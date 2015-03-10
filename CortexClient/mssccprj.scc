@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[CortexClient.csproj]
+SCC_Aux_Path = "\\nycfs1\data\it\VSS"
+SCC_Project_Name = "$/Cortex/CortexGUIClient/CortexClient", VSLBAAAA

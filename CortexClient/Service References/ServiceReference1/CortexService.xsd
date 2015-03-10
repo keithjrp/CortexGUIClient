@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/CortexWebService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CortexWebService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Deal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AcquirerShareholderMeetingEventID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Background" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Catalyst" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Category" nillable="true" type="tns:Category" />
+      <xs:element minOccurs="0" name="CategoryID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Company" nillable="true" type="tns:Company" />
+      <xs:element minOccurs="0" name="Company1" nillable="true" type="tns:Company" />
+      <xs:element minOccurs="0" name="Company2" nillable="true" type="tns:Company" />
+      <xs:element minOccurs="0" name="CompanyID1" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CompanyID2" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CompanyID3" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Comps" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="tns:Currency" />
+      <xs:element minOccurs="0" name="CurrencyID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CurrentValuation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Deal1" nillable="true" type="tns:Deal" />
+      <xs:element minOccurs="0" name="DealCurrencyID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DealID" type="xs:int" />
+      <xs:element minOccurs="0" name="DealStatus" nillable="true" type="tns:DealStatus" />
+      <xs:element minOccurs="0" name="DealStatusID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DealType" nillable="true" type="tns:DealType" />
+      <xs:element minOccurs="0" name="DealType1" nillable="true" type="tns:DealType" />
+      <xs:element minOccurs="0" name="DealTypeID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Deals1" nillable="true" type="tns:Deal" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentGroup" nillable="true" type="tns:DocumentGroup" />
+      <xs:element minOccurs="0" name="DocumentGroupID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Documents" nillable="true" type="tns:ArrayOfDocument" />
+      <xs:element minOccurs="0" name="DownsidePrice" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="DownsidePriceValuation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DropDeadEventID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Event" nillable="true" type="tns:Event" />
+      <xs:element minOccurs="0" name="Event1" nillable="true" type="tns:Event" />
+      <xs:element minOccurs="0" name="Event2" nillable="true" type="tns:Event" />
+      <xs:element minOccurs="0" name="Event3" nillable="true" type="tns:Event" />
+      <xs:element minOccurs="0" name="Events" nillable="true" type="tns:ArrayOfEvent" />
+      <xs:element minOccurs="0" name="ExpirationDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="InvestmentThesis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KeyRisks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MapDealAnalysts" nillable="true" type="tns:ArrayOfMapDealAnalyst" />
+      <xs:element minOccurs="0" name="MergerAgreementEventID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Recommendation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecurityGroup" nillable="true" type="tns:SecurityGroup" />
+      <xs:element minOccurs="0" name="SecurityGroupID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TargetPrice" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TargetPriceValuation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TargetShareholderMeetingEventID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ValuationMethodology" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Deal" nillable="true" type="tns:Deal" />
+  <xs:complexType name="Category">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryID" type="xs:int" />
+      <xs:element minOccurs="0" name="Class" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Deals" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Category" nillable="true" type="tns:Category" />
+  <xs:complexType name="ArrayOfDeal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Deal" nillable="true" type="tns:Deal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDeal" nillable="true" type="tns:ArrayOfDeal" />
+  <xs:complexType name="Company">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyAssociations" nillable="true" type="tns:ArrayOfCompanyAssociation" />
+      <xs:element minOccurs="0" name="CompanyAssociations1" nillable="true" type="tns:ArrayOfCompanyAssociation" />
+      <xs:element minOccurs="0" name="CompanyID" type="xs:int" />
+      <xs:element minOccurs="0" name="Deals" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Deals1" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Deals2" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Security" nillable="true" type="tns:Security" />
+      <xs:element minOccurs="0" name="SecurityID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Company" nillable="true" type="tns:Company" />
+  <xs:complexType name="ArrayOfCompanyAssociation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CompanyAssociation" nillable="true" type="tns:CompanyAssociation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCompanyAssociation" nillable="true" type="tns:ArrayOfCompanyAssociation" />
+  <xs:complexType name="CompanyAssociation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AssociationType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Company" nillable="true" type="tns:Company" />
+      <xs:element minOccurs="0" name="Company1" nillable="true" type="tns:Company" />
+      <xs:element minOccurs="0" name="Company1ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Company2ID" type="xs:int" />
+      <xs:element minOccurs="0" name="CompanyAssociationID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompanyAssociation" nillable="true" type="tns:CompanyAssociation" />
+  <xs:complexType name="Security">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Companies" nillable="true" type="tns:ArrayOfCompany" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="tns:Currency" />
+      <xs:element minOccurs="0" name="CurrencyID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Cusip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Isin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Prices" nillable="true" type="tns:ArrayOfPrice" />
+      <xs:element minOccurs="0" name="SecurityGroups" nillable="true" type="tns:ArrayOfSecurityGroup" />
+      <xs:element minOccurs="0" name="SecurityGroups1" nillable="true" type="tns:ArrayOfSecurityGroup" />
+      <xs:element minOccurs="0" name="SecurityGroups2" nillable="true" type="tns:ArrayOfSecurityGroup" />
+      <xs:element minOccurs="0" name="SecurityGroups3" nillable="true" type="tns:ArrayOfSecurityGroup" />
+      <xs:element minOccurs="0" name="SecurityGroups4" nillable="true" type="tns:ArrayOfSecurityGroup" />
+      <xs:element minOccurs="0" name="SecurityID" type="xs:int" />
+      <xs:element minOccurs="0" name="SecurityType" nillable="true" type="tns:SecurityType" />
+      <xs:element minOccurs="0" name="SecurityTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Sedol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ticker" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Security" nillable="true" type="tns:Security" />
+  <xs:complexType name="ArrayOfCompany">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Company" nillable="true" type="tns:Company" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCompany" nillable="true" type="tns:ArrayOfCompany" />
+  <xs:complexType name="Currency">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrencyID" type="xs:int" />
+      <xs:element minOccurs="0" name="CurrencyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Deals" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Securities" nillable="true" type="tns:ArrayOfSecurity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Currency" nillable="true" type="tns:Currency" />
+  <xs:complexType name="ArrayOfSecurity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Security" nillable="true" type="tns:Security" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSecurity" nillable="true" type="tns:ArrayOfSecurity" />
+  <xs:complexType name="ArrayOfPrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Price" nillable="true" type="tns:Price" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPrice" nillable="true" type="tns:ArrayOfPrice" />
+  <xs:complexType name="Price">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Price1" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PriceDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PriceID" type="xs:int" />
+      <xs:element minOccurs="0" name="PriceSource" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Security" nillable="true" type="tns:Security" />
+      <xs:element minOccurs="0" name="SecurityID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Price" nillable="true" type="tns:Price" />
+  <xs:complexType name="ArrayOfSecurityGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SecurityGroup" nillable="true" type="tns:SecurityGroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSecurityGroup" nillable="true" type="tns:ArrayOfSecurityGroup" />
+  <xs:complexType name="SecurityGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Deals" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Security" nillable="true" type="tns:Security" />
+      <xs:element minOccurs="0" name="Security1" nillable="true" type="tns:Security" />
+      <xs:element minOccurs="0" name="Security2" nillable="true" type="tns:Security" />
+      <xs:element minOccurs="0" name="Security3" nillable="true" type="tns:Security" />
+      <xs:element minOccurs="0" name="Security4" nillable="true" type="tns:Security" />
+      <xs:element minOccurs="0" name="SecurityGroupID" type="xs:int" />
+      <xs:element minOccurs="0" name="SecurityID1" type="xs:int" />
+      <xs:element minOccurs="0" name="SecurityID2" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SecurityID3" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SecurityID4" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="SecurityID5" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SecurityGroup" nillable="true" type="tns:SecurityGroup" />
+  <xs:complexType name="SecurityType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Securities" nillable="true" type="tns:ArrayOfSecurity" />
+      <xs:element minOccurs="0" name="SecurityTypeID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SecurityType" nillable="true" type="tns:SecurityType" />
+  <xs:complexType name="DealStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealStatusID" type="xs:int" />
+      <xs:element minOccurs="0" name="Deals" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealStatus" nillable="true" type="tns:DealStatus" />
+  <xs:complexType name="DealType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Deals" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Deals1" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DealType" nillable="true" type="tns:DealType" />
+  <xs:complexType name="DocumentGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Deals" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Document" nillable="true" type="tns:Document" />
+      <xs:element minOccurs="0" name="Document1" nillable="true" type="tns:Document" />
+      <xs:element minOccurs="0" name="Document2" nillable="true" type="tns:Document" />
+      <xs:element minOccurs="0" name="DocumentGroupID" type="xs:int" />
+      <xs:element minOccurs="0" name="DocumentID1" type="xs:int" />
+      <xs:element minOccurs="0" name="DocumentID2" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DocumentID3" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentGroup" nillable="true" type="tns:DocumentGroup" />
+  <xs:complexType name="Document">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Deal" nillable="true" type="tns:Deal" />
+      <xs:element minOccurs="0" name="DealId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentGroups" nillable="true" type="tns:ArrayOfDocumentGroup" />
+      <xs:element minOccurs="0" name="DocumentGroups1" nillable="true" type="tns:ArrayOfDocumentGroup" />
+      <xs:element minOccurs="0" name="DocumentGroups2" nillable="true" type="tns:ArrayOfDocumentGroup" />
+      <xs:element minOccurs="0" name="DocumentID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="URI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Document" nillable="true" type="tns:Document" />
+  <xs:complexType name="ArrayOfDocumentGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentGroup" nillable="true" type="tns:DocumentGroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumentGroup" nillable="true" type="tns:ArrayOfDocumentGroup" />
+  <xs:complexType name="ArrayOfDocument">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Document" nillable="true" type="tns:Document" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocument" nillable="true" type="tns:ArrayOfDocument" />
+  <xs:complexType name="Event">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Deal" nillable="true" type="tns:Deal" />
+      <xs:element minOccurs="0" name="DealID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Deals" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Deals1" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Deals2" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Deals3" nillable="true" type="tns:ArrayOfDeal" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EventID" type="xs:int" />
+      <xs:element minOccurs="0" name="EventType" nillable="true" type="tns:EventType" />
+      <xs:element minOccurs="0" name="EventTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Event" nillable="true" type="tns:Event" />
+  <xs:complexType name="EventType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EventTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Events" nillable="true" type="tns:ArrayOfEvent" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventType" nillable="true" type="tns:EventType" />
+  <xs:complexType name="ArrayOfEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Event" nillable="true" type="tns:Event" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEvent" nillable="true" type="tns:ArrayOfEvent" />
+  <xs:complexType name="ArrayOfMapDealAnalyst">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MapDealAnalyst" nillable="true" type="tns:MapDealAnalyst" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMapDealAnalyst" nillable="true" type="tns:ArrayOfMapDealAnalyst" />
+  <xs:complexType name="MapDealAnalyst">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Analyst" nillable="true" type="tns:Analyst" />
+      <xs:element minOccurs="0" name="AnalystID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Deal" nillable="true" type="tns:Deal" />
+      <xs:element minOccurs="0" name="DealID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="IsLeadAnalyst" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MapDealAnalystID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MapDealAnalyst" nillable="true" type="tns:MapDealAnalyst" />
+  <xs:complexType name="Analyst">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnalystID" type="xs:int" />
+      <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MapDealAnalysts" nillable="true" type="tns:ArrayOfMapDealAnalyst" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Analyst" nillable="true" type="tns:Analyst" />
+  <xs:complexType name="StatisticType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnnualCompanyStatistics" nillable="true" type="tns:ArrayOfAnnualCompanyStatistic" />
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatisticTypeID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StatisticType" nillable="true" type="tns:StatisticType" />
+  <xs:complexType name="ArrayOfAnnualCompanyStatistic">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AnnualCompanyStatistic" nillable="true" type="tns:AnnualCompanyStatistic" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnnualCompanyStatistic" nillable="true" type="tns:ArrayOfAnnualCompanyStatistic" />
+  <xs:complexType name="AnnualCompanyStatistic">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnnualCompanyStatisticID" type="xs:int" />
+      <xs:element minOccurs="0" name="CompanyID" type="xs:int" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatisticType" nillable="true" type="tns:StatisticType" />
+      <xs:element minOccurs="0" name="StatisticTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="Value" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AnnualCompanyStatistic" nillable="true" type="tns:AnnualCompanyStatistic" />
+  <xs:complexType name="ApplicationUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Actions" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedById" type="ser:guid" />
+      <xs:element minOccurs="0" name="CreatedDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DomainCredential" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EditedById" type="ser:guid" />
+      <xs:element minOccurs="0" name="EditedDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsDeleted" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastAccessDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MachineAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Version" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplicationUser" nillable="true" type="tns:ApplicationUser" />
+  <xs:complexType name="ArrayOfCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Category" nillable="true" type="tns:Category" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCategory" nillable="true" type="tns:ArrayOfCategory" />
+  <xs:complexType name="ArrayOfAnalyst">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Analyst" nillable="true" type="tns:Analyst" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnalyst" nillable="true" type="tns:ArrayOfAnalyst" />
+  <xs:complexType name="ArrayOfSecurityType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SecurityType" nillable="true" type="tns:SecurityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSecurityType" nillable="true" type="tns:ArrayOfSecurityType" />
+  <xs:complexType name="MergerArb">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="C000_DealId__Required_" type="xs:int" />
+      <xs:element minOccurs="0" name="C001_Deal_Name__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C002_Target_Ticker__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C003_Target_Name__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C004_Acquirer_Ticker__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C005_Acquirer_Name__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C006_File_Name_Path__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C008_Target_Shares_Owned__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C009_Acquirer_Shares_Owned__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C011_Key_Notes_1__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C012_Key_Notes_2__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C013_Key_Notes_3__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C014_Pricing_Period__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C015_Target_Earnings_Date__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C016_Acquirer_Earnings_Date__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C017_Key_Dates__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C019_Stated_Cash_Terms__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C020_Stated_Stock_Exchange_Ratio__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C021_Cash_Prorate__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C022_Stock_Prorate__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C023_Hedge_Ratio__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C024_Cash_Terms__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C025_Stock_Exchange_Ratio__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C027_Target_Price_in_Local_Currency__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C028_Acquirer_Price_in_Local_Currency__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C029_Target_Price_in_Deal_Currency__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C030_Acquirer_Price_in_Deal_Currency__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C032_Target_Currency__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C033_Acquirer_Currency__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C034_Deal_Currency__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C035_FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C036_FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C037_FX_Ratio_to_Covert_Deal_Currency_to_USD__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C039_Today__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C040_Announced_Date__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C041_Estimated_Close_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C042_Potential_Days_Delayed__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C043_Days_to_Close__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C044_Close_Date__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C046_Total_Consideration__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C047_Gross_Spread__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C048_Net_Spread_before_Leverage__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C049_Cost_of_Leverage__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C050_Net_Dividends__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C051_Short_Rebates__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C052_Net_Spread__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C053_Hypothetical_Targeted_Net_Spread__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C054_Hypothetical_Unwind_Net_Spread__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C055_Theoretical_Spread_collar__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C057_Gross_Return__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C058_Annualized_ROR__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C059_Hypothetical_Targeted_Annualized_Return__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C060_Hypothetical_Unwind_Annualized_Return__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C061_Theoretical_Annualized_Return_collar__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C063_Commission_Cost_per_Share__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C064_Long_Financing_Rate__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C065_Short_Rebate__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C066_Long_Margin_Required__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C067_Short_Margin_Required__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C069_Target_Ex_Dividend_Date__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C070_Aquirer_Ex_Dividend_Date__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C071_Target_Dividend_Projected_or_Declared__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C072_Acquirer_Dividend_Projected_or_Declared__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C073_Number_of_Target_Dividends__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C074_Number_of_Acquirer_Dividends__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C075_Target_Dividend_Quarterly_Amount__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C076_Acquirer_Dividend_Quarterly_Amount__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C077_Total_Target_Dividends__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C078_Total_Acquirer_Dividends__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C080_Target_Break_Price__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C081_Acquirer_Break_Price__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C082_Expected_USD_Return_prob_wtd__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C083_RiskReward__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C084_Notional_Long_USD_MV__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C085_Net_USD_Profit_at_Close__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C086_Net_USD_Profit_at_Break__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C087_Probability_of_Break__Required_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C088_Tgt_13D_Num_shs_remaining__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C090_Prorate_Value_of_Stock__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C091_Prorate_Value_of_Cash__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C092_Prorate_Comment_1__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C093_Prorate_Comment_2__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C095_Collar_Flag_Yes_No__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C096_Collar_Flag_Normal_Inverted__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C097_Collar_Num_of_Segments__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C098_Collar_Num_of_Breakpoints__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C099_Collar___Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C100_Collar_High_Breakpoint__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C101_Collar_Position__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C102_Collar_Walk__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C103_Collar_Cure_Low_Breakpoint__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C104_Collar_Cure_High_Breakpoint__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C105_Collar_Value_of_Collar__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C106_Collar_Note_Description__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C108_Pricing_Period_Start_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C109_Pricing_Period_End_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C110_Pricing_Period_Length_days__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C111_Pricing_Period_Trading_Days_Prior_to_Close___Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C112_Pricing_Period_Prc_Complete__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C113_Pricing_Period_Prc_Remaining__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C114_Pricing_Period_Price_Based_on_Prc_Complete__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C115_Pricing_Period_Price_Based_on_Prc_Remaining__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C116_Pricing_Period_Weighted_Price__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C118_Bloomberg_Corporate_Action_ID__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C119_Bloomberg_Target_Company_Description__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C120_Bloomberg_Acquirer_Company_Description__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C121_Bloomberg_Deal_Description__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C122_Bloomberg_Target_Legal_Advisors__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C123_Bloomberg_Target_Financial_Advisors__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C124_Bloomberg_Acquirer_Legal_Advisors__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C125_Bloomberg_Acquirer_Financial_Advisors__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C126_Bloomberg_Pending_Approvals__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C127_Bloomberg_Approved_Approvals__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C128_Bloomberg_Expired_Approvals__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C129_Bloomberg_Entended_Approvals__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C130_Bloomberg_Announced_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C131_Bloomberg_Amendment_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C132_Bloomberg_Expected_Completion_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C133_Bloomberg_Completed_Termination_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C134_Bloomberg_Merger_Agreement_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C135_Bloomberg_Drop_Dead_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C136_Bloomberg_Go_Shop_Period_Start_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="C137_Bloomberg_Go_Shop_Period_End_Date__Optional_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MergerArbID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MergerArb" nillable="true" type="tns:MergerArb" />
+  <xs:complexType name="ArrayOfEventType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventType" nillable="true" type="tns:EventType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEventType" nillable="true" type="tns:ArrayOfEventType" />
+  <xs:complexType name="ArrayOfCurrency">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Currency" nillable="true" type="tns:Currency" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCurrency" nillable="true" type="tns:ArrayOfCurrency" />
+  <xs:complexType name="ArrayOfDealStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DealStatus" nillable="true" type="tns:DealStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDealStatus" nillable="true" type="tns:ArrayOfDealStatus" />
+  <xs:complexType name="ArrayOfMergerArbNew">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MergerArbNew" nillable="true" type="tns:MergerArbNew" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMergerArbNew" nillable="true" type="tns:ArrayOfMergerArbNew" />
+  <xs:complexType name="MergerArbNew">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Calendar_Comment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Calendar_Flag" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Calendar_Time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Field_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Field_Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Field_Updated" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Field_Value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MergerArbNew" nillable="true" type="tns:MergerArbNew" />
+</xs:schema>

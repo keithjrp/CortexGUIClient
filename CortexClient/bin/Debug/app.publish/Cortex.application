@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <assemblyIdentity name="Cortex.application" version="2.0.1.6" publicKeyToken="034a6ede72d8c94f" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:publisher="Jake Roy Pillar" co.v1:suiteName="Cortex" asmv2:product="Cortex" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true" co.v1:createDesktopShortcut="true">
+    <subscription>
+      <update>
+        <beforeApplicationStartup />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="http://vmctrxdevs1/CortexInstall/Cortex.application" />
+  </deployment>
+  <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
+    <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
+  </compatibleFrameworks>
+  <dependency>
+    <dependentAssembly dependencyType="install" codebase="Application Files\Cortex_2_0_1_6\Cortex.exe.manifest" size="8118">
+      <assemblyIdentity name="Cortex.exe" version="2.0.1.6" publicKeyToken="034a6ede72d8c94f" language="neutral" processorArchitecture="x86" type="win32" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>60t/pmmUWDk1WNCsgZzp464m8mg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=HALCYON\ktam" issuerKeyHash="5959322258003bb1488254e831d071c92526c510" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Sh46LBofzhonSCTrxtHMwCH6bIk=</DigestValue></Reference></SignedInfo><SignatureValue>uaVM5cml8SXUqNdu+RSoPADL5XqOE7CnenQWUkQJVHvbcNXKT/a6vimfq3Irp6OP0m2eZ1j0TF69hl/Fk2+szcsAG8ICoFsc++oCeTv97DNRqQyXC04Eiid09JDeK7sGZz0bh75NAJjlk5Qh8CP6MEsQmqq87WmcseEUApmRfBI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2vTwLugaVtHFMd2qC+7yH8donNlHwOYi9iSaD0ZbRIoSs4o+hFmu6OCMb6w9YLVy2q8z3+Bg0g50Sue2flGoge0d0RFMUWoAzpfSJwg7zwmSsKHmrR2anlEUEiz4MRECm4i4lrKVSMoQVPaWOO9VTbV8nXV+NIqlrWLYkts6svU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="896cfa21c0ccd1c6eb2448271ace1f1a2c3a1e4a" Description="" Url=""><as:assemblyIdentity name="Cortex.application" version="2.0.1.6" publicKeyToken="034a6ede72d8c94f" language="neutral" processorArchitecture="x86" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HALCYON\ktam</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>/kImSaEvj4AU2/3Fr5vvXNwYzas=</DigestValue></Reference></SignedInfo><SignatureValue>f/YpH/Qvrx9W09JR9B3x4KZhf9484Uq/GGBM+bmBH7jbPn71g7KkDX0d4pY5MfEh59u1QeBt/BhqLiPgA1UT7OC4zVS2s1cugwovODdNTfRPZZ6VMTadWsfg4ZR5Yjbtf3LJO0wf28B7hpkLPRDNyKgPNRmyalpfu2HJtYZRs2c=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2vTwLugaVtHFMd2qC+7yH8donNlHwOYi9iSaD0ZbRIoSs4o+hFmu6OCMb6w9YLVy2q8z3+Bg0g50Sue2flGoge0d0RFMUWoAzpfSJwg7zwmSsKHmrR2anlEUEiz4MRECm4i4lrKVSMoQVPaWOO9VTbV8nXV+NIqlrWLYkts6svU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIByTCCATKgAwIBAgIQYA1yQE4yoJlF6g38cuTrijANBgkqhkiG9w0BAQUFADAjMSEwHwYDVQQDHhgASABBAEwAQwBZAE8ATgBcAGsAdABhAG0wHhcNMTUwMjE3MTU1MDEwWhcNMTYwMjE3MjE1MDEwWjAjMSEwHwYDVQQDHhgASABBAEwAQwBZAE8ATgBcAGsAdABhAG0wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANr08C7oGlbRxTHdqgvu8h/HaJzZR8DmIvYkmg9GW0SKErOKPoRZrujgjG+sPWC1ctqvM9/gYNIOdErntn5RqIHtHdERTFFqAM6X0icIO88JkrCh5q0dmp5RFBIs+DERApuIuJaylUjKEFT2ljjvVU21fJ11fjSKpa1i2JLbOrL1AgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAdSB0Hvnx1QvvMTijM3GxD8jFvPYxRNEjKOTbVgmpZFbXasoeGtyPF0BO19sY/gG5rFptfFWV3BUrGUNUJxQFA319hcwDzcigevUc+gtwH9uc0/bGZ6wuleqleUAQzRUFlYDFHXYMEv0z+jUQDppuhrs9pGcEwn7on9j4f/JtjWc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

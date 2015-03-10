@@ -1,0 +1,1996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CortexWCFServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CortexWebService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CortexWCFService_getDeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDeal" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDeals_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDeals" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDeals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addDeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:addDeal" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addDeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeDeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeDeal" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeDeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateDeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateDeal" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateDeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealsByDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealsByDescription" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealsByDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealsByDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealByDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealByDate" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealByDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeDealById_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeDealById" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeDealById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeDealByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeDealByDescription_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeDealByDescription" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeDealByDescription_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeDealByDescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurity_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurity" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addSecurity_InputMessage">
+    <wsdl:part name="parameters" element="tns:addSecurity" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addSecurity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateSecurity_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateSecurity" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateSecurity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeSecurity_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeSecurity" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeSecurity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCompany" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:addCompany" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateCompany" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeCompany" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDocument" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCurrency_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCurrency" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCurrency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCurrencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEvent" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getEventType_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEventType" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getEventType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEventTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDocumentGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDocumentGroup" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDocumentGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDocumentGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityGroup" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityType_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityType" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCompanyAssociation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyAssociation" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCompanyAssociation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeCompanyAssociation_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeCompanyAssociation" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeCompanyAssociation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeCompanyAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateCompanyAssociation_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateCompanyAssociation" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateCompanyAssociation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateCompanyAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addCompanyAssociation_InputMessage">
+    <wsdl:part name="parameters" element="tns:addCompanyAssociation" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addCompanyAssociation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addCompanyAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastCompany" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastCompanyAssociation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastCompanyAssociation" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastCompanyAssociation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastCompanyAssociationResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastSecurity_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastSecurity" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastSecurity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastSecurityResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastSecurityGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastSecurityGroup" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastSecurityGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastSecurityGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addSecurityGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:addSecurityGroup" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addSecurityGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addSecurityGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addDocumentGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:addDocumentGroup" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addDocumentGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addDocumentGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCurrencyByCodeOrName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCurrencyByCodeOrName" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCurrencyByCodeOrName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCurrencyByCodeOrNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastDocumentGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastDocumentGroup" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastDocumentGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastDocumentGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getPrice_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPrice" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getPrice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getStatisticType_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStatisticType" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getStatisticType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStatisticTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getAnnualCompanyStatistic_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAnnualCompanyStatistic" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getAnnualCompanyStatistic_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAnnualCompanyStatisticResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealType_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealType" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addCurrency_InputMessage">
+    <wsdl:part name="parameters" element="tns:addCurrency" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addCurrency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addCurrencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:addDocument" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:addEvent" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addEventType_InputMessage">
+    <wsdl:part name="parameters" element="tns:addEventType" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addEventType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addEventTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addPrice_InputMessage">
+    <wsdl:part name="parameters" element="tns:addPrice" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addPrice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addAnnualCompanyStatistic_InputMessage">
+    <wsdl:part name="parameters" element="tns:addAnnualCompanyStatistic" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addAnnualCompanyStatistic_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addAnnualCompanyStatisticResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addStatisticType_InputMessage">
+    <wsdl:part name="parameters" element="tns:addStatisticType" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addStatisticType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addStatisticTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addDealType_InputMessage">
+    <wsdl:part name="parameters" element="tns:addDealType" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addDealType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addDealTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addSecurityType_InputMessage">
+    <wsdl:part name="parameters" element="tns:addSecurityType" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addSecurityType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addSecurityTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateDocumentGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateDocumentGroup" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateDocumentGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateDocumentGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateSecurityGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateSecurityGroup" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateSecurityGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateSecurityGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDocumentByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDocumentByName" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDocumentByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDocumentByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateDocument" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastDocument" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealByCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealByCompany" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealByCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealByCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealList" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealListResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getAnalyst_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAnalyst" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getAnalyst_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAnalystResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getAnalystByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAnalystByName" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getAnalystByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAnalystByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_GetCurrentDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentDate" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_GetCurrentDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealStatus" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategory" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealTeam" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateMapDealAnalyst_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateMapDealAnalyst" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateMapDealAnalyst_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateMapDealAnalystResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addMapDealAnalyst_InputMessage">
+    <wsdl:part name="parameters" element="tns:addMapDealAnalyst" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addMapDealAnalyst_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addMapDealAnalystResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMapDealAnalyst_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMapDealAnalyst" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMapDealAnalyst_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMapDealAnalystResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealByAnalyst_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealByAnalyst" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealByAnalyst_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealByAnalystResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getEventsByDeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEventsByDeal" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getEventsByDeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEventsByDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDocumentsByDeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDocumentsByDeal" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDocumentsByDeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDocumentsByDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastEvent" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeEvent_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeEvent" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeEvent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeEventResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeDocument" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeMapDealAnalyst_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeMapDealAnalyst" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeMapDealAnalyst_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeMapDealAnalystResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailAdd_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailAdd" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailAdd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailUpdate_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailUpdate" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailUpdate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailDelete_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailDelete" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailDelete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailLogin" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailLogout_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailLogout" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailLogout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailLogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailView_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailView" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_AuditTrailView_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuditTrailViewResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealByStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealByStatus" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealByStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealByStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealsByCategoryClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealsByCategoryClass" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealsByCategoryClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealsByCategoryClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategoriesByClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoriesByClass" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategoriesByClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoriesByClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealsByCategory_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealsByCategory" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealsByCategory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealsByCategoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastDeal_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLastDeal" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getLastDeal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLastDealResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategoriesByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoriesByName" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategoriesByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoriesByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealStatusByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealStatusByName" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealStatusByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealStatusByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityByCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityByCode" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityByCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityByCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCompanyByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyByName" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCompanyByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanyByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealsByCriteria_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealsByCriteria" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealsByCriteria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealsByCriteriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCompanies_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCompanies" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCompanies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCompaniesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurities_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurities" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSecuritiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getAnalysts_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAnalysts" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getAnalysts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAnalystsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityTypes" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMergerArb_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMergerArb" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMergerArb_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMergerArbResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateMergerArb_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateMergerArb" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateMergerArb_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateMergerArbResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addMergerArb_InputMessage">
+    <wsdl:part name="parameters" element="tns:addMergerArb" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addMergerArb_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addMergerArbResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMergerArbByDealId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMergerArbByDealId" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMergerArbByDealId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMergerArbByDealIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getEventTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEventTypes" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getEventTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEventTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCurrencies_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCurrencies" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCurrencies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCurrenciesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealStatuses_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDealStatuses" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getDealStatuses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDealStatusesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategories" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategoryClasses_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryClasses" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getCategoryClasses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryClassesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMergerArbNewByDealId_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMergerArbNewByDealId" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMergerArbNewByDealId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMergerArbNewByDealIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addMergerArbNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:addMergerArbNew" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_addMergerArbNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addMergerArbNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateMergerArbNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateMergerArbNew" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_updateMergerArbNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateMergerArbNewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CortexWCFService">
+    <wsdl:operation name="getDeal">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDeal" message="tns:CortexWCFService_getDeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealResponse" message="tns:CortexWCFService_getDeal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDeals">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDeals" message="tns:CortexWCFService_getDeals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealsResponse" message="tns:CortexWCFService_getDeals_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addDeal">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addDeal" message="tns:CortexWCFService_addDeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addDealResponse" message="tns:CortexWCFService_addDeal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeDeal">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeDeal" message="tns:CortexWCFService_removeDeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeDealResponse" message="tns:CortexWCFService_removeDeal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDeal">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateDeal" message="tns:CortexWCFService_updateDeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateDealResponse" message="tns:CortexWCFService_updateDeal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealsByDescription">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealsByDescription" message="tns:CortexWCFService_getDealsByDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealsByDescriptionResponse" message="tns:CortexWCFService_getDealsByDescription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealByDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealByDate" message="tns:CortexWCFService_getDealByDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealByDateResponse" message="tns:CortexWCFService_getDealByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeDealById">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeDealById" message="tns:CortexWCFService_removeDealById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeDealByIdResponse" message="tns:CortexWCFService_removeDealById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeDealByDescription">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeDealByDescription" message="tns:CortexWCFService_removeDealByDescription_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeDealByDescriptionResponse" message="tns:CortexWCFService_removeDealByDescription_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSecurity">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getSecurity" message="tns:CortexWCFService_getSecurity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityResponse" message="tns:CortexWCFService_getSecurity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addSecurity">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addSecurity" message="tns:CortexWCFService_addSecurity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addSecurityResponse" message="tns:CortexWCFService_addSecurity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateSecurity">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateSecurity" message="tns:CortexWCFService_updateSecurity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateSecurityResponse" message="tns:CortexWCFService_updateSecurity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeSecurity">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeSecurity" message="tns:CortexWCFService_removeSecurity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeSecurityResponse" message="tns:CortexWCFService_removeSecurity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCompany" message="tns:CortexWCFService_getCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCompanyResponse" message="tns:CortexWCFService_getCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addCompany" message="tns:CortexWCFService_addCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addCompanyResponse" message="tns:CortexWCFService_addCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateCompany" message="tns:CortexWCFService_updateCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateCompanyResponse" message="tns:CortexWCFService_updateCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeCompany" message="tns:CortexWCFService_removeCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeCompanyResponse" message="tns:CortexWCFService_removeCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDocument" message="tns:CortexWCFService_getDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDocumentResponse" message="tns:CortexWCFService_getDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCurrency">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCurrency" message="tns:CortexWCFService_getCurrency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCurrencyResponse" message="tns:CortexWCFService_getCurrency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getEvent" message="tns:CortexWCFService_getEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getEventResponse" message="tns:CortexWCFService_getEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEventType">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getEventType" message="tns:CortexWCFService_getEventType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getEventTypeResponse" message="tns:CortexWCFService_getEventType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDocumentGroup" message="tns:CortexWCFService_getDocumentGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDocumentGroupResponse" message="tns:CortexWCFService_getDocumentGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityGroup" message="tns:CortexWCFService_getSecurityGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityGroupResponse" message="tns:CortexWCFService_getSecurityGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityType">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityType" message="tns:CortexWCFService_getSecurityType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityTypeResponse" message="tns:CortexWCFService_getSecurityType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyAssociation">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCompanyAssociation" message="tns:CortexWCFService_getCompanyAssociation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCompanyAssociationResponse" message="tns:CortexWCFService_getCompanyAssociation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeCompanyAssociation">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeCompanyAssociation" message="tns:CortexWCFService_removeCompanyAssociation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeCompanyAssociationResponse" message="tns:CortexWCFService_removeCompanyAssociation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateCompanyAssociation">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateCompanyAssociation" message="tns:CortexWCFService_updateCompanyAssociation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateCompanyAssociationResponse" message="tns:CortexWCFService_updateCompanyAssociation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addCompanyAssociation">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addCompanyAssociation" message="tns:CortexWCFService_addCompanyAssociation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addCompanyAssociationResponse" message="tns:CortexWCFService_addCompanyAssociation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getLastCompany" message="tns:CortexWCFService_getLastCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getLastCompanyResponse" message="tns:CortexWCFService_getLastCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastCompanyAssociation">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getLastCompanyAssociation" message="tns:CortexWCFService_getLastCompanyAssociation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getLastCompanyAssociationResponse" message="tns:CortexWCFService_getLastCompanyAssociation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastSecurity">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getLastSecurity" message="tns:CortexWCFService_getLastSecurity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getLastSecurityResponse" message="tns:CortexWCFService_getLastSecurity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastSecurityGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getLastSecurityGroup" message="tns:CortexWCFService_getLastSecurityGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getLastSecurityGroupResponse" message="tns:CortexWCFService_getLastSecurityGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addSecurityGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addSecurityGroup" message="tns:CortexWCFService_addSecurityGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addSecurityGroupResponse" message="tns:CortexWCFService_addSecurityGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addDocumentGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addDocumentGroup" message="tns:CortexWCFService_addDocumentGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addDocumentGroupResponse" message="tns:CortexWCFService_addDocumentGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCurrencyByCodeOrName">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCurrencyByCodeOrName" message="tns:CortexWCFService_getCurrencyByCodeOrName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCurrencyByCodeOrNameResponse" message="tns:CortexWCFService_getCurrencyByCodeOrName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastDocumentGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getLastDocumentGroup" message="tns:CortexWCFService_getLastDocumentGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getLastDocumentGroupResponse" message="tns:CortexWCFService_getLastDocumentGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPrice">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getPrice" message="tns:CortexWCFService_getPrice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getPriceResponse" message="tns:CortexWCFService_getPrice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStatisticType">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getStatisticType" message="tns:CortexWCFService_getStatisticType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getStatisticTypeResponse" message="tns:CortexWCFService_getStatisticType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAnnualCompanyStatistic">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getAnnualCompanyStatistic" message="tns:CortexWCFService_getAnnualCompanyStatistic_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getAnnualCompanyStatisticResponse" message="tns:CortexWCFService_getAnnualCompanyStatistic_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealType">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealType" message="tns:CortexWCFService_getDealType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealTypeResponse" message="tns:CortexWCFService_getDealType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addCurrency">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addCurrency" message="tns:CortexWCFService_addCurrency_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addCurrencyResponse" message="tns:CortexWCFService_addCurrency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addDocument" message="tns:CortexWCFService_addDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addDocumentResponse" message="tns:CortexWCFService_addDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addEvent" message="tns:CortexWCFService_addEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addEventResponse" message="tns:CortexWCFService_addEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addEventType">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addEventType" message="tns:CortexWCFService_addEventType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addEventTypeResponse" message="tns:CortexWCFService_addEventType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addPrice">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addPrice" message="tns:CortexWCFService_addPrice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addPriceResponse" message="tns:CortexWCFService_addPrice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addAnnualCompanyStatistic">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addAnnualCompanyStatistic" message="tns:CortexWCFService_addAnnualCompanyStatistic_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addAnnualCompanyStatisticResponse" message="tns:CortexWCFService_addAnnualCompanyStatistic_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addStatisticType">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addStatisticType" message="tns:CortexWCFService_addStatisticType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addStatisticTypeResponse" message="tns:CortexWCFService_addStatisticType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addDealType">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addDealType" message="tns:CortexWCFService_addDealType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addDealTypeResponse" message="tns:CortexWCFService_addDealType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addSecurityType">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addSecurityType" message="tns:CortexWCFService_addSecurityType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addSecurityTypeResponse" message="tns:CortexWCFService_addSecurityType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDocumentGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateDocumentGroup" message="tns:CortexWCFService_updateDocumentGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateDocumentGroupResponse" message="tns:CortexWCFService_updateDocumentGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateSecurityGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateSecurityGroup" message="tns:CortexWCFService_updateSecurityGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateSecurityGroupResponse" message="tns:CortexWCFService_updateSecurityGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDocumentByName" message="tns:CortexWCFService_getDocumentByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDocumentByNameResponse" message="tns:CortexWCFService_getDocumentByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateDocument" message="tns:CortexWCFService_updateDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateDocumentResponse" message="tns:CortexWCFService_updateDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getLastDocument" message="tns:CortexWCFService_getLastDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getLastDocumentResponse" message="tns:CortexWCFService_getLastDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealByCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealByCompany" message="tns:CortexWCFService_getDealByCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealByCompanyResponse" message="tns:CortexWCFService_getDealByCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealList">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealList" message="tns:CortexWCFService_getDealList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealListResponse" message="tns:CortexWCFService_getDealList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAnalyst">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getAnalyst" message="tns:CortexWCFService_getAnalyst_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getAnalystResponse" message="tns:CortexWCFService_getAnalyst_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAnalystByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getAnalystByName" message="tns:CortexWCFService_getAnalystByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getAnalystByNameResponse" message="tns:CortexWCFService_getAnalystByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/GetCurrentDate" message="tns:CortexWCFService_GetCurrentDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/GetCurrentDateResponse" message="tns:CortexWCFService_GetCurrentDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealStatus" message="tns:CortexWCFService_getDealStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealStatusResponse" message="tns:CortexWCFService_getDealStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCategory" message="tns:CortexWCFService_getCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCategoryResponse" message="tns:CortexWCFService_getCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealTeam" message="tns:CortexWCFService_getDealTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealTeamResponse" message="tns:CortexWCFService_getDealTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateMapDealAnalyst">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateMapDealAnalyst" message="tns:CortexWCFService_updateMapDealAnalyst_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateMapDealAnalystResponse" message="tns:CortexWCFService_updateMapDealAnalyst_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addMapDealAnalyst">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addMapDealAnalyst" message="tns:CortexWCFService_addMapDealAnalyst_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addMapDealAnalystResponse" message="tns:CortexWCFService_addMapDealAnalyst_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMapDealAnalyst">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getMapDealAnalyst" message="tns:CortexWCFService_getMapDealAnalyst_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getMapDealAnalystResponse" message="tns:CortexWCFService_getMapDealAnalyst_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealByAnalyst">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealByAnalyst" message="tns:CortexWCFService_getDealByAnalyst_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealByAnalystResponse" message="tns:CortexWCFService_getDealByAnalyst_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEventsByDeal">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getEventsByDeal" message="tns:CortexWCFService_getEventsByDeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getEventsByDealResponse" message="tns:CortexWCFService_getEventsByDeal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentsByDeal">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDocumentsByDeal" message="tns:CortexWCFService_getDocumentsByDeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDocumentsByDealResponse" message="tns:CortexWCFService_getDocumentsByDeal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getLastEvent" message="tns:CortexWCFService_getLastEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getLastEventResponse" message="tns:CortexWCFService_getLastEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeEvent">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeEvent" message="tns:CortexWCFService_removeEvent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeEventResponse" message="tns:CortexWCFService_removeEvent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeDocument">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeDocument" message="tns:CortexWCFService_removeDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeDocumentResponse" message="tns:CortexWCFService_removeDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeMapDealAnalyst">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeMapDealAnalyst" message="tns:CortexWCFService_removeMapDealAnalyst_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeMapDealAnalystResponse" message="tns:CortexWCFService_removeMapDealAnalyst_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailAdd">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailAdd" message="tns:CortexWCFService_AuditTrailAdd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailAddResponse" message="tns:CortexWCFService_AuditTrailAdd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailUpdate">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailUpdate" message="tns:CortexWCFService_AuditTrailUpdate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailUpdateResponse" message="tns:CortexWCFService_AuditTrailUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailDelete">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailDelete" message="tns:CortexWCFService_AuditTrailDelete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailDeleteResponse" message="tns:CortexWCFService_AuditTrailDelete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailLogin" message="tns:CortexWCFService_AuditTrailLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailLoginResponse" message="tns:CortexWCFService_AuditTrailLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailLogout">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailLogout" message="tns:CortexWCFService_AuditTrailLogout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailLogoutResponse" message="tns:CortexWCFService_AuditTrailLogout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailView">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailView" message="tns:CortexWCFService_AuditTrailView_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/AuditTrailViewResponse" message="tns:CortexWCFService_AuditTrailView_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealByStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealByStatus" message="tns:CortexWCFService_getDealByStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealByStatusResponse" message="tns:CortexWCFService_getDealByStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealsByCategoryClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealsByCategoryClass" message="tns:CortexWCFService_getDealsByCategoryClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealsByCategoryClassResponse" message="tns:CortexWCFService_getDealsByCategoryClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategoriesByClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCategoriesByClass" message="tns:CortexWCFService_getCategoriesByClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCategoriesByClassResponse" message="tns:CortexWCFService_getCategoriesByClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealsByCategory">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealsByCategory" message="tns:CortexWCFService_getDealsByCategory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealsByCategoryResponse" message="tns:CortexWCFService_getDealsByCategory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLastDeal">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getLastDeal" message="tns:CortexWCFService_getLastDeal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getLastDealResponse" message="tns:CortexWCFService_getLastDeal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategoriesByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCategoriesByName" message="tns:CortexWCFService_getCategoriesByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCategoriesByNameResponse" message="tns:CortexWCFService_getCategoriesByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealStatusByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealStatusByName" message="tns:CortexWCFService_getDealStatusByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealStatusByNameResponse" message="tns:CortexWCFService_getDealStatusByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityByCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityByCode" message="tns:CortexWCFService_getSecurityByCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityByCodeResponse" message="tns:CortexWCFService_getSecurityByCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCompanyByName" message="tns:CortexWCFService_getCompanyByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCompanyByNameResponse" message="tns:CortexWCFService_getCompanyByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealsByCriteria">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealsByCriteria" message="tns:CortexWCFService_getDealsByCriteria_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealsByCriteriaResponse" message="tns:CortexWCFService_getDealsByCriteria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCompanies">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCompanies" message="tns:CortexWCFService_getCompanies_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCompaniesResponse" message="tns:CortexWCFService_getCompanies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSecurities">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getSecurities" message="tns:CortexWCFService_getSecurities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getSecuritiesResponse" message="tns:CortexWCFService_getSecurities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAnalysts">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getAnalysts" message="tns:CortexWCFService_getAnalysts_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getAnalystsResponse" message="tns:CortexWCFService_getAnalysts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityTypes" message="tns:CortexWCFService_getSecurityTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityTypesResponse" message="tns:CortexWCFService_getSecurityTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMergerArb">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArb" message="tns:CortexWCFService_getMergerArb_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArbResponse" message="tns:CortexWCFService_getMergerArb_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateMergerArb">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateMergerArb" message="tns:CortexWCFService_updateMergerArb_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateMergerArbResponse" message="tns:CortexWCFService_updateMergerArb_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addMergerArb">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addMergerArb" message="tns:CortexWCFService_addMergerArb_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addMergerArbResponse" message="tns:CortexWCFService_addMergerArb_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMergerArbByDealId">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArbByDealId" message="tns:CortexWCFService_getMergerArbByDealId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArbByDealIdResponse" message="tns:CortexWCFService_getMergerArbByDealId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEventTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getEventTypes" message="tns:CortexWCFService_getEventTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getEventTypesResponse" message="tns:CortexWCFService_getEventTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCurrencies">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCurrencies" message="tns:CortexWCFService_getCurrencies_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCurrenciesResponse" message="tns:CortexWCFService_getCurrencies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDealStatuses">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDealStatuses" message="tns:CortexWCFService_getDealStatuses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getDealStatusesResponse" message="tns:CortexWCFService_getDealStatuses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategories">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCategories" message="tns:CortexWCFService_getCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCategoriesResponse" message="tns:CortexWCFService_getCategories_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryClasses">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getCategoryClasses" message="tns:CortexWCFService_getCategoryClasses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getCategoryClassesResponse" message="tns:CortexWCFService_getCategoryClasses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMergerArbNewByDealId">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArbNewByDealId" message="tns:CortexWCFService_getMergerArbNewByDealId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArbNewByDealIdResponse" message="tns:CortexWCFService_getMergerArbNewByDealId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addMergerArbNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/addMergerArbNew" message="tns:CortexWCFService_addMergerArbNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/addMergerArbNewResponse" message="tns:CortexWCFService_addMergerArbNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateMergerArbNew">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateMergerArbNew" message="tns:CortexWCFService_updateMergerArbNew_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateMergerArbNewResponse" message="tns:CortexWCFService_updateMergerArbNew_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_CortexWCFService" type="tns:CortexWCFService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getDeal">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDeals">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDeals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addDeal">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeDeal">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDeal">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealsByDescription">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealsByDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealByDate">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeDealById">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeDealById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeDealByDescription">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeDealByDescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSecurity">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addSecurity">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSecurity">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeSecurity">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompany">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCompany">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateCompany">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeCompany">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocument">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCurrency">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEvent">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEventType">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getEventType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentGroup">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDocumentGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityGroup">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getSecurityGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityType">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getSecurityType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyAssociation">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCompanyAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeCompanyAssociation">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeCompanyAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateCompanyAssociation">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateCompanyAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCompanyAssociation">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addCompanyAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastCompany">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getLastCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastCompanyAssociation">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getLastCompanyAssociation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastSecurity">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getLastSecurity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastSecurityGroup">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getLastSecurityGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addSecurityGroup">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addSecurityGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addDocumentGroup">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addDocumentGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCurrencyByCodeOrName">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCurrencyByCodeOrName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastDocumentGroup">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getLastDocumentGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPrice">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStatisticType">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getStatisticType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAnnualCompanyStatistic">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getAnnualCompanyStatistic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealType">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCurrency">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addCurrency" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addDocument">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addEvent">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addEventType">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addEventType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPrice">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addAnnualCompanyStatistic">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addAnnualCompanyStatistic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addStatisticType">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addStatisticType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addDealType">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addDealType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addSecurityType">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addSecurityType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDocumentGroup">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateDocumentGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateSecurityGroup">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateSecurityGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentByName">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDocumentByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateDocument">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastDocument">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getLastDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealByCompany">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealByCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealList">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAnalyst">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getAnalyst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAnalystByName">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getAnalystByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentDate">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/GetCurrentDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealStatus">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategory">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealTeam">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateMapDealAnalyst">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateMapDealAnalyst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addMapDealAnalyst">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addMapDealAnalyst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMapDealAnalyst">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getMapDealAnalyst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealByAnalyst">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealByAnalyst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEventsByDeal">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getEventsByDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocumentsByDeal">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDocumentsByDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastEvent">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getLastEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeEvent">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeEvent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeDocument">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeMapDealAnalyst">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeMapDealAnalyst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailAdd">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/AuditTrailAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailUpdate">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/AuditTrailUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailDelete">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/AuditTrailDelete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailLogin">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/AuditTrailLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailLogout">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/AuditTrailLogout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AuditTrailView">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/AuditTrailView" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealByStatus">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealByStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealsByCategoryClass">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealsByCategoryClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategoriesByClass">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCategoriesByClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealsByCategory">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealsByCategory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLastDeal">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getLastDeal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategoriesByName">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCategoriesByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealStatusByName">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealStatusByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityByCode">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getSecurityByCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompanyByName">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCompanyByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealsByCriteria">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealsByCriteria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCompanies">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCompanies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSecurities">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getSecurities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAnalysts">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getAnalysts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityTypes">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getSecurityTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMergerArb">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getMergerArb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateMergerArb">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateMergerArb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addMergerArb">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addMergerArb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMergerArbByDealId">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getMergerArbByDealId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEventTypes">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getEventTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCurrencies">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCurrencies" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDealStatuses">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getDealStatuses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategories">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCategories" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryClasses">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getCategoryClasses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMergerArbNewByDealId">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getMergerArbNewByDealId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addMergerArbNew">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/addMergerArbNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateMergerArbNew">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateMergerArbNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CortexWCFServices">
+    <wsdl:port name="BasicHttpBinding_CortexWCFService" binding="tns:BasicHttpBinding_CortexWCFService">
+      <soap:address location="http://vmctrxdevs1:4590/CortexService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

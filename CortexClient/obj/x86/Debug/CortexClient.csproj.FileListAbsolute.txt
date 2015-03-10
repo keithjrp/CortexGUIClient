@@ -1,0 +1,16 @@
+E:\JRP\Cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.exe
+E:\JRP\Cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.exe.config
+E:\JRP\Cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.exe.manifest
+E:\JRP\Cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.application
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.FormCompanyDefinition.resources
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.FormOverview.resources
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.FormSecurityDefinition.resources
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.Login.resources
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.Properties.Resources.resources
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.csproj.GenerateResource.Cache
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.exe.manifest
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.application
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.exe
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.pdb
+E:\JRP\Cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.pdb
+E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.csprojResolveAssemblyReference.cache
