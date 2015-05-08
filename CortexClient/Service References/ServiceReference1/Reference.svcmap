@@ -21,11 +21,11 @@
     <MetadataSource Address="http://vmctrxdevs1:4590/CortexService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CortexService.disco" MetadataType="Disco" ID="5e0ddee0-9982-4074-9e39-1f479321af90" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?disco" />
-    <MetadataFile FileName="CortexService.xsd" MetadataType="Schema" ID="45b09f05-bd1b-40fe-8b29-1468f08ffd71" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd2" />
-    <MetadataFile FileName="CortexWCFServices.wsdl" MetadataType="Wsdl" ID="5c095e5b-0523-4cfa-8434-324e3cf5384b" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?wsdl" />
-    <MetadataFile FileName="CortexService1.xsd" MetadataType="Schema" ID="913cd118-055e-43b5-b82c-7af02d3b3f1b" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd1" />
-    <MetadataFile FileName="CortexService2.xsd" MetadataType="Schema" ID="66295736-dfba-45ce-b277-71756cc9cb7b" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CortexService.disco" MetadataType="Disco" ID="b030b0ee-a095-4fe4-a065-e727cd91b66b" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?disco" />
+    <MetadataFile FileName="CortexService.xsd" MetadataType="Schema" ID="284ffcbb-6afd-43dc-9d57-c203b4a7580a" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CortexWCFServices.wsdl" MetadataType="Wsdl" ID="9ee6ca50-7583-4e17-a774-4de874008a3b" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?wsdl" />
+    <MetadataFile FileName="CortexService1.xsd" MetadataType="Schema" ID="f02c8b6d-d91d-4d87-b1f8-1645c36b7a92" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CortexService2.xsd" MetadataType="Schema" ID="0bcacf78-c332-434b-96e6-a7126889b454" SourceId="1" SourceUrl="http://vmctrxdevs1:4590/CortexService.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

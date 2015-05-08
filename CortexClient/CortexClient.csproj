@@ -31,7 +31,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationRevision>11</ApplicationRevision>
     <ApplicationVersion>2.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -70,7 +70,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Cortex_Icon.ico</ApplicationIcon>
+    <ApplicationIcon>hal_logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.Microsoft.Office.Core, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -88,6 +88,10 @@
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
       <HintPath>bin\Debug\office.dll</HintPath>
+    </Reference>
+    <Reference Include="ReconTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ReconTools.dll</HintPath>
     </Reference>
     <Reference Include="RyanUtils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -272,9 +276,6 @@
     <Folder Include="DataSets\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ServiceReference1\CortexService.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
@@ -298,6 +299,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cortex_Icon.ico" />
+    <Content Include="hal_logo.ico" />
+    <None Include="Service References\ServiceReference1\CortexService.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

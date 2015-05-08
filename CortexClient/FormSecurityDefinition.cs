@@ -43,7 +43,11 @@ namespace CortexClient
                 txtSecDescription.Text = currentSecurity.Description;
                 txtSecCode.Text = currentSecurity.Code;
                 cbxCurrencyID.SelectedValue = currentSecurity.CurrencyID;
-                cbxSecurityTypeID.SelectedValue = currentSecurity.SecurityTypeID; 
+                cbxSecurityTypeID.SelectedValue = currentSecurity.SecurityTypeID;
+                lblTickerValue.Text = currentSecurity.Ticker;
+                lblCusipValue.Text = currentSecurity.Cusip;
+                lblSedolValue.Text = currentSecurity.Sedol;
+                lblIsinValue.Text = currentSecurity.Isin;
             }
 
         }

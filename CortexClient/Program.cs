@@ -13,10 +13,17 @@ namespace CortexClient
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            if (Properties.Settings.Default.PriceFile.Length == 0)
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Login()); 
+            }
+            else
+            {
+                FormOverview.importPrices(Properties.Settings.Default.PriceFile);
 
+            }
         }
     }
 }

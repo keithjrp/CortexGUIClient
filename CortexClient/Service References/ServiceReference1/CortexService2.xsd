@@ -17,7 +17,9 @@
   </xs:element>
   <xs:element name="getDeals">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element minOccurs="0" name="count" type="xs:int" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="getDealsResponse">
@@ -1338,6 +1340,34 @@
   <xs:element name="updateMergerArbNewResponse">
     <xs:complexType>
       <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSecurityGroupBySecurity1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getSecurityGroupBySecurity1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/CortexWebService" minOccurs="0" name="getSecurityGroupBySecurity1Result" nillable="true" type="q104:SecurityGroup" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMergerArbNewByValue">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMergerArbNewByValueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/CortexWebService" minOccurs="0" name="getMergerArbNewByValueResult" nillable="true" type="q105:ArrayOfMergerArbNew" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

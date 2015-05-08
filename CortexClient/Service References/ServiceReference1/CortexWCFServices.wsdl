@@ -631,6 +631,18 @@
   <wsdl:message name="CortexWCFService_updateMergerArbNew_OutputMessage">
     <wsdl:part name="parameters" element="tns:updateMergerArbNewResponse" />
   </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityGroupBySecurity1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityGroupBySecurity1" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getSecurityGroupBySecurity1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSecurityGroupBySecurity1Response" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMergerArbNewByValue_InputMessage">
+    <wsdl:part name="parameters" element="tns:getMergerArbNewByValue" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_getMergerArbNewByValue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getMergerArbNewByValueResponse" />
+  </wsdl:message>
   <wsdl:portType name="CortexWCFService">
     <wsdl:operation name="getDeal">
       <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDeal" message="tns:CortexWCFService_getDeal_InputMessage" />
@@ -1047,6 +1059,14 @@
     <wsdl:operation name="updateMergerArbNew">
       <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/updateMergerArbNew" message="tns:CortexWCFService_updateMergerArbNew_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/updateMergerArbNewResponse" message="tns:CortexWCFService_updateMergerArbNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityGroupBySecurity1">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityGroupBySecurity1" message="tns:CortexWCFService_getSecurityGroupBySecurity1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getSecurityGroupBySecurity1Response" message="tns:CortexWCFService_getSecurityGroupBySecurity1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getMergerArbNewByValue">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArbNewByValue" message="tns:CortexWCFService_getMergerArbNewByValue_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArbNewByValueResponse" message="tns:CortexWCFService_getMergerArbNewByValue_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_CortexWCFService" type="tns:CortexWCFService">
@@ -1980,6 +2000,24 @@
     </wsdl:operation>
     <wsdl:operation name="updateMergerArbNew">
       <soap:operation soapAction="http://tempuri.org/CortexWCFService/updateMergerArbNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityGroupBySecurity1">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getSecurityGroupBySecurity1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMergerArbNewByValue">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/getMergerArbNewByValue" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

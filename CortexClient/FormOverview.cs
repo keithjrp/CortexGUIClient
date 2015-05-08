@@ -13,6 +13,7 @@ using Microsoft.Office.Interop.Excel;
 using RyanUtils;
 using System.Reflection;
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace CortexClient
 {
@@ -31,6 +32,7 @@ namespace CortexClient
         List<ListItem> compList,analystList,dealStatusList;
         MergerArb mb;
         MergerArbNew[] nmb;
+        DateTime currentPriceDate;
 
         /// <summary>
         /// Set up the Cortex Application Window, logs user info
@@ -294,10 +296,17 @@ namespace CortexClient
             try
             {
                 clearEvents();
+
+                //DataGridViewLinkColumn note = new DataGridViewLinkColumn();
+                //note.DataPropertyName = "Note";
+                //note.Name = "Note";
+                //note.LinkBehavior = LinkBehavior.SystemDefault;
+
                 dgEvents.Columns.Add("Desc", "Event Description");
                 dgEvents.Columns[0].Width = 250;
                 dgEvents.Columns.Add("Date", "Event Date");
-                dgEvents.Columns.Add("Note", "Event Notes");
+                dgEvents.Columns.Add("Note", "Event Note");
+                //dgEvents.Columns["Note"].HeaderText = "Event Note";
                 dgEvents.Columns[2].Width = 250;
                 dgEvents.Columns.Add("Type", "Event Type");
                 dgEvents.Columns.Add("ID", "Event ID");
@@ -423,7 +432,7 @@ namespace CortexClient
         {
             Security s1;
             SecurityGroup sg;
-
+            Price currPrc;
             try
             {
                 if (deal.SecurityGroupID != 0)
@@ -433,7 +442,9 @@ namespace CortexClient
                     s1 = wc.getSecurity((int)sg.SecurityID1);
 
                     cbxSecurity1.Text = s1.Code;
-                    txtCurrentPrice.Text = wc.getPrice(s1.SecurityID).Price1.ToString(numericFormat);
+                    currPrc = wc.getPrice(s1.SecurityID);
+                    txtCurrentPrice.Text = currPrc.Price1.ToString(numericFormat);
+                    currentPriceDate = currPrc.PriceDateTime;
                 }
             }
             catch (Exception ex)
@@ -547,32 +558,32 @@ namespace CortexClient
         {
             try
             {
-                compList = ListItem.loadCompanyList(wc);
-                ListItem.loadListItems(cbxSearchByCompany, compList);
-                ListItem.loadListItems(cbxCompany1, compList);
+                //compList = ListItem.loadCompanyList(wc);
+                //ListItem.loadListItems(cbxSearchByCompany, compList);
+                //ListItem.loadListItems(cbxCompany1, compList);
 
-                ListItem.loadListItems(cbxSecurity1, ListItem.loadSecurityList(wc));
+                //ListItem.loadListItems(cbxSecurity1, ListItem.loadSecurityList(wc));
 
-                analystList = ListItem.loadAnalystList(wc);
-                ListItem.loadListItems(cbxLeadAnalyst, analystList);
-                ListItem.loadListItems(cbxSearchByAnalyst, analystList);
-                ListItem.loadListItems(dgAnalystPool, analystList);
-                dgAnalystPool.Columns[0].Name = "Login";
-                dgAnalystPool.Columns[0].HeaderText = "Login";
-                dgAnalystPool.Columns[1].Visible = false;
+                //analystList = ListItem.loadAnalystList(wc);
+                //ListItem.loadListItems(cbxLeadAnalyst, analystList);
+                //ListItem.loadListItems(cbxSearchByAnalyst, analystList);
+                //ListItem.loadListItems(dgAnalystPool, analystList);
+                //dgAnalystPool.Columns[0].Name = "Login";
+                //dgAnalystPool.Columns[0].HeaderText = "Login";
+                //dgAnalystPool.Columns[1].Visible = false;
 
-                ListItem.loadListItems(cbxEventType, ListItem.loadEventTypes(wc));
-                ListItem.loadListItems(cbxCurrencyID, ListItem.loadCCYList(wc));
+                //ListItem.loadListItems(cbxEventType, ListItem.loadEventTypes(wc));
+                //ListItem.loadListItems(cbxCurrencyID, ListItem.loadCCYList(wc));
 
-                dealStatusList = ListItem.loadDealStatusList(wc);
-                ListItem.loadListItems(cbxStatus, dealStatusList);
-                ListItem.loadListItems(cbxSearchStatus, dealStatusList);
+                //dealStatusList = ListItem.loadDealStatusList(wc);
+                //ListItem.loadListItems(cbxStatus, dealStatusList);
+                //ListItem.loadListItems(cbxSearchStatus, dealStatusList);
 
-                ListItem.loadListItems(cbxCategory, ListItem.loadCategoryList(wc));
-                ListItem.loadListItems(cbxSearchCategoryClass, ListItem.loadClassList(wc));
+                //ListItem.loadListItems(cbxCategory, ListItem.loadCategoryList(wc));
+                //ListItem.loadListItems(cbxSearchCategoryClass, ListItem.loadClassList(wc));
 
                 tabCtrlDealDef.Visible = false;
-                LoadDealList(wc.getDeals());
+                LoadDealList(wc.getDeals(0), 30);
                 lblAnalyst.Text = analyst.Login;
                 gbOverview.Visible = true;
 
@@ -778,7 +789,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// Update or Assign new Lead Analyst to current Deal
         /// </summary>
         /// <param name="deal"></param>
         private void updateLeadAnalyst(Deal deal)
@@ -805,7 +816,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// Update or Assign new Security to current Deal
         /// </summary>
         /// <param name="deal"></param>
         /// <param name="sg"></param>
@@ -1018,7 +1029,7 @@ namespace CortexClient
         /// Load Deal List to Overview Grid
         /// </summary>
         /// <param name="dealFiltered"></param>
-        private void LoadDealList(Deal[] dealFiltered)
+        private void LoadDealList(Deal[] dealFiltered, int count = 0)
         {
             try
             {
@@ -1033,16 +1044,24 @@ namespace CortexClient
                 dataGridView1.Columns.Add("Downside", "Downside Price");
                 dataGridView1.Columns.Add("Comp", "Comps");
                 dataGridView1.Columns["ID"].Visible = false;
-                dataGridView1.Columns["Desc"].Width = 200;
-                dataGridView1.Columns["Downside"].Width = 150;
+                dataGridView1.Columns["Desc"].Width = 350;
+                dataGridView1.Columns["Downside"].Width = 125;
                 dataGridView1.Columns["Comp"].Width = 250;
 
-                Security sec;
-                Price pr;
+                Security sec = new Security(); sec.Code = "";
+                Price pr = new Price(); pr.Price1 = (Decimal)1.00;
                 String numeralFormat = "N4";
                 int currentRow = 0;
 
-                dealFiltered = dealFiltered.OrderBy(x => x.Description).ToArray<Deal>();
+                if (count == 0)
+                {
+                    dealFiltered = dealFiltered.OrderBy(x => x.Description).ToArray<Deal>(); 
+                }
+                else
+                {
+                    dealFiltered = dealFiltered.OrderBy(x => x.Description).Take(count).ToArray<Deal>(); 
+
+                }
                 foreach (Deal deal in dealFiltered)
                 {
                     int id = wc.getSecurityGroup((int)deal.SecurityGroupID).SecurityID1;
@@ -1077,7 +1096,7 @@ namespace CortexClient
         /// <param name="e"></param>
         private void smiRefreshOverview_Click(object sender, EventArgs e)
         {
-            LoadDealList(wc.getDeals());
+            LoadDealList(wc.getDeals(0));
         }
 
         /// <summary>
@@ -1087,7 +1106,7 @@ namespace CortexClient
         /// <param name="e"></param>
         private void btnReset_Click(object sender, EventArgs e)
         {
-            LoadDealList(wc.getDeals());
+            LoadDealList(wc.getDeals(0));
         }
 
         /// <summary>
@@ -1408,10 +1427,17 @@ namespace CortexClient
         /// <param name="e"></param>
         private void dgDocuments_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string filename = dgDocuments[e.ColumnIndex, e.RowIndex].Value.ToString();
-            if (e.ColumnIndex == 0 && File.Exists(filename))
+            try
             {
-                Process.Start(filename);
+                string filename = dgDocuments[e.ColumnIndex, e.RowIndex].Value.ToString();
+                if (e.ColumnIndex == 0 && File.Exists(filename))
+                {
+                    Process.Start(filename);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -1445,7 +1471,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// Search All function logic, search Deals by Class, Company, Status, Analyst and Deal data
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -1458,6 +1484,8 @@ namespace CortexClient
                     analyst = cbxSearchByAnalyst.Text;
                 int companyID = cbxSearchByCompany.Text == "" ? 0 : (int)cbxSearchByCompany.SelectedValue,
                     dealStatusID = cbxSearchStatus.Text == "" ? 0 : (int)cbxSearchStatus.SelectedValue;
+
+                Cursor.Current = Cursors.WaitCursor;
 
                 Deal[] dealByDesc = wc.getDealsByCriteria(
                     desc, companyID, dealStatusID, categoryClass, analyst);
@@ -1472,6 +1500,7 @@ namespace CortexClient
                         "Deal with Status Name " + cbxSearchStatus.SelectedText + "\n Not Found",
                         "Confirm", MessageBoxButtons.OK);
                 }
+                Cursor.Current = Cursors.Default;
             }
             catch (Exception ex)
             {
@@ -1480,7 +1509,8 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// Handles Quick Import function.  
+        /// Read selected file template and loads data from each worksheet
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -1522,7 +1552,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// logic to handle reading data from Merger Arb worksheet and load to Cortex DB
         /// </summary>
         /// <param name="CortexLoader"></param>
         private void importMergerArb(String CortexLoader)
@@ -1571,10 +1601,14 @@ namespace CortexClient
                             Field_Type = row["Field Type"].ToString(),
                             Calendar_Comment = row["Calendar Comment"].ToString(),
                             Calendar_Flag = row["Calendar Flag"].ToString(),
-                            Calendar_Time = row["Calendar Time"].ToString(),
-                            DealId = deal.DealID
+                            Calendar_Time = row["Calendar Time"].ToString()
 
                         };
+                        if (MergerArb.Columns.Contains("DealId"))
+                            man.DealId = Convert.ToInt16(row["DealId"].ToString()); //bulk upload logic
+                        else
+                            man.DealId = deal.DealID;
+
                         wc.addMergerArbNew(man);
                     }
                 }
@@ -1586,7 +1620,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// logic to handle reading data from Securities worksheet and load to Cortex DB
         /// </summary>
         /// <param name="CortexLoader"></param>
         private void importSecurities(String CortexLoader)
@@ -1621,7 +1655,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// logic to handle reading data from Documents worksheet and load to Cortex DB
         /// </summary>
         /// <param name="CortexLoader"></param>
         private void importDocuments(String CortexLoader)
@@ -1650,7 +1684,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// logic to handle reading data from Companies worksheet and load to Cortex DB
         /// </summary>
         /// <param name="CortexLoader"></param>
         private void importCompanies(String CortexLoader)
@@ -1678,7 +1712,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// logic to handle reading data from Deals worksheet and load to Cortex DB
         /// </summary>
         /// <param name="CortexLoader"></param>
         private void importDeals(String CortexLoader)
@@ -1740,7 +1774,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// logic to handle reading data from Events worksheet and load to Cortex DB
         /// </summary>
         /// <param name="CortexLoader"></param>
         private void importEvents(String CortexLoader)
@@ -1767,6 +1801,49 @@ namespace CortexClient
             }
         }
 
+
+        /// <summary>
+        /// logic to handle reading data from Companies worksheet and load to Cortex DB
+        /// </summary>
+        /// <param name="CortexLoader"></param>
+        public static void importPrices(String CortexLoader)
+        {
+            try
+            {
+                MyDt comp = CortexLoader.EndsWith(".csv") ? 
+                    ReconTools.ReconUtils.loadCSVReport(CortexLoader,"CortexPrices") : 
+                    ExcelTools.parseExcel(CortexLoader, 1);
+
+                CortexWCFServiceClient wc1 = new CortexWCFServiceClient();
+
+                foreach (DataRow dr in comp.Rows)
+                {
+                    try
+                    {
+                        DateTime d = CortexLoader.EndsWith(".csv") ?
+                            DateTime.Parse(dr["PriceDateTime"].ToString()) : 
+                            DateTime.FromOADate(Convert.ToDouble(dr["PriceDateTime"].ToString()));
+                        Price pr = new Price()
+                        {
+                            SecurityID = wc1.getSecurityByCode(dr["SecurityID"].ToString()).SecurityID,
+                            Price1 = Convert.ToDecimal(dr["Price"].ToString()),
+                            PriceDateTime = d,
+                            PriceSource = dr["PriceSource"].ToString()
+                        };
+                        wc1.addPrice(pr);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
         /// <summary>
         /// 
         /// </summary>
@@ -1802,7 +1879,8 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// Handles logic to update each modified fields on the Merger Arb tab.
+        /// Gets called when user updates the current Deal
         /// </summary>
         private void updateMergArb()
         {
@@ -1869,6 +1947,199 @@ namespace CortexClient
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void txtEventNote_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            OpenFileDialog choofdlog = new OpenFileDialog();
+            choofdlog.Filter = "All Files (*.*)|*.*";
+            choofdlog.FilterIndex = 1;
+            choofdlog.Multiselect = true;
+
+            if (choofdlog.ShowDialog() == DialogResult.OK)
+                txtEventNote.Text += " " + choofdlog.FileName;
+        }
+
+        private void dgEvents_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string filename = ExtractPathFromLine(
+                dgEvents[e.ColumnIndex, e.RowIndex].Value.ToString());
+
+            if (e.ColumnIndex == 2 && File.Exists(filename))
+            {
+                Process.Start(filename);
+            }
+        }
+
+        static string ExtractPathFromLine(string line)
+        {
+            
+            Regex PathRegex = new Regex(@"^[^ \t]+[ \t]+(.*)$");
+            Match match = PathRegex.Match(line);
+            if (!match.Success)
+            {
+                //throw new ArgumentException("Invalid line");
+                return "";
+            }
+            return match.Groups[1].Value;
+        }
+        private bool isShown = false;
+        private void txtCurrentPrice_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (!isShown)
+            {
+                toolTip1.Show(currentPriceDate.ToShortDateString(), txtCurrentPrice, e.Location);
+                isShown = true;
+            }
+            else
+            {
+                toolTip1.Hide(txtCurrentPrice);
+                isShown = false;
+            }
+        }
+
+        //speed up GUI home screen loading time
+        #region Click to Load ComboBox Items
+        private void cbxSearchStatus_Click(object sender, EventArgs e)
+        {
+            if (cbxSearchStatus.Items.Count == 0)
+            {
+                if (dealStatusList == null) dealStatusList = ListItem.loadDealStatusList(wc);
+                ListItem.loadListItems(cbxSearchStatus, dealStatusList);
+            }
+        }
+
+        private void cbxStatus_Click(object sender, EventArgs e)
+        {
+            if (cbxStatus.Items.Count == 0)
+            {
+                if (dealStatusList == null) dealStatusList = ListItem.loadDealStatusList(wc);
+                ListItem.loadListItems(cbxStatus, dealStatusList);
+            }
+        }
+
+        private void cbxCategory_Click(object sender, EventArgs e)
+        {
+            if (cbxCategory.Items.Count == 0)
+            {
+                ListItem.loadListItems(cbxCategory, ListItem.loadCategoryList(wc));
+            }
+        }
+
+        private void cbxSearchCategoryClass_Click(object sender, EventArgs e)
+        {
+            if (cbxSearchCategoryClass.Items.Count == 0)
+            {
+                ListItem.loadListItems(cbxSearchCategoryClass, ListItem.loadClassList(wc));
+            }
+
+        }
+
+        private void cbxCompany1_Click(object sender, EventArgs e)
+        {
+            if (cbxCompany1.Items.Count == 0)
+            {
+                if (compList == null) compList = ListItem.loadCompanyList(wc);
+                ListItem.loadListItems(cbxCompany1, compList);
+            }
+        }
+
+        private void cbxSecurity1_Click(object sender, EventArgs e)
+        {
+
+            if (cbxSecurity1.Items.Count == 0)
+            {
+                ListItem.loadListItems(cbxSecurity1, ListItem.loadSecurityList(wc));
+            }
+
+        }
+
+        private void cbxLeadAnalyst_Click(object sender, EventArgs e)
+        {
+            if (cbxLeadAnalyst.Items.Count == 0)
+            {
+                if(analystList == null) analystList = ListItem.loadAnalystList(wc);
+                ListItem.loadListItems(cbxLeadAnalyst, analystList);
+            }
+
+        }
+
+        private void cbxSearchByCompany_Click(object sender, EventArgs e)
+        {
+            if (cbxSearchByCompany.Items.Count == 0)
+            {
+                if (compList == null) compList = ListItem.loadCompanyList(wc);
+                ListItem.loadListItems(cbxSearchByCompany, compList);
+            }
+        }
+
+        private void cbxSearchByAnalyst_Click(object sender, EventArgs e)
+        {
+            if (cbxSearchByAnalyst.Items.Count == 0)
+            {
+                if (analystList == null) analystList = ListItem.loadAnalystList(wc); 
+                ListItem.loadListItems(cbxSearchByAnalyst, analystList);
+            }
+        }
+
+        private void cbxEventType_Click(object sender, EventArgs e)
+        {
+            if (cbxEventType.Items.Count == 0)
+            {
+                ListItem.loadListItems(cbxEventType, ListItem.loadEventTypes(wc));
+            }
+
+        }
+
+        private void cbxCurrencyID_Click(object sender, EventArgs e)
+        {
+            if (cbxCurrencyID.Items.Count == 0)
+            {
+                ListItem.loadListItems(cbxCurrencyID, ListItem.loadCCYList(wc));
+            }
+
+        }
+
+        private void tabDealTeam_Enter(object sender, EventArgs e)
+        {
+            if (dgAnalystPool.Rows.Count == 0)
+            {
+                if (analystList == null) analystList = ListItem.loadAnalystList(wc);
+                //ListItem.loadListItems(cbxLeadAnalyst, analystList);
+                //ListItem.loadListItems(cbxSearchByAnalyst, analystList);
+                ListItem.loadListItems(dgAnalystPool, analystList);
+                dgAnalystPool.Columns[0].Name = "Login";
+                dgAnalystPool.Columns[0].HeaderText = "Login";
+                dgAnalystPool.Columns[1].Visible = false; 
+            }
+        }
+        #endregion
+
+        private void allToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fCortex_Summary&ViewMode=Detail");
+        }
+
+        private void byNameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fCortex_DealDefinition&ViewMode=Detail");
+        }
+
+        private void byFilterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fCortex_Search&ViewMode=Detail");
+        }
+
+        private void allToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fMergerArb_Summary&ViewMode=Detail");
+
+        }
+
+        private void byDealToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fMergerArb_SummaryDetail&ViewMode=Detail");
+
         }
 
     }

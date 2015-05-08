@@ -49,6 +49,14 @@
             this.txtSecCode = new System.Windows.Forms.TextBox();
             this.lblSecCode = new System.Windows.Forms.Label();
             this.tabCtrlSecurityDef = new System.Windows.Forms.TabControl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblIsinValue = new System.Windows.Forms.Label();
+            this.lblSedolValue = new System.Windows.Forms.Label();
+            this.lblCusipValue = new System.Windows.Forms.Label();
+            this.lblTickerValue = new System.Windows.Forms.Label();
             this.tabSecurityDef.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -127,6 +135,14 @@
             // tabSecurityBasic
             // 
             this.tabSecurityBasic.BackColor = System.Drawing.Color.SkyBlue;
+            this.tabSecurityBasic.Controls.Add(this.lblIsinValue);
+            this.tabSecurityBasic.Controls.Add(this.lblSedolValue);
+            this.tabSecurityBasic.Controls.Add(this.lblCusipValue);
+            this.tabSecurityBasic.Controls.Add(this.lblTickerValue);
+            this.tabSecurityBasic.Controls.Add(this.label3);
+            this.tabSecurityBasic.Controls.Add(this.label4);
+            this.tabSecurityBasic.Controls.Add(this.label1);
+            this.tabSecurityBasic.Controls.Add(this.label2);
             this.tabSecurityBasic.Controls.Add(this.lblSecTypeName);
             this.tabSecurityBasic.Controls.Add(this.lblSecTypeDescr);
             this.tabSecurityBasic.Controls.Add(this.lblCurrencyID);
@@ -167,7 +183,7 @@
             // lblCurrencyID
             // 
             this.lblCurrencyID.AutoSize = true;
-            this.lblCurrencyID.Location = new System.Drawing.Point(361, 66);
+            this.lblCurrencyID.Location = new System.Drawing.Point(196, 66);
             this.lblCurrencyID.Name = "lblCurrencyID";
             this.lblCurrencyID.Size = new System.Drawing.Size(49, 13);
             this.lblCurrencyID.TabIndex = 30;
@@ -187,9 +203,9 @@
             this.cbxCurrencyID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbxCurrencyID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbxCurrencyID.FormattingEnabled = true;
-            this.cbxCurrencyID.Location = new System.Drawing.Point(364, 82);
+            this.cbxCurrencyID.Location = new System.Drawing.Point(199, 82);
             this.cbxCurrencyID.Name = "cbxCurrencyID";
-            this.cbxCurrencyID.Size = new System.Drawing.Size(216, 21);
+            this.cbxCurrencyID.Size = new System.Drawing.Size(140, 21);
             this.cbxCurrencyID.TabIndex = 28;
             this.cbxCurrencyID.SelectedIndexChanged += new System.EventHandler(this.cbxCurrencyID_SelectedIndexChanged);
             // 
@@ -214,7 +230,7 @@
             // lblSecName
             // 
             this.lblSecName.AutoSize = true;
-            this.lblSecName.Location = new System.Drawing.Point(480, 12);
+            this.lblSecName.Location = new System.Drawing.Point(480, 15);
             this.lblSecName.Name = "lblSecName";
             this.lblSecName.Size = new System.Drawing.Size(35, 13);
             this.lblSecName.TabIndex = 13;
@@ -246,7 +262,7 @@
             // lblSecCode
             // 
             this.lblSecCode.AutoSize = true;
-            this.lblSecCode.Location = new System.Drawing.Point(361, 12);
+            this.lblSecCode.Location = new System.Drawing.Point(361, 15);
             this.lblSecCode.Name = "lblSecCode";
             this.lblSecCode.Size = new System.Drawing.Size(32, 13);
             this.lblSecCode.TabIndex = 11;
@@ -260,6 +276,82 @@
             this.tabCtrlSecurityDef.SelectedIndex = 0;
             this.tabCtrlSecurityDef.Size = new System.Drawing.Size(658, 205);
             this.tabCtrlSecurityDef.TabIndex = 36;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(478, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Cusip";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(358, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Ticker";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(478, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(23, 13);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Isin";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(358, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.TabIndex = 35;
+            this.label4.Text = "Sedol";
+            // 
+            // lblIsinValue
+            // 
+            this.lblIsinValue.AutoSize = true;
+            this.lblIsinValue.Location = new System.Drawing.Point(513, 90);
+            this.lblIsinValue.Name = "lblIsinValue";
+            this.lblIsinValue.Size = new System.Drawing.Size(53, 13);
+            this.lblIsinValue.TabIndex = 40;
+            this.lblIsinValue.Text = "Isin Value";
+            // 
+            // lblSedolValue
+            // 
+            this.lblSedolValue.AutoSize = true;
+            this.lblSedolValue.Location = new System.Drawing.Point(394, 90);
+            this.lblSedolValue.Name = "lblSedolValue";
+            this.lblSedolValue.Size = new System.Drawing.Size(64, 13);
+            this.lblSedolValue.TabIndex = 39;
+            this.lblSedolValue.Text = "Sedol Value";
+            // 
+            // lblCusipValue
+            // 
+            this.lblCusipValue.AutoSize = true;
+            this.lblCusipValue.Location = new System.Drawing.Point(513, 66);
+            this.lblCusipValue.Name = "lblCusipValue";
+            this.lblCusipValue.Size = new System.Drawing.Size(63, 13);
+            this.lblCusipValue.TabIndex = 38;
+            this.lblCusipValue.Text = "Cusip Value";
+            // 
+            // lblTickerValue
+            // 
+            this.lblTickerValue.AutoSize = true;
+            this.lblTickerValue.Location = new System.Drawing.Point(394, 66);
+            this.lblTickerValue.Name = "lblTickerValue";
+            this.lblTickerValue.Size = new System.Drawing.Size(67, 13);
+            this.lblTickerValue.TabIndex = 37;
+            this.lblTickerValue.Text = "Ticker Value";
             // 
             // FormSecurityDefinition
             // 
@@ -311,5 +403,13 @@
         private System.Windows.Forms.TextBox txtSecCode;
         private System.Windows.Forms.Label lblSecCode;
         private System.Windows.Forms.TabControl tabCtrlSecurityDef;
+        private System.Windows.Forms.Label lblIsinValue;
+        private System.Windows.Forms.Label lblSedolValue;
+        private System.Windows.Forms.Label lblCusipValue;
+        private System.Windows.Forms.Label lblTickerValue;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

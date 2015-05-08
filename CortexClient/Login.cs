@@ -43,9 +43,11 @@ namespace CortexClient
 
                 if (a != null && pwd == a.Password)
                 {
+                    Cursor.Current = Cursors.WaitCursor;
                     FormOverview o = new FormOverview(a);
                     o.Show();
                     this.Hide();
+                    Cursor.Current = Cursors.Default;
                     o.FormClosing += o_FormClosing;
                     ApplicationUser usr = new ApplicationUser()
                     {

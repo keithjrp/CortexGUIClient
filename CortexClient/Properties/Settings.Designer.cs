@@ -44,5 +44,17 @@ namespace CortexClient.Properties {
                 this["DocumentFolder"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PriceFile {
+            get {
+                return ((string)(this["PriceFile"]));
+            }
+            set {
+                this["PriceFile"] = value;
+            }
+        }
     }
 }

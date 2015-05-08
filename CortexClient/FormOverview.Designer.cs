@@ -53,6 +53,14 @@
             this.menuSecurity = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.smiImport = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dealsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.allToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.byNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.byFilterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mergerArbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.byDealToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.DealID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -174,6 +182,7 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.lblAnalyst = new System.Windows.Forms.Label();
             this.oFDUpload = new System.Windows.Forms.OpenFileDialog();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.cmsOverview.SuspendLayout();
@@ -209,6 +218,7 @@
             this.dealsToolStripMenuItem,
             this.searchDealsToolStripMenuItem,
             this.smiImport,
+            this.reportsToolStripMenuItem,
             this.logoutToolStripMenuItem});
             this.menuMain.Location = new System.Drawing.Point(0, 0);
             this.menuMain.Name = "menuMain";
@@ -303,6 +313,69 @@
             this.smiImport.Text = "Import";
             this.smiImport.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
             // 
+            // reportsToolStripMenuItem
+            // 
+            this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dealsToolStripMenuItem1,
+            this.mergerArbToolStripMenuItem});
+            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.reportsToolStripMenuItem.Text = "Reports";
+            // 
+            // dealsToolStripMenuItem1
+            // 
+            this.dealsToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.allToolStripMenuItem,
+            this.byNameToolStripMenuItem,
+            this.byFilterToolStripMenuItem});
+            this.dealsToolStripMenuItem1.Name = "dealsToolStripMenuItem1";
+            this.dealsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dealsToolStripMenuItem1.Text = "Deals";
+            // 
+            // allToolStripMenuItem
+            // 
+            this.allToolStripMenuItem.Name = "allToolStripMenuItem";
+            this.allToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.allToolStripMenuItem.Text = "All";
+            this.allToolStripMenuItem.Click += new System.EventHandler(this.allToolStripMenuItem_Click);
+            // 
+            // byNameToolStripMenuItem
+            // 
+            this.byNameToolStripMenuItem.Name = "byNameToolStripMenuItem";
+            this.byNameToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.byNameToolStripMenuItem.Text = "By Name";
+            this.byNameToolStripMenuItem.Click += new System.EventHandler(this.byNameToolStripMenuItem_Click);
+            // 
+            // byFilterToolStripMenuItem
+            // 
+            this.byFilterToolStripMenuItem.Name = "byFilterToolStripMenuItem";
+            this.byFilterToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.byFilterToolStripMenuItem.Text = "By Filter";
+            this.byFilterToolStripMenuItem.Click += new System.EventHandler(this.byFilterToolStripMenuItem_Click);
+            // 
+            // mergerArbToolStripMenuItem
+            // 
+            this.mergerArbToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.allToolStripMenuItem1,
+            this.byDealToolStripMenuItem});
+            this.mergerArbToolStripMenuItem.Name = "mergerArbToolStripMenuItem";
+            this.mergerArbToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mergerArbToolStripMenuItem.Text = "Merger Arb";
+            // 
+            // allToolStripMenuItem1
+            // 
+            this.allToolStripMenuItem1.Name = "allToolStripMenuItem1";
+            this.allToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.allToolStripMenuItem1.Text = "All";
+            this.allToolStripMenuItem1.Click += new System.EventHandler(this.allToolStripMenuItem1_Click);
+            // 
+            // byDealToolStripMenuItem
+            // 
+            this.byDealToolStripMenuItem.Name = "byDealToolStripMenuItem";
+            this.byDealToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.byDealToolStripMenuItem.Text = "By Deal";
+            this.byDealToolStripMenuItem.Click += new System.EventHandler(this.byDealToolStripMenuItem_Click);
+            // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
@@ -382,13 +455,13 @@
             this.cmsOverview.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.smiRefreshOverview});
             this.cmsOverview.Name = "cmsSecurity";
-            this.cmsOverview.Size = new System.Drawing.Size(103, 26);
+            this.cmsOverview.Size = new System.Drawing.Size(121, 26);
             // 
             // smiRefreshOverview
             // 
             this.smiRefreshOverview.Name = "smiRefreshOverview";
-            this.smiRefreshOverview.Size = new System.Drawing.Size(102, 22);
-            this.smiRefreshOverview.Text = "Reset";
+            this.smiRefreshOverview.Size = new System.Drawing.Size(120, 22);
+            this.smiRefreshOverview.Text = "Show All";
             this.smiRefreshOverview.Click += new System.EventHandler(this.smiRefreshOverview_Click);
             // 
             // tabCtrlDealDef
@@ -574,6 +647,7 @@
             this.cbxLeadAnalyst.Size = new System.Drawing.Size(197, 21);
             this.cbxLeadAnalyst.TabIndex = 80;
             this.cbxLeadAnalyst.SelectedIndexChanged += new System.EventHandler(this.cbxLeadAnalyst_SelectedIndexChanged);
+            this.cbxLeadAnalyst.Click += new System.EventHandler(this.cbxLeadAnalyst_Click);
             // 
             // label18
             // 
@@ -618,6 +692,7 @@
             this.cbxCategory.Name = "cbxCategory";
             this.cbxCategory.Size = new System.Drawing.Size(197, 21);
             this.cbxCategory.TabIndex = 78;
+            this.cbxCategory.Click += new System.EventHandler(this.cbxCategory_Click);
             // 
             // label19
             // 
@@ -639,6 +714,7 @@
             this.cbxStatus.Size = new System.Drawing.Size(95, 21);
             this.cbxStatus.TabIndex = 76;
             this.cbxStatus.ValueMember = "DealStatusID";
+            this.cbxStatus.Click += new System.EventHandler(this.cbxStatus_Click);
             // 
             // groupBox4
             // 
@@ -759,7 +835,7 @@
             this.lblCatalyst.Name = "lblCatalyst";
             this.lblCatalyst.Size = new System.Drawing.Size(44, 13);
             this.lblCatalyst.TabIndex = 89;
-            this.lblCatalyst.Text = "Catalyst";
+            this.lblCatalyst.Text = "Impetus";
             // 
             // txtCurrentPrice
             // 
@@ -767,11 +843,12 @@
             this.txtCurrentPrice.Name = "txtCurrentPrice";
             this.txtCurrentPrice.Size = new System.Drawing.Size(113, 20);
             this.txtCurrentPrice.TabIndex = 66;
+            this.txtCurrentPrice.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtCurrentPrice_MouseMove);
             // 
             // lblCurrentPrice
             // 
             this.lblCurrentPrice.AutoSize = true;
-            this.lblCurrentPrice.Location = new System.Drawing.Point(554, 20);
+            this.lblCurrentPrice.Location = new System.Drawing.Point(554, 16);
             this.lblCurrentPrice.Name = "lblCurrentPrice";
             this.lblCurrentPrice.Size = new System.Drawing.Size(68, 13);
             this.lblCurrentPrice.TabIndex = 67;
@@ -780,7 +857,7 @@
             // lblCurrency
             // 
             this.lblCurrency.AutoSize = true;
-            this.lblCurrency.Location = new System.Drawing.Point(692, 19);
+            this.lblCurrency.Location = new System.Drawing.Point(676, 16);
             this.lblCurrency.Name = "lblCurrency";
             this.lblCurrency.Size = new System.Drawing.Size(49, 13);
             this.lblCurrency.TabIndex = 53;
@@ -790,11 +867,12 @@
             // 
             this.cbxCurrencyID.DisplayMember = "CurrencyID";
             this.cbxCurrencyID.FormattingEnabled = true;
-            this.cbxCurrencyID.Location = new System.Drawing.Point(695, 35);
+            this.cbxCurrencyID.Location = new System.Drawing.Point(679, 36);
             this.cbxCurrencyID.Name = "cbxCurrencyID";
             this.cbxCurrencyID.Size = new System.Drawing.Size(99, 21);
             this.cbxCurrencyID.TabIndex = 52;
             this.cbxCurrencyID.ValueMember = "CurrencyID";
+            this.cbxCurrencyID.Click += new System.EventHandler(this.cbxCurrencyID_Click);
             // 
             // cbxSecurity1
             // 
@@ -806,6 +884,7 @@
             this.cbxSecurity1.Name = "cbxSecurity1";
             this.cbxSecurity1.Size = new System.Drawing.Size(178, 21);
             this.cbxSecurity1.TabIndex = 53;
+            this.cbxSecurity1.Click += new System.EventHandler(this.cbxSecurity1_Click);
             // 
             // cmsSecurity
             // 
@@ -866,6 +945,7 @@
             this.cbxCompany1.Name = "cbxCompany1";
             this.cbxCompany1.Size = new System.Drawing.Size(322, 21);
             this.cbxCompany1.TabIndex = 4;
+            this.cbxCompany1.Click += new System.EventHandler(this.cbxCompany1_Click);
             // 
             // cmsCompany
             // 
@@ -1011,7 +1091,7 @@
             this.dgDocuments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgDocuments.Size = new System.Drawing.Size(868, 198);
             this.dgDocuments.TabIndex = 35;
-            this.dgDocuments.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDocuments_CellContentClick);
+            this.dgDocuments.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDocuments_CellContentClick);
             // 
             // cmsRemove
             // 
@@ -1141,6 +1221,7 @@
             this.cbxEventType.Name = "cbxEventType";
             this.cbxEventType.Size = new System.Drawing.Size(233, 21);
             this.cbxEventType.TabIndex = 74;
+            this.cbxEventType.Click += new System.EventHandler(this.cbxEventType_Click);
             // 
             // dtpEventDate
             // 
@@ -1182,6 +1263,7 @@
             this.txtEventNote.Name = "txtEventNote";
             this.txtEventNote.Size = new System.Drawing.Size(607, 20);
             this.txtEventNote.TabIndex = 69;
+            this.txtEventNote.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.txtEventNote_MouseDoubleClick);
             // 
             // txtEventDescription
             // 
@@ -1220,6 +1302,7 @@
             this.dgEvents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgEvents.Size = new System.Drawing.Size(871, 198);
             this.dgEvents.TabIndex = 36;
+            this.dgEvents.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgEvents_CellDoubleClick);
             // 
             // gbNewEvent
             // 
@@ -1260,6 +1343,7 @@
             this.tabDealTeam.Size = new System.Drawing.Size(900, 603);
             this.tabDealTeam.TabIndex = 11;
             this.tabDealTeam.Text = "Deal Team";
+            this.tabDealTeam.Enter += new System.EventHandler(this.tabDealTeam_Enter);
             // 
             // label17
             // 
@@ -1522,6 +1606,7 @@
             this.cbxSearchCategoryClass.Name = "cbxSearchCategoryClass";
             this.cbxSearchCategoryClass.Size = new System.Drawing.Size(176, 21);
             this.cbxSearchCategoryClass.TabIndex = 44;
+            this.cbxSearchCategoryClass.Click += new System.EventHandler(this.cbxSearchCategoryClass_Click);
             this.cbxSearchCategoryClass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearchCategoryClass_Keypress);
             // 
             // cbxSearchStatus
@@ -1533,6 +1618,7 @@
             this.cbxSearchStatus.Name = "cbxSearchStatus";
             this.cbxSearchStatus.Size = new System.Drawing.Size(176, 21);
             this.cbxSearchStatus.TabIndex = 42;
+            this.cbxSearchStatus.Click += new System.EventHandler(this.cbxSearchStatus_Click);
             this.cbxSearchStatus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbxSearchStatus_KeyPress);
             // 
             // btnSearchStatus
@@ -1554,6 +1640,7 @@
             this.cbxSearchByAnalyst.Name = "cbxSearchByAnalyst";
             this.cbxSearchByAnalyst.Size = new System.Drawing.Size(176, 21);
             this.cbxSearchByAnalyst.TabIndex = 40;
+            this.cbxSearchByAnalyst.Click += new System.EventHandler(this.cbxSearchByAnalyst_Click);
             this.cbxSearchByAnalyst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbxSearchByAnalyst_KeyPress);
             // 
             // btnSearchByAnalyst
@@ -1572,7 +1659,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(130, 23);
             this.btnReset.TabIndex = 39;
-            this.btnReset.Text = "Reset";
+            this.btnReset.Text = "Show All Deals";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
@@ -1585,6 +1672,7 @@
             this.cbxSearchByCompany.Name = "cbxSearchByCompany";
             this.cbxSearchByCompany.Size = new System.Drawing.Size(176, 21);
             this.cbxSearchByCompany.TabIndex = 37;
+            this.cbxSearchByCompany.Click += new System.EventHandler(this.cbxSearchByCompany_Click);
             this.cbxSearchByCompany.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbxSearchByCompany_KeyPress);
             // 
             // btnSearch
@@ -1805,6 +1893,15 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label lblLeadAnalyst;
         private System.Windows.Forms.DataGridView dgvMergArb;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dealsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem allToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem byNameToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem byFilterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mergerArbToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem allToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem byDealToolStripMenuItem;
 
     }
 }

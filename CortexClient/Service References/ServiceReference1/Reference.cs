@@ -5859,7 +5859,7 @@ namespace CortexClient.ServiceReference1 {
         CortexClient.ServiceReference1.Deal getDeal(int DealId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CortexWCFService/getDeals", ReplyAction="http://tempuri.org/CortexWCFService/getDealsResponse")]
-        CortexClient.ServiceReference1.Deal[] getDeals();
+        CortexClient.ServiceReference1.Deal[] getDeals(int count);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CortexWCFService/addDeal", ReplyAction="http://tempuri.org/CortexWCFService/addDealResponse")]
         void addDeal(CortexClient.ServiceReference1.Deal d);
@@ -6166,6 +6166,12 @@ namespace CortexClient.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CortexWCFService/updateMergerArbNew", ReplyAction="http://tempuri.org/CortexWCFService/updateMergerArbNewResponse")]
         void updateMergerArbNew(CortexClient.ServiceReference1.MergerArbNew mb);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CortexWCFService/getSecurityGroupBySecurity1", ReplyAction="http://tempuri.org/CortexWCFService/getSecurityGroupBySecurity1Response")]
+        CortexClient.ServiceReference1.SecurityGroup getSecurityGroupBySecurity1(int sid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CortexWCFService/getMergerArbNewByValue", ReplyAction="http://tempuri.org/CortexWCFService/getMergerArbNewByValueResponse")]
+        CortexClient.ServiceReference1.MergerArbNew[] getMergerArbNewByValue(string value);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -6199,8 +6205,8 @@ namespace CortexClient.ServiceReference1 {
             return base.Channel.getDeal(DealId);
         }
         
-        public CortexClient.ServiceReference1.Deal[] getDeals() {
-            return base.Channel.getDeals();
+        public CortexClient.ServiceReference1.Deal[] getDeals(int count) {
+            return base.Channel.getDeals(count);
         }
         
         public void addDeal(CortexClient.ServiceReference1.Deal d) {
@@ -6609,6 +6615,14 @@ namespace CortexClient.ServiceReference1 {
         
         public void updateMergerArbNew(CortexClient.ServiceReference1.MergerArbNew mb) {
             base.Channel.updateMergerArbNew(mb);
+        }
+        
+        public CortexClient.ServiceReference1.SecurityGroup getSecurityGroupBySecurity1(int sid) {
+            return base.Channel.getSecurityGroupBySecurity1(sid);
+        }
+        
+        public CortexClient.ServiceReference1.MergerArbNew[] getMergerArbNewByValue(string value) {
+            return base.Channel.getMergerArbNewByValue(value);
         }
     }
 }
