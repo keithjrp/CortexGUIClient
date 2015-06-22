@@ -1,10 +1,26 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : Cortex
+// Author           : JRP-Dell-01
+// Created          : 03-10-2015
+//
+// Last Modified By : JRP-Dell-01
+// Last Modified On : 02-24-2015
+// ***********************************************************************
+// <copyright file="ListItem.cs" company="">
+//     Copyright (c) . All rights reserved.
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using CortexClient.ServiceReference1;
 
+/// <summary>
+/// The CortexClient namespace.
+/// </summary>
 namespace CortexClient
 {
     /// <summary>
@@ -12,10 +28,22 @@ namespace CortexClient
     /// </summary>
     public class ListItem
     {
+        /// <summary>
+        /// Gets or sets the text.
+        /// </summary>
+        /// <value>The text.</value>
         public string Text { get; set; }
+        /// <summary>
+        /// Gets or sets the value.
+        /// </summary>
+        /// <value>The value.</value>
         public object Value { get; set; }
 
 
+        /// <summary>
+        /// Returns a <see cref="System.String" /> that represents this instance.
+        /// </summary>
+        /// <returns>A <see cref="System.String" /> that represents this instance.</returns>
         public override string ToString()
         {
             return Text;
@@ -24,8 +52,8 @@ namespace CortexClient
         /// <summary>
         /// populate Combo Box
         /// </summary>
-        /// <param name="cbx"></param>
-        /// <param name="list"></param>
+        /// <param name="cbx">The CBX.</param>
+        /// <param name="list">The list.</param>
         public static void loadListItems(ComboBox cbx, List<ListItem> list)
         {
             try
@@ -45,8 +73,8 @@ namespace CortexClient
         /// <summary>
         /// populate DataGrid control
         /// </summary>
-        /// <param name="dgv"></param>
-        /// <param name="list"></param>
+        /// <param name="dgv">The DGV.</param>
+        /// <param name="list">The list.</param>
         public static void loadListItems(DataGridView dgv, List<ListItem> list)
         {
             try
@@ -64,8 +92,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve list of Security Types
         /// </summary>
-        /// <param name="wc"></param>
-        /// <returns></returns>
+        /// <param name="wc">The wc.</param>
+        /// <returns>List&lt;ListItem&gt;.</returns>
         public static List<ListItem> loadTypeList(CortexWCFServiceClient wc)
         {
             SecurityType[] types = wc.getSecurityTypes();
@@ -86,8 +114,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve list of Currencies
         /// </summary>
-        /// <param name="wc"></param>
-        /// <returns></returns>
+        /// <param name="wc">The wc.</param>
+        /// <returns>List&lt;ListItem&gt;.</returns>
         public static List<ListItem> loadCCYList(CortexWCFServiceClient wc)
         {
             Currency[] types = wc.getCurrencies();
@@ -108,8 +136,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve list of Deal Status values
         /// </summary>
-        /// <param name="wc"></param>
-        /// <returns></returns>
+        /// <param name="wc">The wc.</param>
+        /// <returns>List&lt;ListItem&gt;.</returns>
         public static List<ListItem> loadDealStatusList(CortexWCFServiceClient wc)
         {
             DealStatus[] types = wc.getDealStatuses();
@@ -130,8 +158,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve list of Event Types
         /// </summary>
-        /// <param name="wc"></param>
-        /// <returns></returns>
+        /// <param name="wc">The wc.</param>
+        /// <returns>List&lt;ListItem&gt;.</returns>
         public static List<ListItem> loadEventTypes(CortexWCFServiceClient wc)
         {
             EventType[] ets = wc.getEventTypes();
@@ -152,8 +180,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve list of Analysts
         /// </summary>
-        /// <param name="wc"></param>
-        /// <returns></returns>
+        /// <param name="wc">The wc.</param>
+        /// <returns>List&lt;ListItem&gt;.</returns>
         public static List<ListItem> loadAnalystList(CortexWCFServiceClient wc)
         {
             Analyst[] analysts = wc.getAnalysts();
@@ -174,8 +202,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve list of Securities
         /// </summary>
-        /// <param name="wc"></param>
-        /// <returns></returns>
+        /// <param name="wc">The wc.</param>
+        /// <returns>List&lt;ListItem&gt;.</returns>
         public static List<ListItem> loadSecurityList(CortexWCFServiceClient wc)
         {
             Security[] securities = wc.getSecurities();
@@ -196,8 +224,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve list of Companies
         /// </summary>
-        /// <param name="wc"></param>
-        /// <returns></returns>
+        /// <param name="wc">The wc.</param>
+        /// <returns>List&lt;ListItem&gt;.</returns>
         public static List<ListItem> loadCompanyList(CortexWCFServiceClient wc)
         {
             Company[] companies = wc.getCompanies();
@@ -218,8 +246,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve list of Categories
         /// </summary>
-        /// <param name="wc"></param>
-        /// <returns></returns>
+        /// <param name="wc">The wc.</param>
+        /// <returns>List&lt;ListItem&gt;.</returns>
         public static List<ListItem> loadCategoryList(CortexWCFServiceClient wc)
         {
             Category[] categories = wc.getCategories();
@@ -240,8 +268,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve list of Category Class
         /// </summary>
-        /// <param name="wc"></param>
-        /// <returns></returns>
+        /// <param name="wc">The wc.</param>
+        /// <returns>List&lt;ListItem&gt;.</returns>
         public static List<ListItem> loadClassList(CortexWCFServiceClient wc)
         {
             Category[] categories = wc.getCategoryClasses();

@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : Cortex
+// Author           : JRP-Dell-01
+// Created          : 03-10-2015
+//
+// Last Modified By : JRP-Dell-01
+// Last Modified On : 03-23-2015
+// ***********************************************************************
+// <copyright file="FormSecurityDefinition.cs" company="">
+//     Copyright (c) . All rights reserved.
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,16 +21,29 @@ using System.Text;
 using System.Windows.Forms;
 using CortexClient.ServiceReference1;
 
+/// <summary>
+/// The CortexClient namespace.
+/// </summary>
 namespace CortexClient
 {
+    /// <summary>
+    /// Class FormSecurityDefinition.
+    /// </summary>
     public partial class FormSecurityDefinition : Form
     {
         /// <summary>
         /// Form attributes
         /// </summary>
         CortexWCFServiceClient wc;
+        /// <summary>
+        /// The current security
+        /// </summary>
         Security currentSecurity;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FormSecurityDefinition"/> class.
+        /// </summary>
+        /// <param name="sec">The sec.</param>
         public FormSecurityDefinition(Security sec = null)
         {
             InitializeComponent();
@@ -29,8 +55,8 @@ namespace CortexClient
         /// Method call before Security form screen is loaded
         /// Loadeds existing Security data if passed in from Deal form
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void FormSecurityDefinition_Load(object sender, EventArgs e)
         {
             ListItem.loadListItems(cbxSecurityTypeID, ListItem.loadTypeList(wc));
@@ -52,6 +78,12 @@ namespace CortexClient
 
         }
 
+        /// <summary>
+        /// Shows the security group.
+        /// </summary>
+        /// <param name="cbxSec">The CBX sec.</param>
+        /// <param name="lblDescr">The label description.</param>
+        /// <param name="lblName">Name of the label.</param>
         private void showSecurityGroup(ComboBox cbxSec, Label lblDescr, Label lblName)
         {
             try
@@ -82,8 +114,8 @@ namespace CortexClient
         /// Method called when a user loads an existing Security to definition screen
         /// loads Security Currency value to dropdown
         /// </summary>
-        /// <param name="cbxSec"></param>
-        /// <param name="lblName"></param>
+        /// <param name="cbxSec">The CBX sec.</param>
+        /// <param name="lblName">Name of the label.</param>
         private void showCurrency(ComboBox cbxSec, Label lblName)
         {
             try
@@ -108,6 +140,11 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Handles the SelectedIndexChanged event of the cbxSecurityGroupID control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cbxSecurityGroupID_SelectedIndexChanged(object sender, EventArgs e)
         {
             showSecurityGroup(cbxSecurityTypeID, lblSecTypeDescr, lblSecTypeName);
@@ -117,8 +154,8 @@ namespace CortexClient
         /// Method called when a user loads an existing Security to definition screen
         /// loads Security Currency value to dropdown
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cbxCurrencyID_SelectedIndexChanged(object sender, EventArgs e)
         {
             //showCurrency(cbxCurrencyID, lblCurrencyName);
@@ -128,8 +165,8 @@ namespace CortexClient
         /// Event handler for tool strip Button
         /// Update/Save Security information on the definition screen
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void saveToolStripButton_Click(object sender, EventArgs e)
         {
 

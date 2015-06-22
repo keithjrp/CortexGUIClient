@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : Cortex
+// Author           : JRP-Dell-01
+// Created          : 03-10-2015
+//
+// Last Modified By : JRP-Dell-01
+// Last Modified On : 04-24-2015
+// ***********************************************************************
+// <copyright file="FormOverview.cs" company="">
+//     Copyright (c) . All rights reserved.
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,29 +28,65 @@ using System.Reflection;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
+/// <summary>
+/// The CortexClient namespace.
+/// </summary>
 namespace CortexClient
 {
+    /// <summary>
+    /// Class FormOverview.
+    /// </summary>
     public partial class FormOverview : Form
     {
         /// <summary>
         /// Form attributes and local Cortex objects
         /// </summary>
         CortexWCFServiceClient wc;
+        /// <summary>
+        /// The new deal
+        /// </summary>
         Boolean newDeal = false;
+        /// <summary>
+        /// The analyst access level
+        /// </summary>
         int analystAccessLevel;
+        /// <summary>
+        /// The numeric format
+        /// </summary>
         String numericFormat = "N2";
+        /// <summary>
+        /// The analyst
+        /// </summary>
         Analyst analyst;
+        /// <summary>
+        /// The deal
+        /// </summary>
         Deal deal;
+        /// <summary>
+        /// The usr
+        /// </summary>
         ApplicationUser usr;
+        /// <summary>
+        /// The comp list
+        /// </summary>
         List<ListItem> compList,analystList,dealStatusList;
+        /// <summary>
+        /// The mb
+        /// </summary>
         MergerArb mb;
+        /// <summary>
+        /// The NMB
+        /// </summary>
         MergerArbNew[] nmb;
+        /// <summary>
+        /// The current price date
+        /// </summary>
         DateTime currentPriceDate;
 
         /// <summary>
         /// Set up the Cortex Application Window, logs user info
         /// </summary>
-        /// <param name="a"></param>
+        /// <param name="a">a.</param>
         public FormOverview(Analyst a = null)
         {
             InitializeComponent();
@@ -58,8 +107,8 @@ namespace CortexClient
         /// <summary>
         /// Event handler for user double-click on Overview screen
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="DataGridViewCellMouseEventArgs" /> instance containing the event data.</param>
         private void dataGridView1_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             LoadDeal();
@@ -68,7 +117,7 @@ namespace CortexClient
         /// <summary>
         /// Loads exiting Deal to definition screen
         /// </summary>
-        /// <param name="d"></param>
+        /// <param name="d">The d.</param>
         private void LoadDeal(Deal d = null)
         {
             try
@@ -111,7 +160,7 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// 
+        /// Fills the merger arb information.
         /// </summary>
         private void fillMergerArbInfo()
         {
@@ -202,6 +251,9 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Clears the merger arbs.
+        /// </summary>
         private void clearMergerArbs()
         {
             dgvMergArb.DataSource = null;
@@ -213,7 +265,7 @@ namespace CortexClient
         /// Method called when a user loads an existing Deal to definition screen
         /// loads basic Deal values to textbox and dropdowns
         /// </summary>
-        /// <param name="deal"></param>
+        /// <param name="deal">The deal.</param>
         private void fillAllBasicInfo(Deal deal)
         {
             try
@@ -246,8 +298,8 @@ namespace CortexClient
         /// <summary>
         /// retrieve selected Deal info to memory from user double-click on Overview Grid
         /// </summary>
-        /// <param name="deal"></param>
-        /// <returns></returns>
+        /// <param name="deal">The deal.</param>
+        /// <returns>Deal.</returns>
         private Deal getSelectedDeal(Deal deal = null)
         {
             try
@@ -277,8 +329,8 @@ namespace CortexClient
         /// Method called when a user loads an existing Deal to definition screen
         /// loads Deal Deal Currency value to dropdown
         /// </summary>
-        /// <param name="wc"></param>
-        /// <param name="deal"></param>
+        /// <param name="wc">The wc.</param>
+        /// <param name="deal">The deal.</param>
         private void fillCurrencyControls(CortexWCFServiceClient wc, Deal deal)
         {
             Currency c = wc.getCurrency((int)deal.CurrencyID);
@@ -289,8 +341,8 @@ namespace CortexClient
         /// Method called when a user loads an existing Deal to definition screen
         /// loads Deal Events value to datagrid
         /// </summary>
-        /// <param name="wc"></param>
-        /// <param name="deal"></param>
+        /// <param name="wc">The wc.</param>
+        /// <param name="deal">The deal.</param>
         private void fillAllEventControls(CortexWCFServiceClient wc, Deal deal)
         {
             try
@@ -347,8 +399,8 @@ namespace CortexClient
         /// Method called when a user loads an existing Deal to definition screen
         /// loads Deal Company1 value to dropdown
         /// </summary>
-        /// <param name="wc"></param>
-        /// <param name="deal"></param>
+        /// <param name="wc">The wc.</param>
+        /// <param name="deal">The deal.</param>
         private void fillAllCompanyControls(CortexWCFServiceClient wc, Deal deal)
         {
             Company c1;
@@ -370,8 +422,8 @@ namespace CortexClient
         /// Method called when a user loads an existing Deal to definition screen
         /// loads Deal Documents to Document Grid
         /// </summary>
-        /// <param name="wc"></param>
-        /// <param name="deal"></param>
+        /// <param name="wc">The wc.</param>
+        /// <param name="deal">The deal.</param>
         private void fillAllDocumentControls(CortexWCFServiceClient wc, Deal deal)
         {
             try
@@ -426,8 +478,8 @@ namespace CortexClient
         /// Method called when a user loads an existing Deal to definition screen
         /// loads Deal Security1 value to dropdown
         /// </summary>
-        /// <param name="wc"></param>
-        /// <param name="deal"></param>
+        /// <param name="wc">The wc.</param>
+        /// <param name="deal">The deal.</param>
         private void fillAllSecurityControls(CortexWCFServiceClient wc, Deal deal)
         {
             Security s1;
@@ -457,8 +509,8 @@ namespace CortexClient
         /// Method called when a user loads an existing Deal to definition screen
         /// loads Deal Lead Analyst value to dropdown and rest of the Deal Team to datagrid
         /// </summary>
-        /// <param name="wc"></param>
-        /// <param name="deal"></param>
+        /// <param name="wc">The wc.</param>
+        /// <param name="deal">The deal.</param>
         private void fillAnalystControls(CortexWCFServiceClient wc, Deal deal)
         {
             try
@@ -536,8 +588,8 @@ namespace CortexClient
         /// Event handler for top menu Add New | Deal
         /// Load blank Deal definition scrren
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void menuNewDeal_Click(object sender, EventArgs e)
         {
             if (gbOverview.Visible)
@@ -552,8 +604,8 @@ namespace CortexClient
         /// <summary>
         /// Loaded data into Grids and Dropdowns as the Application launches
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void FormOverview_Load(object sender, EventArgs e)
         {
             try
@@ -603,8 +655,8 @@ namespace CortexClient
         /// Event handler for top menu Add New | Security
         /// Load blank Security form
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void menuSecurity_Click(object sender, EventArgs e)
         {
             FormSecurityDefinition secForm = new FormSecurityDefinition();
@@ -615,8 +667,8 @@ namespace CortexClient
         /// Event handler for top menu Add New | Company
         /// Load blank Company form
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void menuCompany_Click(object sender, EventArgs e)
         {
             FormCompanyDefinition compForm = new FormCompanyDefinition();
@@ -626,8 +678,8 @@ namespace CortexClient
         /// <summary>
         /// Event handler for top menu Logout, exits the application
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (deal != null)
@@ -643,8 +695,8 @@ namespace CortexClient
         /// Update/Save Deal information on the definition screen
         /// Goes back to Overview Grid and hide Deal definition screen
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void updateToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -791,7 +843,7 @@ namespace CortexClient
         /// <summary>
         /// Update or Assign new Lead Analyst to current Deal
         /// </summary>
-        /// <param name="deal"></param>
+        /// <param name="deal">The deal.</param>
         private void updateLeadAnalyst(Deal deal)
         {
 
@@ -818,8 +870,8 @@ namespace CortexClient
         /// <summary>
         /// Update or Assign new Security to current Deal
         /// </summary>
-        /// <param name="deal"></param>
-        /// <param name="sg"></param>
+        /// <param name="deal">The deal.</param>
+        /// <param name="sg">The sg.</param>
         private void updateSecurity(Deal deal, SecurityGroup sg)
         {
             int sec1id = (int)cbxSecurity1.SelectedValue;
@@ -846,7 +898,8 @@ namespace CortexClient
         /// <summary>
         /// Method to handle updates to Deal Team
         /// </summary>
-        /// <param name="deal"></param>
+        /// <param name="deal">The deal.</param>
+        /// <param name="isLead">The is lead.</param>
         private void addNewAnalyst(Deal deal, Boolean isLead = false)
         {
             try
@@ -873,8 +926,8 @@ namespace CortexClient
         /// Removes Deal from database
         /// Goes back to Overview Grid and hide Deal definition screen
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -905,8 +958,8 @@ namespace CortexClient
         /// Event handler for top menu Go | Home (CTRL+H)
         /// Goes back to Overview Grid and hide Deal definition screen
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //wc.AuditTrailUpdate(usr, deal);
@@ -918,8 +971,8 @@ namespace CortexClient
         /// Event handler for context menu item to Add New Company from Dropdown on Deal definition screen
         /// Opens blank Company form to enter a new Company
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void smiNewCompany_Click(object sender, EventArgs e)
         {
             menuCompany_Click(sender, e);
@@ -929,8 +982,8 @@ namespace CortexClient
         /// Event handler for context menu item to Add New Security from Dropdown on Deal definition screen
         /// Opens blank Security form to enter a new Security
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void smiAddSecurity_Click(object sender, EventArgs e)
         {
             menuSecurity_Click(sender, e);
@@ -940,8 +993,8 @@ namespace CortexClient
         /// Event handler for context menu item to Edit Company from Dropdown on Deal definition screen
         /// Opens Company form and load selected Company for edit
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void smiEditCompany_Click(object sender, EventArgs e)
         {
             int id = (int)cbxCompany1.SelectedValue;
@@ -954,8 +1007,8 @@ namespace CortexClient
         /// Event handler for context menu item to Edit Security from Dropdown on Deal definition screen
         /// Opens Security form and load selected Security for edit
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void smiEditSecurity_Click(object sender, EventArgs e)
         {
             int id = (int)cbxSecurity1.SelectedValue;
@@ -969,8 +1022,8 @@ namespace CortexClient
         /// Event handler for context menu item to Refresh Company Dropdown on Deal definition screen
         /// reloads the dropdown list and jump back to the selected item
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void smiRefreshCompany_Click(object sender, EventArgs e)
         {
             int index = cbxCompany1.SelectedIndex;
@@ -984,8 +1037,8 @@ namespace CortexClient
         /// Event handler for context menu item to Refresh Security Dropdown on Deal definition screen
         /// reloads the dropdown list and jump back to the selected item
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void smiRefreshSecurity_Click(object sender, EventArgs e)
         {
             int index = cbxSecurity1.SelectedIndex;
@@ -999,8 +1052,8 @@ namespace CortexClient
         /// <summary>
         /// Event handler for Search button under Overview Grid to load Deals with matching Companies.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnSearch_Click(object sender, EventArgs e)
         {
             try
@@ -1028,7 +1081,8 @@ namespace CortexClient
         /// <summary>
         /// Load Deal List to Overview Grid
         /// </summary>
-        /// <param name="dealFiltered"></param>
+        /// <param name="dealFiltered">The deal filtered.</param>
+        /// <param name="count">The count.</param>
         private void LoadDealList(Deal[] dealFiltered, int count = 0)
         {
             try
@@ -1092,8 +1146,8 @@ namespace CortexClient
         /// <summary>
         /// Event handler for context menu when you right-click on Overview Grid to reload Deal list
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void smiRefreshOverview_Click(object sender, EventArgs e)
         {
             LoadDealList(wc.getDeals(0));
@@ -1102,8 +1156,8 @@ namespace CortexClient
         /// <summary>
         /// Event handler for button under the Overview Grid to clear Company filters and reload Deals list.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnReset_Click(object sender, EventArgs e)
         {
             LoadDealList(wc.getDeals(0));
@@ -1112,8 +1166,8 @@ namespace CortexClient
         /// <summary>
         /// Quit Application completely, Audit Trail will log Exit on the Login.o_FormClosing()
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wc.Close();
@@ -1123,8 +1177,8 @@ namespace CortexClient
         /// <summary>
         /// Method handles Document selection dialog on the Documents tab
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void txtFileUpload_TextChanged_1(object sender, EventArgs e)
         {
             OpenFileDialog choofdlog = new OpenFileDialog();
@@ -1142,8 +1196,8 @@ namespace CortexClient
         /// <summary>
         /// Method handles Document upload logic
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnUpload_Click(object sender, EventArgs e)
         {
             try
@@ -1184,8 +1238,8 @@ namespace CortexClient
         /// <summary>
         /// Loads Deals matching selected Analyst from dropdown on Overview screen
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnSearchByAnalyst_Click(object sender, EventArgs e)
         {
             try
@@ -1213,8 +1267,8 @@ namespace CortexClient
         /// <summary>
         /// Method handles Analyst tab control to add Analyst to Deal Team
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnAddAnalyst_Click(object sender, EventArgs e)
         {
             try
@@ -1254,8 +1308,8 @@ namespace CortexClient
         /// <summary>
         /// Method handles Event tab control to add Event to Deal
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnAddEvent_Click(object sender, EventArgs e)
         {
             try
@@ -1289,8 +1343,8 @@ namespace CortexClient
         /// <summary>
         /// Method handles Deal Team tab control to add Analyst to the Deal
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="MouseEventArgs" /> instance containing the event data.</param>
         private void dgAnalystPool_CellMouseDoubleClick(object sender, MouseEventArgs e)
         {
             btnAddAnalyst_Click(sender, e);
@@ -1300,8 +1354,8 @@ namespace CortexClient
         /// Method handles Right-Click menu on datagrids for Event, Documents and Analysts
         /// Removes the selected object from datagrid and database records
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cmiRemove_Click(object sender, EventArgs e)
         {
             try
@@ -1344,8 +1398,8 @@ namespace CortexClient
         /// <summary>
         /// remove Analyst from datagrid and database and records teh action to Audit Trail
         /// </summary>
-        /// <param name="row"></param>
-        /// <param name="id"></param>
+        /// <param name="row">The row.</param>
+        /// <param name="id">The identifier.</param>
         private void removeAnalyst(out int row, out int id)
         {
             row = dgAnalysts.CurrentRow.Index;
@@ -1368,8 +1422,8 @@ namespace CortexClient
         /// Method handles control on Deal Team tab to
         /// remove Analyst from datagrid and database and records teh action to Audit Trail
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnRemoveAnalyst_Click(object sender, EventArgs e)
         {
             int row, id;
@@ -1380,8 +1434,8 @@ namespace CortexClient
         /// Method handles Lead Analyst control on Deal definition screen
         /// records updates to this control to Audit Trail
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxLeadAnalyst_SelectedIndexChanged(object sender, EventArgs e)
         {
             //usr.Actions = "[Analyst " + cbxLeadAnalyst.Text + " Selected as Lead to Deal " + deal.DealID + "]";
@@ -1390,11 +1444,11 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// Method handles control from Overview screen to filter Deal datagrid 
+        /// Method handles control from Overview screen to filter Deal datagrid
         /// by Deals with matching Deal Status to the dropdown
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnSearchStatus_Click(object sender, EventArgs e)
         {
             try
@@ -1423,8 +1477,8 @@ namespace CortexClient
         /// Method handles URI link behavior on Document datagrid
         /// opens deal documents
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="DataGridViewCellEventArgs" /> instance containing the event data.</param>
         private void dgDocuments_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -1442,11 +1496,11 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// Method handles control from Overview screen to filter Deal datagrid 
+        /// Method handles control from Overview screen to filter Deal datagrid
         /// by Deals with matching Deal Strategy Class to the dropdown
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnSearchCategoryClass_Click(object sender, EventArgs e)
         {
             try
@@ -1473,8 +1527,8 @@ namespace CortexClient
         /// <summary>
         /// Search All function logic, search Deals by Class, Company, Status, Analyst and Deal data
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void btnSearchByDescription_Click(object sender, EventArgs e)
         {
             try
@@ -1509,11 +1563,11 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// Handles Quick Import function.  
+        /// Handles Quick Import function.
         /// Read selected file template and loads data from each worksheet
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -1554,7 +1608,7 @@ namespace CortexClient
         /// <summary>
         /// logic to handle reading data from Merger Arb worksheet and load to Cortex DB
         /// </summary>
-        /// <param name="CortexLoader"></param>
+        /// <param name="CortexLoader">The cortex loader.</param>
         private void importMergerArb(String CortexLoader)
         {
             try
@@ -1622,7 +1676,7 @@ namespace CortexClient
         /// <summary>
         /// logic to handle reading data from Securities worksheet and load to Cortex DB
         /// </summary>
-        /// <param name="CortexLoader"></param>
+        /// <param name="CortexLoader">The cortex loader.</param>
         private void importSecurities(String CortexLoader)
         {
             try
@@ -1657,7 +1711,7 @@ namespace CortexClient
         /// <summary>
         /// logic to handle reading data from Documents worksheet and load to Cortex DB
         /// </summary>
-        /// <param name="CortexLoader"></param>
+        /// <param name="CortexLoader">The cortex loader.</param>
         private void importDocuments(String CortexLoader)
         {
             try
@@ -1686,7 +1740,7 @@ namespace CortexClient
         /// <summary>
         /// logic to handle reading data from Companies worksheet and load to Cortex DB
         /// </summary>
-        /// <param name="CortexLoader"></param>
+        /// <param name="CortexLoader">The cortex loader.</param>
         private void importCompanies(String CortexLoader)
         {
             try
@@ -1714,7 +1768,7 @@ namespace CortexClient
         /// <summary>
         /// logic to handle reading data from Deals worksheet and load to Cortex DB
         /// </summary>
-        /// <param name="CortexLoader"></param>
+        /// <param name="CortexLoader">The cortex loader.</param>
         private void importDeals(String CortexLoader)
         {
             try
@@ -1776,7 +1830,7 @@ namespace CortexClient
         /// <summary>
         /// logic to handle reading data from Events worksheet and load to Cortex DB
         /// </summary>
-        /// <param name="CortexLoader"></param>
+        /// <param name="CortexLoader">The cortex loader.</param>
         private void importEvents(String CortexLoader)
         {
             try
@@ -1805,7 +1859,7 @@ namespace CortexClient
         /// <summary>
         /// logic to handle reading data from Companies worksheet and load to Cortex DB
         /// </summary>
-        /// <param name="CortexLoader"></param>
+        /// <param name="CortexLoader">The cortex loader.</param>
         public static void importPrices(String CortexLoader)
         {
             try
@@ -1845,33 +1899,53 @@ namespace CortexClient
             }
         }
         /// <summary>
-        /// 
+        /// Handles the KeyPress event of the txtSearchByDescription control.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="KeyPressEventArgs" /> instance containing the event data.</param>
         private void txtSearchByDescription_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(e.KeyChar == (char)Keys.Enter) btnSearchByDescription_Click(sender, e);
         }
 
+        /// <summary>
+        /// Handles the Keypress event of the txtSearchCategoryClass control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="KeyPressEventArgs" /> instance containing the event data.</param>
         private void txtSearchCategoryClass_Keypress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.F2) cbxSearchCategoryClass.Text = "";
 
         }
 
+        /// <summary>
+        /// Handles the KeyPress event of the cbxSearchStatus control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="KeyPressEventArgs" /> instance containing the event data.</param>
         private void cbxSearchStatus_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.F2) cbxSearchStatus.Text = "";
 
         }
 
+        /// <summary>
+        /// Handles the KeyPress event of the cbxSearchByCompany control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="KeyPressEventArgs" /> instance containing the event data.</param>
         private void cbxSearchByCompany_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.F2) cbxSearchByCompany.Text = "";
 
         }
 
+        /// <summary>
+        /// Handles the KeyPress event of the cbxSearchByAnalyst control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="KeyPressEventArgs" /> instance containing the event data.</param>
         private void cbxSearchByAnalyst_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.F2) cbxSearchByAnalyst.Text = "";
@@ -1949,6 +2023,11 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Handles the MouseDoubleClick event of the txtEventNote control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="MouseEventArgs" /> instance containing the event data.</param>
         private void txtEventNote_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             OpenFileDialog choofdlog = new OpenFileDialog();
@@ -1960,6 +2039,11 @@ namespace CortexClient
                 txtEventNote.Text += " " + choofdlog.FileName;
         }
 
+        /// <summary>
+        /// Handles the CellDoubleClick event of the dgEvents control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="DataGridViewCellEventArgs" /> instance containing the event data.</param>
         private void dgEvents_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             string filename = ExtractPathFromLine(
@@ -1971,6 +2055,11 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Extracts the path from line.
+        /// </summary>
+        /// <param name="line">The line.</param>
+        /// <returns>System.String.</returns>
         static string ExtractPathFromLine(string line)
         {
             
@@ -1983,7 +2072,15 @@ namespace CortexClient
             }
             return match.Groups[1].Value;
         }
+        /// <summary>
+        /// The is shown
+        /// </summary>
         private bool isShown = false;
+        /// <summary>
+        /// Handles the MouseMove event of the txtCurrentPrice control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="MouseEventArgs" /> instance containing the event data.</param>
         private void txtCurrentPrice_MouseMove(object sender, MouseEventArgs e)
         {
             if (!isShown)
@@ -2000,6 +2097,11 @@ namespace CortexClient
 
         //speed up GUI home screen loading time
         #region Click to Load ComboBox Items
+        /// <summary>
+        /// Handles the Click event of the cbxSearchStatus control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxSearchStatus_Click(object sender, EventArgs e)
         {
             if (cbxSearchStatus.Items.Count == 0)
@@ -2009,6 +2111,11 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxStatus control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxStatus_Click(object sender, EventArgs e)
         {
             if (cbxStatus.Items.Count == 0)
@@ -2018,6 +2125,11 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxCategory control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxCategory_Click(object sender, EventArgs e)
         {
             if (cbxCategory.Items.Count == 0)
@@ -2026,6 +2138,11 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxSearchCategoryClass control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxSearchCategoryClass_Click(object sender, EventArgs e)
         {
             if (cbxSearchCategoryClass.Items.Count == 0)
@@ -2035,6 +2152,11 @@ namespace CortexClient
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxCompany1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxCompany1_Click(object sender, EventArgs e)
         {
             if (cbxCompany1.Items.Count == 0)
@@ -2044,6 +2166,11 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxSecurity1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxSecurity1_Click(object sender, EventArgs e)
         {
 
@@ -2054,6 +2181,11 @@ namespace CortexClient
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxLeadAnalyst control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxLeadAnalyst_Click(object sender, EventArgs e)
         {
             if (cbxLeadAnalyst.Items.Count == 0)
@@ -2064,6 +2196,11 @@ namespace CortexClient
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxSearchByCompany control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxSearchByCompany_Click(object sender, EventArgs e)
         {
             if (cbxSearchByCompany.Items.Count == 0)
@@ -2073,6 +2210,11 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxSearchByAnalyst control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxSearchByAnalyst_Click(object sender, EventArgs e)
         {
             if (cbxSearchByAnalyst.Items.Count == 0)
@@ -2082,6 +2224,11 @@ namespace CortexClient
             }
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxEventType control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxEventType_Click(object sender, EventArgs e)
         {
             if (cbxEventType.Items.Count == 0)
@@ -2091,6 +2238,11 @@ namespace CortexClient
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the cbxCurrencyID control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void cbxCurrencyID_Click(object sender, EventArgs e)
         {
             if (cbxCurrencyID.Items.Count == 0)
@@ -2100,6 +2252,11 @@ namespace CortexClient
 
         }
 
+        /// <summary>
+        /// Handles the Enter event of the tabDealTeam control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void tabDealTeam_Enter(object sender, EventArgs e)
         {
             if (dgAnalystPool.Rows.Count == 0)
@@ -2115,27 +2272,52 @@ namespace CortexClient
         }
         #endregion
 
+        /// <summary>
+        /// Handles the Click event of the allToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void allToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fCortex_Summary&ViewMode=Detail");
         }
 
+        /// <summary>
+        /// Handles the Click event of the byNameToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void byNameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fCortex_DealDefinition&ViewMode=Detail");
         }
 
+        /// <summary>
+        /// Handles the Click event of the byFilterToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void byFilterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fCortex_Search&ViewMode=Detail");
         }
 
+        /// <summary>
+        /// Handles the Click event of the allToolStripMenuItem1 control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void allToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fMergerArb_Summary&ViewMode=Detail");
 
         }
 
+        /// <summary>
+        /// Handles the Click event of the byDealToolStripMenuItem control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void byDealToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("IExplore.exe", "http://nyvmdevs1/Reports/Pages/Report.aspx?ItemPath=%2fMergerArb_SummaryDetail&ViewMode=Detail");

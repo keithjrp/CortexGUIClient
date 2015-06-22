@@ -14,3 +14,19 @@ E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.exe
 E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.pdb
 E:\JRP\Cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.pdb
 E:\JRP\Cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.csprojResolveAssemblyReference.cache
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.exe.config
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.exe
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.pdb
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.exe.manifest
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.application
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.exe
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\bin\Debug\Cortex.pdb
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.csprojResolveAssemblyReference.cache
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.FormCompanyDefinition.resources
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.FormOverview.resources
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.FormSecurityDefinition.resources
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.Login.resources
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.Properties.Resources.resources
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\CortexClient.csproj.GenerateResource.Cache
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.exe.manifest
+C:\Users\JRP-Dell-01\Google Drive\Halcyon\cortex\CortexGUIClient\CortexClient\obj\x86\Debug\Cortex.application
