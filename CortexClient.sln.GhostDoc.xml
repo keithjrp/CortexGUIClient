@@ -13,19 +13,20 @@
   </SpellChecker>
 <HelpConfigurations selected="HelpFile">
   <HelpConfiguration name="HelpFile">
-    <OutputPath>F:\TedRyan\Manikay\Apps\MankayPricesAndDivs\trunk\ManikayPricingTool\Help</OutputPath>
+    <OutputPath>.\Help</OutputPath>
+    <HelpFileName>CortexClient</HelpFileName>
     <ImageFolderPath />
     <HtmlFormats>
       <HtmlHelp>true</HtmlHelp>
       <MSHelpViewer>false</MSHelpViewer>
       <MSHelp2>false</MSHelp2>
-      <Website>false</Website>
+      <Website>true</Website>
     </HtmlFormats>
     <IncludeScopes>
       <Public>true</Public>
       <Internal>false</Internal>
       <Protected>false</Protected>
-      <Private>false</Private>
+      <Private>true</Private>
       <Inherited>true</Inherited>
       <InheritedFromReferences>true</InheritedFromReferences>
       <EnableTags>false</EnableTags>

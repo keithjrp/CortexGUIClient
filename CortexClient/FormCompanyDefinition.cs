@@ -1,13 +1,13 @@
 ﻿// ***********************************************************************
 // Assembly         : Cortex
-// Author           : JRP-Dell-01
-// Created          : 03-10-2015
+// Author           : ktam
+// Created          : 12-05-2014
 //
-// Last Modified By : JRP-Dell-01
+// Last Modified By : ktam
 // Last Modified On : 02-13-2015
 // ***********************************************************************
-// <copyright file="FormCompanyDefinition.cs" company="">
-//     Copyright (c) . All rights reserved.
+// <copyright file="FormCompanyDefinition.cs" company="Amazon.com">
+//     Copyright © Amazon.com 2014
 // </copyright>
 // <summary></summary>
 // ***********************************************************************
@@ -27,7 +27,7 @@ using CortexClient.ServiceReference1;
 namespace CortexClient
 {
     /// <summary>
-    /// Class FormCompanyDefinition. GUI for adding/editing Company info
+    /// Class FormCompanyDefinition.
     /// </summary>
     public partial class FormCompanyDefinition : Form
     {

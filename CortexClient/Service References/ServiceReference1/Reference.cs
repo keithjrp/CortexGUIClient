@@ -6172,6 +6172,9 @@ namespace CortexClient.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CortexWCFService/getMergerArbNewByValue", ReplyAction="http://tempuri.org/CortexWCFService/getMergerArbNewByValueResponse")]
         CortexClient.ServiceReference1.MergerArbNew[] getMergerArbNewByValue(string value);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CortexWCFService/removeMergerArbNewByDealID", ReplyAction="http://tempuri.org/CortexWCFService/removeMergerArbNewByDealIDResponse")]
+        void removeMergerArbNewByDealID(int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -6623,6 +6626,10 @@ namespace CortexClient.ServiceReference1 {
         
         public CortexClient.ServiceReference1.MergerArbNew[] getMergerArbNewByValue(string value) {
             return base.Channel.getMergerArbNewByValue(value);
+        }
+        
+        public void removeMergerArbNewByDealID(int id) {
+            base.Channel.removeMergerArbNewByDealID(id);
         }
     }
 }

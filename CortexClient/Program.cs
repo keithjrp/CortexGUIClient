@@ -1,13 +1,13 @@
 ﻿// ***********************************************************************
 // Assembly         : Cortex
-// Author           : JRP-Dell-01
-// Created          : 03-10-2015
+// Author           : ktam
+// Created          : 11-18-2014
 //
-// Last Modified By : JRP-Dell-01
+// Last Modified By : ktam
 // Last Modified On : 03-20-2015
 // ***********************************************************************
-// <copyright file="Program.cs" company="">
-//     Copyright (c) . All rights reserved.
+// <copyright file="Program.cs" company="Amazon.com">
+//     Copyright © Amazon.com 2014
 // </copyright>
 // <summary></summary>
 // ***********************************************************************
@@ -40,7 +40,7 @@ namespace CortexClient
             }
             else
             {
-                FormOverview.importPrices(Properties.Settings.Default.PriceFile);
+                CortexGUIProcesses.importPrices(Properties.Settings.Default.PriceFile);
 
             }
         }

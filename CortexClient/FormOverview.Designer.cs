@@ -53,6 +53,8 @@
             this.menuSecurity = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCompany = new System.Windows.Forms.ToolStripMenuItem();
             this.smiImport = new System.Windows.Forms.ToolStripMenuItem();
+            this.partialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fullToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dealsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.allToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -165,6 +167,8 @@
             this.dgAnalysts = new System.Windows.Forms.DataGridView();
             this.tabMA = new System.Windows.Forms.TabPage();
             this.dgvMergArb = new System.Windows.Forms.DataGridView();
+            this.cmsMergerArb = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmiMARefresh = new System.Windows.Forms.ToolStripMenuItem();
             this.tabCredit = new System.Windows.Forms.TabPage();
             this.tabSpecSit = new System.Windows.Forms.TabPage();
             this.gbOverview = new System.Windows.Forms.GroupBox();
@@ -208,6 +212,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgAnalysts)).BeginInit();
             this.tabMA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMergArb)).BeginInit();
+            this.cmsMergerArb.SuspendLayout();
             this.gbOverview.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -308,10 +313,27 @@
             // 
             // smiImport
             // 
+            this.smiImport.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.partialToolStripMenuItem,
+            this.fullToolStripMenuItem});
             this.smiImport.Name = "smiImport";
-            this.smiImport.Size = new System.Drawing.Size(55, 20);
-            this.smiImport.Text = "Import";
+            this.smiImport.Size = new System.Drawing.Size(96, 20);
+            this.smiImport.Text = "Import Update";
             this.smiImport.Click += new System.EventHandler(this.helpToolStripMenuItem_Click);
+            // 
+            // partialToolStripMenuItem
+            // 
+            this.partialToolStripMenuItem.Name = "partialToolStripMenuItem";
+            this.partialToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.partialToolStripMenuItem.Text = "Partial";
+            this.partialToolStripMenuItem.Click += new System.EventHandler(this.partialToolStripMenuItem_Click);
+            // 
+            // fullToolStripMenuItem
+            // 
+            this.fullToolStripMenuItem.Name = "fullToolStripMenuItem";
+            this.fullToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fullToolStripMenuItem.Text = "Full";
+            this.fullToolStripMenuItem.Click += new System.EventHandler(this.fullToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
@@ -329,7 +351,7 @@
             this.byNameToolStripMenuItem,
             this.byFilterToolStripMenuItem});
             this.dealsToolStripMenuItem1.Name = "dealsToolStripMenuItem1";
-            this.dealsToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dealsToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
             this.dealsToolStripMenuItem1.Text = "Deals";
             // 
             // allToolStripMenuItem
@@ -359,20 +381,20 @@
             this.allToolStripMenuItem1,
             this.byDealToolStripMenuItem});
             this.mergerArbToolStripMenuItem.Name = "mergerArbToolStripMenuItem";
-            this.mergerArbToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mergerArbToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.mergerArbToolStripMenuItem.Text = "Merger Arb";
             // 
             // allToolStripMenuItem1
             // 
             this.allToolStripMenuItem1.Name = "allToolStripMenuItem1";
-            this.allToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.allToolStripMenuItem1.Size = new System.Drawing.Size(113, 22);
             this.allToolStripMenuItem1.Text = "All";
             this.allToolStripMenuItem1.Click += new System.EventHandler(this.allToolStripMenuItem1_Click);
             // 
             // byDealToolStripMenuItem
             // 
             this.byDealToolStripMenuItem.Name = "byDealToolStripMenuItem";
-            this.byDealToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.byDealToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.byDealToolStripMenuItem.Text = "By Deal";
             this.byDealToolStripMenuItem.Click += new System.EventHandler(this.byDealToolStripMenuItem_Click);
             // 
@@ -1501,7 +1523,7 @@
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvMergArb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvMergArb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMergArb.ContextMenuStrip = this.cmsRemove;
+            this.dgvMergArb.ContextMenuStrip = this.cmsMergerArb;
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1515,6 +1537,20 @@
             this.dgvMergArb.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMergArb.Size = new System.Drawing.Size(868, 587);
             this.dgvMergArb.TabIndex = 36;
+            // 
+            // cmsMergerArb
+            // 
+            this.cmsMergerArb.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cmiMARefresh});
+            this.cmsMergerArb.Name = "cmsRemove";
+            this.cmsMergerArb.Size = new System.Drawing.Size(114, 26);
+            // 
+            // cmiMARefresh
+            // 
+            this.cmiMARefresh.Name = "cmiMARefresh";
+            this.cmiMARefresh.Size = new System.Drawing.Size(113, 22);
+            this.cmiMARefresh.Text = "Refresh";
+            this.cmiMARefresh.Click += new System.EventHandler(this.cmsMergerArb_Click);
             // 
             // tabCredit
             // 
@@ -1705,10 +1741,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(984, 761);
+            this.Controls.Add(this.tabCtrlDealDef);
             this.Controls.Add(this.lblAnalyst);
             this.Controls.Add(this.menuMain);
             this.Controls.Add(this.gbOverview);
-            this.Controls.Add(this.tabCtrlDealDef);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuMain;
@@ -1751,6 +1787,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgAnalysts)).EndInit();
             this.tabMA.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMergArb)).EndInit();
+            this.cmsMergerArb.ResumeLayout(false);
             this.gbOverview.ResumeLayout(false);
             this.gbOverview.PerformLayout();
             this.ResumeLayout(false);
@@ -1902,6 +1939,10 @@
         private System.Windows.Forms.ToolStripMenuItem mergerArbToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem allToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem byDealToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsMergerArb;
+        private System.Windows.Forms.ToolStripMenuItem cmiMARefresh;
+        private System.Windows.Forms.ToolStripMenuItem partialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fullToolStripMenuItem;
 
     }
 }

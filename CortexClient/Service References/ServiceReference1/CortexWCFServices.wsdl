@@ -643,6 +643,12 @@
   <wsdl:message name="CortexWCFService_getMergerArbNewByValue_OutputMessage">
     <wsdl:part name="parameters" element="tns:getMergerArbNewByValueResponse" />
   </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeMergerArbNewByDealID_InputMessage">
+    <wsdl:part name="parameters" element="tns:removeMergerArbNewByDealID" />
+  </wsdl:message>
+  <wsdl:message name="CortexWCFService_removeMergerArbNewByDealID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removeMergerArbNewByDealIDResponse" />
+  </wsdl:message>
   <wsdl:portType name="CortexWCFService">
     <wsdl:operation name="getDeal">
       <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getDeal" message="tns:CortexWCFService_getDeal_InputMessage" />
@@ -1067,6 +1073,10 @@
     <wsdl:operation name="getMergerArbNewByValue">
       <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArbNewByValue" message="tns:CortexWCFService_getMergerArbNewByValue_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/getMergerArbNewByValueResponse" message="tns:CortexWCFService_getMergerArbNewByValue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removeMergerArbNewByDealID">
+      <wsdl:input wsaw:Action="http://tempuri.org/CortexWCFService/removeMergerArbNewByDealID" message="tns:CortexWCFService_removeMergerArbNewByDealID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CortexWCFService/removeMergerArbNewByDealIDResponse" message="tns:CortexWCFService_removeMergerArbNewByDealID_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_CortexWCFService" type="tns:CortexWCFService">
@@ -2018,6 +2028,15 @@
     </wsdl:operation>
     <wsdl:operation name="getMergerArbNewByValue">
       <soap:operation soapAction="http://tempuri.org/CortexWCFService/getMergerArbNewByValue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeMergerArbNewByDealID">
+      <soap:operation soapAction="http://tempuri.org/CortexWCFService/removeMergerArbNewByDealID" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -1,15 +1,10 @@
 ﻿// ***********************************************************************
 // Assembly         : Cortex
-// Author           : JRP-Dell-01
-// Created          : 03-10-2015
+// Author           : ktam
+// Created          : 02-12-2015
 //
-// Last Modified By : JRP-Dell-01
+// Last Modified By : ktam
 // Last Modified On : 02-24-2015
-// ***********************************************************************
-// <copyright file="ListItem.cs" company="">
-//     Copyright (c) . All rights reserved.
-// </copyright>
-// <summary></summary>
 // ***********************************************************************
 using System;
 using System.Collections.Generic;

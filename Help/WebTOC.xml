@@ -1,0 +1,1561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="25894322-d129-4a49-b437-8afd8b0650e6" Title="CortexClient Namespace" Url="html/775665635.htm">
+    <HelpTOCNode Id="2dcd6d37-ba19-469d-96e3-20149e903b98" Title="CortexGUIProcesses Class" Url="html/946754483.htm">
+      <HelpTOCNode Title="CortexGUIProcesses Members" Url="html/1277179987.htm" />
+      <HelpTOCNode Id="70b8704d-3502-499f-a3ee-cdba3b88b0a3" Title="CortexGUIProcesses Methods" Url="html/100633863.htm">
+        <HelpTOCNode Title="addNewAnalyst Method " Url="html/1756624315.htm" />
+        <HelpTOCNode Title="ExtractPathFromLine Method " Url="html/1793026901.htm" />
+        <HelpTOCNode Title="getSelectedDeal Method " Url="html/1969846152.htm" />
+        <HelpTOCNode Title="importCompanies Method " Url="html/1702173140.htm" />
+        <HelpTOCNode Title="importDeals Method " Url="html/1720915452.htm" />
+        <HelpTOCNode Title="importDocuments Method " Url="html/1251949509.htm" />
+        <HelpTOCNode Title="importEvents Method " Url="html/1705883613.htm" />
+        <HelpTOCNode Title="importMergerArb Method " Url="html/1630399824.htm" />
+        <HelpTOCNode Title="importPrices Method " Url="html/674813722.htm" />
+        <HelpTOCNode Title="importSecurities Method " Url="html/573303750.htm" />
+        <HelpTOCNode Title="LoadDealList Method " Url="html/179245673.htm" />
+        <HelpTOCNode Title="showCurrency Method " Url="html/801714358.htm" />
+        <HelpTOCNode Title="showSecurityGroup Method " Url="html/1222819930.htm" />
+        <HelpTOCNode Title="updateLeadAnalyst Method " Url="html/1185189263.htm" />
+        <HelpTOCNode Title="updateMergArb Method " Url="html/1147055367.htm" />
+        <HelpTOCNode Title="updateSecurity Method " Url="html/227991743.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4b8ea03d-691d-4f7d-b996-9737a261c9e9" Title="FormCompanyDefinition Class" Url="html/672795408.htm">
+      <HelpTOCNode Title="FormCompanyDefinition Members" Url="html/981150155.htm" />
+      <HelpTOCNode Title="FormCompanyDefinition Constructor " Url="html/1139028264.htm" />
+      <HelpTOCNode Id="3dc5b759-3962-40c0-8509-53bd61808f72" Title="FormCompanyDefinition Fields" Url="html/1161508282.htm">
+        <HelpTOCNode Title="components Field" Url="html/1319350613.htm" />
+        <HelpTOCNode Title="currentCompany Field" Url="html/1644192384.htm" />
+        <HelpTOCNode Title="lblCompanyCode Field" Url="html/2101899800.htm" />
+        <HelpTOCNode Title="lblCompanyDescr Field" Url="html/821184916.htm" />
+        <HelpTOCNode Title="lblCompanyName Field" Url="html/360739346.htm" />
+        <HelpTOCNode Title="saveToolStripButton Field" Url="html/822530623.htm" />
+        <HelpTOCNode Title="tabCompany Field" Url="html/341592378.htm" />
+        <HelpTOCNode Title="tabControl1 Field" Url="html/1473429499.htm" />
+        <HelpTOCNode Title="toolStrip1 Field" Url="html/103139482.htm" />
+        <HelpTOCNode Title="toolStripSeparator Field" Url="html/1094058066.htm" />
+        <HelpTOCNode Title="txtCompanyCode Field" Url="html/1766073690.htm" />
+        <HelpTOCNode Title="txtCompanyDesc Field" Url="html/785684030.htm" />
+        <HelpTOCNode Title="txtCompanyName Field" Url="html/1363944800.htm" />
+        <HelpTOCNode Title="wc Field" Url="html/262279559.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b14ce6a6-db8a-4ee3-a132-e63aea145e8d" Title="FormCompanyDefinition Methods" Url="html/811803569.htm">
+        <HelpTOCNode Title="FormCompanyDefinition_Load Method " Url="html/938794792.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/550385792.htm" />
+        <HelpTOCNode Title="saveToolStripButton_Click Method " Url="html/1789165916.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FormCompanyDefinition Properties" Url="html/1419090903.htm" />
+      <HelpTOCNode Title="FormCompanyDefinition Events" Url="html/95600670.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f2757ec3-5157-4c41-8ac8-f27db96844b8" Title="FormOverview Class" Url="html/1318105229.htm">
+      <HelpTOCNode Title="FormOverview Members" Url="html/530527327.htm" />
+      <HelpTOCNode Title="FormOverview Constructor " Url="html/1280441740.htm" />
+      <HelpTOCNode Id="a9e51ffe-c8c0-470e-bf06-df9a324ffdb8" Title="FormOverview Fields" Url="html/1174502951.htm">
+        <HelpTOCNode Title="allToolStripMenuItem Field" Url="html/1810276976.htm" />
+        <HelpTOCNode Title="allToolStripMenuItem1 Field" Url="html/1376098646.htm" />
+        <HelpTOCNode Title="analyst Field" Url="html/1729592682.htm" />
+        <HelpTOCNode Title="analystAccessLevel Field" Url="html/910667136.htm" />
+        <HelpTOCNode Title="analystList Field" Url="html/1459869111.htm" />
+        <HelpTOCNode Title="btnAddAnalyst Field" Url="html/1475504759.htm" />
+        <HelpTOCNode Title="btnAddEvent Field" Url="html/593877388.htm" />
+        <HelpTOCNode Title="btnRemoveAnalyst Field" Url="html/635258269.htm" />
+        <HelpTOCNode Title="btnReset Field" Url="html/923675051.htm" />
+        <HelpTOCNode Title="btnSearch Field" Url="html/746302158.htm" />
+        <HelpTOCNode Title="btnSearchByAnalyst Field" Url="html/1327782002.htm" />
+        <HelpTOCNode Title="btnSearchByDescription Field" Url="html/1058217711.htm" />
+        <HelpTOCNode Title="btnSearchCategoryClass Field" Url="html/1257194417.htm" />
+        <HelpTOCNode Title="btnSearchStatus Field" Url="html/580330491.htm" />
+        <HelpTOCNode Title="btnUpload Field" Url="html/1190135472.htm" />
+        <HelpTOCNode Title="byDealToolStripMenuItem Field" Url="html/1289018687.htm" />
+        <HelpTOCNode Title="byFilterToolStripMenuItem Field" Url="html/1799155964.htm" />
+        <HelpTOCNode Title="byNameToolStripMenuItem Field" Url="html/2013777668.htm" />
+        <HelpTOCNode Title="cbxCategory Field" Url="html/1217814759.htm" />
+        <HelpTOCNode Title="cbxCompany1 Field" Url="html/727124263.htm" />
+        <HelpTOCNode Title="cbxCurrencyID Field" Url="html/500197770.htm" />
+        <HelpTOCNode Title="cbxEventType Field" Url="html/729570401.htm" />
+        <HelpTOCNode Title="cbxLeadAnalyst Field" Url="html/916656105.htm" />
+        <HelpTOCNode Title="cbxNewAnalyst Field" Url="html/1438896068.htm" />
+        <HelpTOCNode Title="cbxSearchByAnalyst Field" Url="html/1453758019.htm" />
+        <HelpTOCNode Title="cbxSearchByCompany Field" Url="html/895267371.htm" />
+        <HelpTOCNode Title="cbxSearchCategoryClass Field" Url="html/504985428.htm" />
+        <HelpTOCNode Title="cbxSearchStatus Field" Url="html/1557586948.htm" />
+        <HelpTOCNode Title="cbxSecurity1 Field" Url="html/19887385.htm" />
+        <HelpTOCNode Title="cbxStatus Field" Url="html/514366841.htm" />
+        <HelpTOCNode Title="closeToolStripMenuItem Field" Url="html/1713338898.htm" />
+        <HelpTOCNode Title="cmiRemove Field" Url="html/1702890776.htm" />
+        <HelpTOCNode Title="cmsCompany Field" Url="html/913167958.htm" />
+        <HelpTOCNode Title="cmsOverview Field" Url="html/1169067560.htm" />
+        <HelpTOCNode Title="cmsRemove Field" Url="html/1805710442.htm" />
+        <HelpTOCNode Title="cmsSecurity Field" Url="html/423879078.htm" />
+        <HelpTOCNode Title="Code Field" Url="html/424180898.htm" />
+        <HelpTOCNode Title="compList Field" Url="html/1880338900.htm" />
+        <HelpTOCNode Title="components Field" Url="html/1916737135.htm" />
+        <HelpTOCNode Title="Comps Field" Url="html/1307718698.htm" />
+        <HelpTOCNode Title="currentPriceDate Field" Url="html/1405165337.htm" />
+        <HelpTOCNode Title="dataGridView1 Field" Url="html/1164938235.htm" />
+        <HelpTOCNode Title="deal Field" Url="html/448518802.htm" />
+        <HelpTOCNode Title="DealID Field" Url="html/476424849.htm" />
+        <HelpTOCNode Title="dealStatusList Field" Url="html/939161146.htm" />
+        <HelpTOCNode Title="dealsToolStripMenuItem Field" Url="html/1338554939.htm" />
+        <HelpTOCNode Title="dealsToolStripMenuItem1 Field" Url="html/1120963768.htm" />
+        <HelpTOCNode Title="deleteToolStripMenuItem Field" Url="html/1369341657.htm" />
+        <HelpTOCNode Title="dgAnalystPool Field" Url="html/567589606.htm" />
+        <HelpTOCNode Title="dgAnalysts Field" Url="html/1985197224.htm" />
+        <HelpTOCNode Title="dgDocuments Field" Url="html/1097709582.htm" />
+        <HelpTOCNode Title="dgEvents Field" Url="html/1710347763.htm" />
+        <HelpTOCNode Title="dgvMergArb Field" Url="html/621339805.htm" />
+        <HelpTOCNode Title="DownsidePrice Field" Url="html/409803714.htm" />
+        <HelpTOCNode Title="dtpEventDate Field" Url="html/2112231744.htm" />
+        <HelpTOCNode Title="gbNewDocument Field" Url="html/1043776899.htm" />
+        <HelpTOCNode Title="gbNewEvent Field" Url="html/1857840405.htm" />
+        <HelpTOCNode Title="gbOverview Field" Url="html/2021057513.htm" />
+        <HelpTOCNode Title="groupBox4 Field" Url="html/1390212254.htm" />
+        <HelpTOCNode Title="isShown Field" Url="html/225139660.htm" />
+        <HelpTOCNode Title="label1 Field" Url="html/361230785.htm" />
+        <HelpTOCNode Title="label10 Field" Url="html/1861523153.htm" />
+        <HelpTOCNode Title="label11 Field" Url="html/295439212.htm" />
+        <HelpTOCNode Title="label12 Field" Url="html/1270644729.htm" />
+        <HelpTOCNode Title="label13 Field" Url="html/1458238626.htm" />
+        <HelpTOCNode Title="label14 Field" Url="html/107845315.htm" />
+        <HelpTOCNode Title="label15 Field" Url="html/1673929256.htm" />
+        <HelpTOCNode Title="label16 Field" Url="html/1054954099.htm" />
+        <HelpTOCNode Title="label17 Field" Url="html/511129842.htm" />
+        <HelpTOCNode Title="label18 Field" Url="html/2077213783.htm" />
+        <HelpTOCNode Title="label19 Field" Url="html/651669572.htm" />
+        <HelpTOCNode Title="label2 Field" Url="html/361034177.htm" />
+        <HelpTOCNode Title="label20 Field" Url="html/1861326545.htm" />
+        <HelpTOCNode Title="label21 Field" Url="html/295242604.htm" />
+        <HelpTOCNode Title="label22 Field" Url="html/1270841337.htm" />
+        <HelpTOCNode Title="label3 Field" Url="html/361099713.htm" />
+        <HelpTOCNode Title="label33 Field" Url="html/1458107554.htm" />
+        <HelpTOCNode Title="label4 Field" Url="html/360903105.htm" />
+        <HelpTOCNode Title="label5 Field" Url="html/360968641.htm" />
+        <HelpTOCNode Title="label6 Field" Url="html/360772033.htm" />
+        <HelpTOCNode Title="label7 Field" Url="html/360837569.htm" />
+        <HelpTOCNode Title="label8 Field" Url="html/361689537.htm" />
+        <HelpTOCNode Title="label9 Field" Url="html/361755073.htm" />
+        <HelpTOCNode Title="lblAnalyst Field" Url="html/1645159296.htm" />
+        <HelpTOCNode Title="lblCatalyst Field" Url="html/1753241751.htm" />
+        <HelpTOCNode Title="lblCategory Field" Url="html/255295392.htm" />
+        <HelpTOCNode Title="lblCurrency Field" Url="html/740622198.htm" />
+        <HelpTOCNode Title="lblCurrentPrice Field" Url="html/513008292.htm" />
+        <HelpTOCNode Title="lblCurrentPriceSym Field" Url="html/378060279.htm" />
+        <HelpTOCNode Title="lblDealDescr Field" Url="html/1819149023.htm" />
+        <HelpTOCNode Title="lblDownsidePriceSym Field" Url="html/568376598.htm" />
+        <HelpTOCNode Title="lblKeyRisk Field" Url="html/1368465895.htm" />
+        <HelpTOCNode Title="lblLeadAnalyst Field" Url="html/1021982390.htm" />
+        <HelpTOCNode Title="lblStatus Field" Url="html/2046702046.htm" />
+        <HelpTOCNode Title="lblTargetPriceSym Field" Url="html/792960784.htm" />
+        <HelpTOCNode Title="logoutToolStripMenuItem Field" Url="html/1338824241.htm" />
+        <HelpTOCNode Title="mb Field" Url="html/441538614.htm" />
+        <HelpTOCNode Title="menuCompany Field" Url="html/69345732.htm" />
+        <HelpTOCNode Title="menuMain Field" Url="html/429500760.htm" />
+        <HelpTOCNode Title="menuNewDeal Field" Url="html/1251784904.htm" />
+        <HelpTOCNode Title="menuSecurity Field" Url="html/1400519034.htm" />
+        <HelpTOCNode Title="mergerArbToolStripMenuItem Field" Url="html/1722747500.htm" />
+        <HelpTOCNode Title="newDeal Field" Url="html/1023378833.htm" />
+        <HelpTOCNode Title="newToolStripButton Field" Url="html/1029198730.htm" />
+        <HelpTOCNode Title="nmb Field" Url="html/1166424169.htm" />
+        <HelpTOCNode Title="numericFormat Field" Url="html/447143277.htm" />
+        <HelpTOCNode Title="oFDUpload Field" Url="html/1758290695.htm" />
+        <HelpTOCNode Title="openToolStripButton Field" Url="html/1542746733.htm" />
+        <HelpTOCNode Title="quitToolStripMenuItem Field" Url="html/1243529997.htm" />
+        <HelpTOCNode Title="reportsToolStripMenuItem Field" Url="html/482675258.htm" />
+        <HelpTOCNode Title="saveToolStripButton Field" Url="html/1026224512.htm" />
+        <HelpTOCNode Title="searchDealsToolStripMenuItem Field" Url="html/1050214036.htm" />
+        <HelpTOCNode Title="smiAddSecurity Field" Url="html/6903086.htm" />
+        <HelpTOCNode Title="smiEditCompany Field" Url="html/2035514759.htm" />
+        <HelpTOCNode Title="smiEditSecurity Field" Url="html/1394882679.htm" />
+        <HelpTOCNode Title="smiImport Field" Url="html/1623443999.htm" />
+        <HelpTOCNode Title="smiNewCompany Field" Url="html/336708567.htm" />
+        <HelpTOCNode Title="smiRefreshCompany Field" Url="html/1063102623.htm" />
+        <HelpTOCNode Title="smiRefreshOverview Field" Url="html/599930028.htm" />
+        <HelpTOCNode Title="smiRefreshSecurity Field" Url="html/2040910491.htm" />
+        <HelpTOCNode Title="tabCredit Field" Url="html/1858488935.htm" />
+        <HelpTOCNode Title="tabCtrlDeal Field" Url="html/1866490905.htm" />
+        <HelpTOCNode Title="tabCtrlDealDef Field" Url="html/1206334974.htm" />
+        <HelpTOCNode Title="tabDealBasic Field" Url="html/819398717.htm" />
+        <HelpTOCNode Title="tabDealTeam Field" Url="html/941368667.htm" />
+        <HelpTOCNode Title="tabDocuments Field" Url="html/318120061.htm" />
+        <HelpTOCNode Title="tabEvents Field" Url="html/1905272844.htm" />
+        <HelpTOCNode Title="tabMA Field" Url="html/585174810.htm" />
+        <HelpTOCNode Title="tabPage1 Field" Url="html/906325101.htm" />
+        <HelpTOCNode Title="tabSpecSit Field" Url="html/1254151671.htm" />
+        <HelpTOCNode Title="toolStrip1 Field" Url="html/1083510619.htm" />
+        <HelpTOCNode Title="toolStripContainer1 Field" Url="html/1016094066.htm" />
+        <HelpTOCNode Title="toolStripSeparator Field" Url="html/1955625155.htm" />
+        <HelpTOCNode Title="toolTip1 Field" Url="html/348696640.htm" />
+        <HelpTOCNode Title="txtCatalyst Field" Url="html/1328799255.htm" />
+        <HelpTOCNode Title="txtComps Field" Url="html/1319491790.htm" />
+        <HelpTOCNode Title="txtCurrentPrice Field" Url="html/925750625.htm" />
+        <HelpTOCNode Title="txtCurrentValuation Field" Url="html/1164295101.htm" />
+        <HelpTOCNode Title="txtDealDescription Field" Url="html/929679048.htm" />
+        <HelpTOCNode Title="txtDocumentDescription Field" Url="html/314204412.htm" />
+        <HelpTOCNode Title="txtDocumentName Field" Url="html/1589512802.htm" />
+        <HelpTOCNode Title="txtDownsidePrice Field" Url="html/669639406.htm" />
+        <HelpTOCNode Title="txtDownsidePriceValuation Field" Url="html/315928464.htm" />
+        <HelpTOCNode Title="txtEventDescription Field" Url="html/1127618743.htm" />
+        <HelpTOCNode Title="txtEventNote Field" Url="html/1311024206.htm" />
+        <HelpTOCNode Title="txtFileUpload Field" Url="html/1037853965.htm" />
+        <HelpTOCNode Title="txtInvestmentThesis Field" Url="html/751508987.htm" />
+        <HelpTOCNode Title="txtKeyRisk Field" Url="html/1553683337.htm" />
+        <HelpTOCNode Title="txtRecommendation Field" Url="html/907077532.htm" />
+        <HelpTOCNode Title="txtSearchByDescription Field" Url="html/1298020265.htm" />
+        <HelpTOCNode Title="txtTargetPrice Field" Url="html/1455427477.htm" />
+        <HelpTOCNode Title="txtTargetPriceValuation Field" Url="html/1425072689.htm" />
+        <HelpTOCNode Title="txtValuation Field" Url="html/1737728699.htm" />
+        <HelpTOCNode Title="updateToolStripMenuItem Field" Url="html/1715001688.htm" />
+        <HelpTOCNode Title="usr Field" Url="html/455143106.htm" />
+        <HelpTOCNode Title="wc Field" Url="html/441473072.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1fa2ca36-3bad-45cb-939e-229c25ef20f6" Title="FormOverview Methods" Url="html/1307499106.htm">
+        <HelpTOCNode Title="addNewDeal Method " Url="html/317636808.htm" />
+        <HelpTOCNode Title="AddNewDocument Method " Url="html/923473776.htm" />
+        <HelpTOCNode Title="allToolStripMenuItem_Click Method " Url="html/1656585173.htm" />
+        <HelpTOCNode Title="allToolStripMenuItem1_Click Method " Url="html/745362210.htm" />
+        <HelpTOCNode Title="btnAddAnalyst_Click Method " Url="html/1339584538.htm" />
+        <HelpTOCNode Title="btnAddEvent_Click Method " Url="html/1766384835.htm" />
+        <HelpTOCNode Title="btnRemoveAnalyst_Click Method " Url="html/1132122054.htm" />
+        <HelpTOCNode Title="btnReset_Click Method " Url="html/489370750.htm" />
+        <HelpTOCNode Title="btnSearch_Click Method " Url="html/1466324407.htm" />
+        <HelpTOCNode Title="btnSearchByAnalyst_Click Method " Url="html/1818188583.htm" />
+        <HelpTOCNode Title="btnSearchByDescription_Click Method " Url="html/371412068.htm" />
+        <HelpTOCNode Title="btnSearchCategoryClass_Click Method " Url="html/810527092.htm" />
+        <HelpTOCNode Title="btnSearchStatus_Click Method " Url="html/1449958560.htm" />
+        <HelpTOCNode Title="btnUpload_Click Method " Url="html/903210079.htm" />
+        <HelpTOCNode Title="byDealToolStripMenuItem_Click Method " Url="html/174486732.htm" />
+        <HelpTOCNode Title="byFilterToolStripMenuItem_Click Method " Url="html/1539637319.htm" />
+        <HelpTOCNode Title="byNameToolStripMenuItem_Click Method " Url="html/1497387613.htm" />
+        <HelpTOCNode Title="cbxCategory_Click Method " Url="html/1451390955.htm" />
+        <HelpTOCNode Title="cbxCompany1_Click Method " Url="html/85683400.htm" />
+        <HelpTOCNode Title="cbxCurrencyID_Click Method " Url="html/1036337677.htm" />
+        <HelpTOCNode Title="cbxEventType_Click Method " Url="html/1014804080.htm" />
+        <HelpTOCNode Title="cbxLeadAnalyst_Click Method " Url="html/1285923448.htm" />
+        <HelpTOCNode Title="cbxLeadAnalyst_SelectedIndexChanged Method " Url="html/175352153.htm" />
+        <HelpTOCNode Title="cbxSearchByAnalyst_Click Method " Url="html/93607783.htm" />
+        <HelpTOCNode Title="cbxSearchByAnalyst_KeyPress Method " Url="html/1204417721.htm" />
+        <HelpTOCNode Title="cbxSearchByCompany_Click Method " Url="html/540785495.htm" />
+        <HelpTOCNode Title="cbxSearchByCompany_KeyPress Method " Url="html/1224136514.htm" />
+        <HelpTOCNode Title="cbxSearchCategoryClass_Click Method " Url="html/2002012406.htm" />
+        <HelpTOCNode Title="cbxSearchStatus_Click Method " Url="html/1861521528.htm" />
+        <HelpTOCNode Title="cbxSearchStatus_KeyPress Method " Url="html/1212756665.htm" />
+        <HelpTOCNode Title="cbxSecurity1_Click Method " Url="html/616606238.htm" />
+        <HelpTOCNode Title="cbxStatus_Click Method " Url="html/99828606.htm" />
+        <HelpTOCNode Title="clearAllControls Method " Url="html/807971262.htm" />
+        <HelpTOCNode Title="clearAnalysts Method " Url="html/1885752348.htm" />
+        <HelpTOCNode Title="clearDocuments Method " Url="html/766304817.htm" />
+        <HelpTOCNode Title="clearEvents Method " Url="html/2054915704.htm" />
+        <HelpTOCNode Title="clearMergerArbs Method " Url="html/1778670610.htm" />
+        <HelpTOCNode Title="closeToolStripMenuItem_Click Method " Url="html/1987388505.htm" />
+        <HelpTOCNode Title="cmiRemove_Click Method " Url="html/2058580962.htm" />
+        <HelpTOCNode Title="dataGridView1_CellMouseDoubleClick Method " Url="html/445566623.htm" />
+        <HelpTOCNode Title="deleteToolStripMenuItem_Click Method " Url="html/1856477646.htm" />
+        <HelpTOCNode Title="dgAnalystPool_CellMouseDoubleClick Method " Url="html/774431320.htm" />
+        <HelpTOCNode Title="dgDocuments_CellContentClick Method " Url="html/1934355332.htm" />
+        <HelpTOCNode Title="dgEvents_CellDoubleClick Method " Url="html/1979508230.htm" />
+        <HelpTOCNode Title="fillAllBasicInfo Method " Url="html/99300574.htm" />
+        <HelpTOCNode Title="fillAllCompanyControls Method " Url="html/972688111.htm" />
+        <HelpTOCNode Title="fillAllDocumentControls Method " Url="html/1608220725.htm" />
+        <HelpTOCNode Title="fillAllEventControls Method " Url="html/885005782.htm" />
+        <HelpTOCNode Title="fillAllSecurityControls Method " Url="html/1591735155.htm" />
+        <HelpTOCNode Title="fillAnalystControls Method " Url="html/1633633791.htm" />
+        <HelpTOCNode Title="fillCurrencyControls Method " Url="html/935623124.htm" />
+        <HelpTOCNode Title="fillMergerArbInfo Method " Url="html/610531401.htm" />
+        <HelpTOCNode Title="FormOverview_Load Method " Url="html/1325358457.htm" />
+        <HelpTOCNode Title="helpToolStripMenuItem_Click Method " Url="html/2098415522.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/277525768.htm" />
+        <HelpTOCNode Title="LoadDeal Method " Url="html/1068100352.htm" />
+        <HelpTOCNode Title="logoutToolStripMenuItem_Click Method " Url="html/558463259.htm" />
+        <HelpTOCNode Title="menuCompany_Click Method " Url="html/463574716.htm" />
+        <HelpTOCNode Title="menuNewDeal_Click Method " Url="html/1050769597.htm" />
+        <HelpTOCNode Title="menuSecurity_Click Method " Url="html/1394100602.htm" />
+        <HelpTOCNode Title="quitToolStripMenuItem_Click Method " Url="html/589161496.htm" />
+        <HelpTOCNode Title="removeAnalyst Method " Url="html/702968074.htm" />
+        <HelpTOCNode Title="smiAddSecurity_Click Method " Url="html/213495324.htm" />
+        <HelpTOCNode Title="smiEditCompany_Click Method " Url="html/1404864781.htm" />
+        <HelpTOCNode Title="smiEditSecurity_Click Method " Url="html/1987725135.htm" />
+        <HelpTOCNode Title="smiNewCompany_Click Method " Url="html/1642074846.htm" />
+        <HelpTOCNode Title="smiRefreshCompany_Click Method " Url="html/1552393016.htm" />
+        <HelpTOCNode Title="smiRefreshOverview_Click Method " Url="html/2136873199.htm" />
+        <HelpTOCNode Title="smiRefreshSecurity_Click Method " Url="html/450257378.htm" />
+        <HelpTOCNode Title="tabDealTeam_Enter Method " Url="html/1948010002.htm" />
+        <HelpTOCNode Title="txtCurrentPrice_MouseMove Method " Url="html/28504360.htm" />
+        <HelpTOCNode Title="txtEventNote_MouseDoubleClick Method " Url="html/539175490.htm" />
+        <HelpTOCNode Title="txtFileUpload_TextChanged_1 Method " Url="html/806714074.htm" />
+        <HelpTOCNode Title="txtSearchByDescription_KeyPress Method " Url="html/1751717518.htm" />
+        <HelpTOCNode Title="txtSearchCategoryClass_Keypress Method " Url="html/1458133335.htm" />
+        <HelpTOCNode Title="updateExistingDeal Method " Url="html/236228602.htm" />
+        <HelpTOCNode Title="updateToolStripMenuItem_Click Method " Url="html/777352940.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FormOverview Properties" Url="html/1121770693.htm" />
+      <HelpTOCNode Title="FormOverview Events" Url="html/883052120.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="70d72213-1d7d-41ae-8768-dcc53d123a3b" Title="FormSecurityDefinition Class" Url="html/313499494.htm">
+      <HelpTOCNode Title="FormSecurityDefinition Members" Url="html/367953432.htm" />
+      <HelpTOCNode Title="FormSecurityDefinition Constructor " Url="html/1059436036.htm" />
+      <HelpTOCNode Id="365061d7-6a83-4441-8e3e-e6cd1efb193b" Title="FormSecurityDefinition Fields" Url="html/1751456163.htm">
+        <HelpTOCNode Title="cbxCurrencyID Field" Url="html/1252741577.htm" />
+        <HelpTOCNode Title="cbxSecurityTypeID Field" Url="html/1018760505.htm" />
+        <HelpTOCNode Title="components Field" Url="html/47985294.htm" />
+        <HelpTOCNode Title="currentSecurity Field" Url="html/113393823.htm" />
+        <HelpTOCNode Title="label1 Field" Url="html/1389149378.htm" />
+        <HelpTOCNode Title="label2 Field" Url="html/949502782.htm" />
+        <HelpTOCNode Title="label3 Field" Url="html/1006812354.htm" />
+        <HelpTOCNode Title="label4 Field" Url="html/1331839806.htm" />
+        <HelpTOCNode Title="lblCurrencyID Field" Url="html/1968799412.htm" />
+        <HelpTOCNode Title="lblCusipValue Field" Url="html/795718589.htm" />
+        <HelpTOCNode Title="lblIsinValue Field" Url="html/32082863.htm" />
+        <HelpTOCNode Title="lblSecCode Field" Url="html/1930622145.htm" />
+        <HelpTOCNode Title="lblSecDescr Field" Url="html/2127226726.htm" />
+        <HelpTOCNode Title="lblSecName Field" Url="html/441375495.htm" />
+        <HelpTOCNode Title="lblSecTypeDescr Field" Url="html/2064419639.htm" />
+        <HelpTOCNode Title="lblSecTypeName Field" Url="html/1341662956.htm" />
+        <HelpTOCNode Title="lblSecurityType Field" Url="html/2067237589.htm" />
+        <HelpTOCNode Title="lblSedolValue Field" Url="html/951763285.htm" />
+        <HelpTOCNode Title="lblTickerValue Field" Url="html/790780204.htm" />
+        <HelpTOCNode Title="saveToolStripButton Field" Url="html/2102039414.htm" />
+        <HelpTOCNode Title="tabCtrlDeal Field" Url="html/509701075.htm" />
+        <HelpTOCNode Title="tabCtrlSecurityDef Field" Url="html/502918826.htm" />
+        <HelpTOCNode Title="tabSecurityBasic Field" Url="html/1481945718.htm" />
+        <HelpTOCNode Title="tabSecurityDef Field" Url="html/1914698062.htm" />
+        <HelpTOCNode Title="toolStrip1 Field" Url="html/1975393394.htm" />
+        <HelpTOCNode Title="toolStripContainer1 Field" Url="html/1313280360.htm" />
+        <HelpTOCNode Title="toolStripSeparator Field" Url="html/1367681580.htm" />
+        <HelpTOCNode Title="txtSecCode Field" Url="html/625724474.htm" />
+        <HelpTOCNode Title="txtSecDescription Field" Url="html/1056478690.htm" />
+        <HelpTOCNode Title="txtSecName Field" Url="html/1747583892.htm" />
+        <HelpTOCNode Title="wc Field" Url="html/630433011.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f9e26329-8a1d-4e4a-b1e7-fceffd750e42" Title="FormSecurityDefinition Methods" Url="html/1699159468.htm">
+        <HelpTOCNode Title="cbxCurrencyID_SelectedIndexChanged Method " Url="html/1206190070.htm" />
+        <HelpTOCNode Title="cbxSecurityGroupID_SelectedIndexChanged Method " Url="html/1821543326.htm" />
+        <HelpTOCNode Title="FormSecurityDefinition_Load Method " Url="html/444790802.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/1338011073.htm" />
+        <HelpTOCNode Title="saveToolStripButton_Click Method " Url="html/1764815098.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FormSecurityDefinition Properties" Url="html/2126021739.htm" />
+      <HelpTOCNode Title="FormSecurityDefinition Events" Url="html/219745214.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="deaf3993-9835-4d96-b9f7-896b8cf5bcf5" Title="ListItem Class" Url="html/1720605044.htm">
+      <HelpTOCNode Title="ListItem Members" Url="html/826400994.htm" />
+      <HelpTOCNode Id="ffc03a50-7698-4595-9d03-8c7b1f61e408" Title="ListItem Methods" Url="html/219600048.htm">
+        <HelpTOCNode Title="loadAnalystList Method " Url="html/280400285.htm" />
+        <HelpTOCNode Title="loadCategoryList Method " Url="html/2021126338.htm" />
+        <HelpTOCNode Title="loadCCYList Method " Url="html/467188383.htm" />
+        <HelpTOCNode Title="loadClassList Method " Url="html/2053184603.htm" />
+        <HelpTOCNode Title="loadCompanyList Method " Url="html/1551057634.htm" />
+        <HelpTOCNode Title="loadDealStatusList Method " Url="html/1660457624.htm" />
+        <HelpTOCNode Title="loadEventTypes Method " Url="html/650929147.htm" />
+        <HelpTOCNode Id="f1765ded-a620-4126-9648-63932b3b599e" Title="loadListItems Method " Url="html/267464531.htm">
+          <HelpTOCNode Title="loadListItems Method (ComboBox, List(ListItem))" Url="html/1684628090.htm" />
+          <HelpTOCNode Title="loadListItems Method (DataGridView, List(ListItem))" Url="html/2050744072.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="loadSecurityList Method " Url="html/231110620.htm" />
+        <HelpTOCNode Title="loadTypeList Method " Url="html/1942230558.htm" />
+        <HelpTOCNode Title="ToString Method " Url="html/1842871797.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cb822a61-56c9-425c-bc1f-92c41e705ae7" Title="ListItem Properties" Url="html/1220790995.htm">
+        <HelpTOCNode Title="Text Property " Url="html/1395026258.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/1199163672.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6e53d782-26dc-4ce5-a094-4919e3047428" Title="Login Class" Url="html/2127535601.htm">
+      <HelpTOCNode Title="Login Members" Url="html/1362758468.htm" />
+      <HelpTOCNode Title="Login Constructor " Url="html/1190877898.htm" />
+      <HelpTOCNode Id="b1f7d2a6-68f3-4104-a59c-8725af732b92" Title="Login Fields" Url="html/188423874.htm">
+        <HelpTOCNode Title="a Field" Url="html/996947057.htm" />
+        <HelpTOCNode Title="btnSubmit Field" Url="html/1929274095.htm" />
+        <HelpTOCNode Title="components Field" Url="html/1682053883.htm" />
+        <HelpTOCNode Title="label1 Field" Url="html/1006334534.htm" />
+        <HelpTOCNode Title="label2 Field" Url="html/603050007.htm" />
+        <HelpTOCNode Title="lblVersion Field" Url="html/634445131.htm" />
+        <HelpTOCNode Title="pictureBox1 Field" Url="html/860424175.htm" />
+        <HelpTOCNode Title="txtLogin Field" Url="html/1275190571.htm" />
+        <HelpTOCNode Title="txtPassword Field" Url="html/724875847.htm" />
+        <HelpTOCNode Title="wc Field" Url="html/1990025381.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="64a17b6e-0c5e-4316-ba08-81ba06935120" Title="Login Methods" Url="html/329905779.htm">
+        <HelpTOCNode Title="btnSubmit_Click Method " Url="html/1318367099.htm" />
+        <HelpTOCNode Title="InitializeComponent Method " Url="html/414647102.htm" />
+        <HelpTOCNode Title="Login_Load Method " Url="html/435447260.htm" />
+        <HelpTOCNode Title="o_FormClosing Method " Url="html/545724608.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Login Properties" Url="html/1051160080.htm" />
+      <HelpTOCNode Title="Login Events" Url="html/1632960132.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="6ae29125-8560-470b-a736-6e2235693ba7" Title="CortexClient.ServiceReference1 Namespace" Url="html/503538283.htm">
+    <HelpTOCNode Id="4c267aab-d86d-462a-bc97-c7b1bb8bf0e5" Title="Analyst Class" Url="html/1302629753.htm">
+      <HelpTOCNode Title="Analyst Members" Url="html/451107649.htm" />
+      <HelpTOCNode Id="bbf54996-9ca2-4660-851d-85e34852354c" Title="Analyst Fields" Url="html/1958113041.htm">
+        <HelpTOCNode Title="AnalystIDField Field" Url="html/1166000972.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1872888921.htm" />
+        <HelpTOCNode Title="LoginField Field" Url="html/2050557785.htm" />
+        <HelpTOCNode Title="MapDealAnalystsField Field" Url="html/289840457.htm" />
+        <HelpTOCNode Title="PasswordField Field" Url="html/1878497860.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Analyst Methods" Url="html/584532124.htm" />
+      <HelpTOCNode Id="41a08000-bd8b-45c3-8890-857685c5581f" Title="Analyst Properties" Url="html/1735411755.htm">
+        <HelpTOCNode Title="AnalystID Property " Url="html/941146946.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/972111640.htm" />
+        <HelpTOCNode Title="Login Property " Url="html/1507144140.htm" />
+        <HelpTOCNode Title="MapDealAnalysts Property " Url="html/1175905573.htm" />
+        <HelpTOCNode Title="Password Property " Url="html/1635876991.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1c7937d5-9f13-42ca-b130-18717c4aa7df" Title="Analyst Events" Url="html/1947369149.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/962100716.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ad07ae05-1d2c-4623-9074-ad5f37897d0d" Title="AnnualCompanyStatistic Class" Url="html/498687601.htm">
+      <HelpTOCNode Title="AnnualCompanyStatistic Members" Url="html/1555666379.htm" />
+      <HelpTOCNode Id="be1bfd96-69ee-4cdd-a1a6-ec3d9d88e828" Title="AnnualCompanyStatistic Fields" Url="html/1304091063.htm">
+        <HelpTOCNode Title="AnnualCompanyStatisticIDField Field" Url="html/1254649008.htm" />
+        <HelpTOCNode Title="CompanyIDField Field" Url="html/779943338.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1457310418.htm" />
+        <HelpTOCNode Title="SourceField Field" Url="html/272296029.htm" />
+        <HelpTOCNode Title="StatisticTypeField Field" Url="html/1312845903.htm" />
+        <HelpTOCNode Title="StatisticTypeIDField Field" Url="html/1682779391.htm" />
+        <HelpTOCNode Title="ValueField Field" Url="html/815265317.htm" />
+        <HelpTOCNode Title="YearField Field" Url="html/1024892962.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AnnualCompanyStatistic Methods" Url="html/1785734195.htm" />
+      <HelpTOCNode Id="821dea57-861c-4e4c-b101-0b20ae5f4319" Title="AnnualCompanyStatistic Properties" Url="html/1540734246.htm">
+        <HelpTOCNode Title="AnnualCompanyStatisticID Property " Url="html/572019413.htm" />
+        <HelpTOCNode Title="CompanyID Property " Url="html/34061747.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/133365894.htm" />
+        <HelpTOCNode Title="Source Property " Url="html/1367085495.htm" />
+        <HelpTOCNode Title="StatisticType Property " Url="html/1854231538.htm" />
+        <HelpTOCNode Title="StatisticTypeID Property " Url="html/1723238514.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/2083219409.htm" />
+        <HelpTOCNode Title="Year Property " Url="html/712704849.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6e49847b-9b24-4f6d-8e36-c79ff32de2fc" Title="AnnualCompanyStatistic Events" Url="html/1009319971.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/1451112643.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e47104ac-cf04-4a8a-b833-f47bff92e593" Title="ApplicationUser Class" Url="html/1417659730.htm">
+      <HelpTOCNode Title="ApplicationUser Members" Url="html/981140874.htm" />
+      <HelpTOCNode Id="69ed2e26-1e32-4610-9c4d-bfb935936a33" Title="ApplicationUser Fields" Url="html/1307220044.htm">
+        <HelpTOCNode Title="ActionsField Field" Url="html/150758710.htm" />
+        <HelpTOCNode Title="CreatedByIdField Field" Url="html/415183915.htm" />
+        <HelpTOCNode Title="CreatedDateTimeField Field" Url="html/582150577.htm" />
+        <HelpTOCNode Title="DomainCredentialField Field" Url="html/824598323.htm" />
+        <HelpTOCNode Title="EditedByIdField Field" Url="html/1927839757.htm" />
+        <HelpTOCNode Title="EditedDateTimeField Field" Url="html/1316958417.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1452937370.htm" />
+        <HelpTOCNode Title="IdField Field" Url="html/1239253015.htm" />
+        <HelpTOCNode Title="IsDeletedField Field" Url="html/652105935.htm" />
+        <HelpTOCNode Title="LastAccessDateTimeField Field" Url="html/494884523.htm" />
+        <HelpTOCNode Title="MachineAddressField Field" Url="html/97060785.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/242706223.htm" />
+        <HelpTOCNode Title="VersionField Field" Url="html/442830007.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ApplicationUser Methods" Url="html/968364462.htm" />
+      <HelpTOCNode Id="18f9f901-3c9c-496d-8452-b25d603f9513" Title="ApplicationUser Properties" Url="html/2058104184.htm">
+        <HelpTOCNode Title="Actions Property " Url="html/1364029061.htm" />
+        <HelpTOCNode Title="CreatedById Property " Url="html/1944897377.htm" />
+        <HelpTOCNode Title="CreatedDateTime Property " Url="html/206442034.htm" />
+        <HelpTOCNode Title="DomainCredential Property " Url="html/1520814403.htm" />
+        <HelpTOCNode Title="EditedById Property " Url="html/1241686683.htm" />
+        <HelpTOCNode Title="EditedDateTime Property " Url="html/1159375417.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/81730926.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/216332250.htm" />
+        <HelpTOCNode Title="IsDeleted Property " Url="html/1402488943.htm" />
+        <HelpTOCNode Title="LastAccessDateTime Property " Url="html/996768802.htm" />
+        <HelpTOCNode Title="MachineAddress Property " Url="html/826135065.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1231819450.htm" />
+        <HelpTOCNode Title="Version Property " Url="html/635704822.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="24904598-f0ea-4fc7-9f27-6844de226394" Title="ApplicationUser Events" Url="html/1199921545.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/943514447.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5672082a-b1cb-40b1-a899-d48dab28f128" Title="Category Class" Url="html/285594286.htm">
+      <HelpTOCNode Title="Category Members" Url="html/567175142.htm" />
+      <HelpTOCNode Id="3005b72e-02f7-4ea8-86eb-47cb8f8bfddb" Title="Category Fields" Url="html/571830360.htm">
+        <HelpTOCNode Title="CategoryIDField Field" Url="html/1911319993.htm" />
+        <HelpTOCNode Title="ClassField Field" Url="html/1011415590.htm" />
+        <HelpTOCNode Title="DealsField Field" Url="html/1630918253.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1443313976.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/457140152.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Category Methods" Url="html/1105261562.htm" />
+      <HelpTOCNode Id="7f3ed583-ff69-4ef0-a4a6-eb439531e445" Title="Category Properties" Url="html/775349046.htm">
+        <HelpTOCNode Title="CategoryID Property " Url="html/1871679238.htm" />
+        <HelpTOCNode Title="Class Property " Url="html/1291540252.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/1643167957.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/2012200600.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1383234493.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a83c643d-44c8-4b81-ad8e-d14ba6a001b5" Title="Category Events" Url="html/292039334.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/985107016.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0533286f-daf1-4144-9999-fd555e59dd3a" Title="Company Class" Url="html/1556906335.htm">
+      <HelpTOCNode Title="Company Members" Url="html/754327464.htm" />
+      <HelpTOCNode Id="3bd1192b-7c07-498f-82ac-35e9101496df" Title="Company Fields" Url="html/1950108124.htm">
+        <HelpTOCNode Title="CodeField Field" Url="html/994802852.htm" />
+        <HelpTOCNode Title="CompanyAssociations1Field Field" Url="html/1959752733.htm" />
+        <HelpTOCNode Title="CompanyAssociationsField Field" Url="html/857369768.htm" />
+        <HelpTOCNode Title="CompanyIDField Field" Url="html/1485898578.htm" />
+        <HelpTOCNode Title="Deals1Field Field" Url="html/470715549.htm" />
+        <HelpTOCNode Title="Deals2Field Field" Url="html/174488028.htm" />
+        <HelpTOCNode Title="DealsField Field" Url="html/797964076.htm" />
+        <HelpTOCNode Title="DescriptionField Field" Url="html/501015906.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/294207912.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/966122010.htm" />
+        <HelpTOCNode Title="SecurityField Field" Url="html/557617186.htm" />
+        <HelpTOCNode Title="SecurityIDField Field" Url="html/1658465536.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Company Methods" Url="html/1857426180.htm" />
+      <HelpTOCNode Id="2388d324-b489-40a1-9c60-5be80b8e9402" Title="Company Properties" Url="html/799593612.htm">
+        <HelpTOCNode Title="Code Property " Url="html/806206137.htm" />
+        <HelpTOCNode Title="CompanyAssociations Property " Url="html/2023925488.htm" />
+        <HelpTOCNode Title="CompanyAssociations1 Property " Url="html/977967605.htm" />
+        <HelpTOCNode Title="CompanyID Property " Url="html/1781987052.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/1574401634.htm" />
+        <HelpTOCNode Title="Deals1 Property " Url="html/1759739200.htm" />
+        <HelpTOCNode Title="Deals2 Property " Url="html/1356454673.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/199692210.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/909621064.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1518248943.htm" />
+        <HelpTOCNode Title="Security Property " Url="html/223073166.htm" />
+        <HelpTOCNode Title="SecurityID Property " Url="html/1229341895.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="921c03ea-e964-4b24-a929-a6cfce3d693c" Title="Company Events" Url="html/537388246.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/764570587.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="31445ffa-dff9-4e70-8c9c-fd00acfecd38" Title="CompanyAssociation Class" Url="html/679708440.htm">
+      <HelpTOCNode Title="CompanyAssociation Members" Url="html/1549694846.htm" />
+      <HelpTOCNode Id="07956df9-bad4-47bb-9a13-f54948fc57aa" Title="CompanyAssociation Fields" Url="html/1478803763.htm">
+        <HelpTOCNode Title="AssociationTypeField Field" Url="html/1667218016.htm" />
+        <HelpTOCNode Title="Company1Field Field" Url="html/1746972165.htm" />
+        <HelpTOCNode Title="Company1IDField Field" Url="html/2098642368.htm" />
+        <HelpTOCNode Title="Company2IDField Field" Url="html/2114863680.htm" />
+        <HelpTOCNode Title="CompanyAssociationIDField Field" Url="html/111121547.htm" />
+        <HelpTOCNode Title="CompanyField Field" Url="html/1558788156.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/418371937.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CompanyAssociation Methods" Url="html/1465373672.htm" />
+      <HelpTOCNode Id="3ee454f1-9c2a-438f-aea0-ab9eadb95562" Title="CompanyAssociation Properties" Url="html/1968798649.htm">
+        <HelpTOCNode Title="AssociationType Property " Url="html/1027492717.htm" />
+        <HelpTOCNode Title="Company Property " Url="html/318004462.htm" />
+        <HelpTOCNode Title="Company1 Property " Url="html/2070502638.htm" />
+        <HelpTOCNode Title="Company1ID Property " Url="html/2019000343.htm" />
+        <HelpTOCNode Title="Company2ID Property " Url="html/445022231.htm" />
+        <HelpTOCNode Title="CompanyAssociationID Property " Url="html/1871389133.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/244766801.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b593884d-71f3-4042-801f-c2b44f299f18" Title="CompanyAssociation Events" Url="html/128317773.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/566674819.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b9ecd841-6649-496d-abed-38c26729757f" Title="CortexWCFService Interface" Url="html/360947172.htm">
+      <HelpTOCNode Title="CortexWCFService Members" Url="html/1012466640.htm" />
+      <HelpTOCNode Id="d0d02f0b-239f-49b8-8a5d-e6d679ca588a" Title="CortexWCFService Methods" Url="html/1159643157.htm">
+        <HelpTOCNode Title="addAnnualCompanyStatistic Method " Url="html/584983807.htm" />
+        <HelpTOCNode Title="addCompany Method " Url="html/1454777209.htm" />
+        <HelpTOCNode Title="addCompanyAssociation Method " Url="html/1271313640.htm" />
+        <HelpTOCNode Title="addCurrency Method " Url="html/1360965160.htm" />
+        <HelpTOCNode Title="addDeal Method " Url="html/427905674.htm" />
+        <HelpTOCNode Title="addDealType Method " Url="html/558591918.htm" />
+        <HelpTOCNode Title="addDocument Method " Url="html/1884419025.htm" />
+        <HelpTOCNode Title="addDocumentGroup Method " Url="html/550195668.htm" />
+        <HelpTOCNode Title="addEvent Method " Url="html/1649647299.htm" />
+        <HelpTOCNode Title="addEventType Method " Url="html/2045356470.htm" />
+        <HelpTOCNode Title="addMapDealAnalyst Method " Url="html/300171011.htm" />
+        <HelpTOCNode Title="addMergerArb Method " Url="html/525102766.htm" />
+        <HelpTOCNode Title="addMergerArbNew Method " Url="html/1389076918.htm" />
+        <HelpTOCNode Title="addPrice Method " Url="html/665519504.htm" />
+        <HelpTOCNode Title="addSecurity Method " Url="html/207578804.htm" />
+        <HelpTOCNode Title="addSecurityGroup Method " Url="html/1862181969.htm" />
+        <HelpTOCNode Title="addSecurityType Method " Url="html/644314366.htm" />
+        <HelpTOCNode Title="addStatisticType Method " Url="html/1704906316.htm" />
+        <HelpTOCNode Title="AuditTrailAdd Method " Url="html/1571257789.htm" />
+        <HelpTOCNode Title="AuditTrailDelete Method " Url="html/528663341.htm" />
+        <HelpTOCNode Title="AuditTrailLogin Method " Url="html/991318682.htm" />
+        <HelpTOCNode Title="AuditTrailLogout Method " Url="html/1863429984.htm" />
+        <HelpTOCNode Title="AuditTrailUpdate Method " Url="html/2088058681.htm" />
+        <HelpTOCNode Title="AuditTrailView Method " Url="html/1690026294.htm" />
+        <HelpTOCNode Title="getAnalyst Method " Url="html/2954399.htm" />
+        <HelpTOCNode Title="getAnalystByName Method " Url="html/514746840.htm" />
+        <HelpTOCNode Title="getAnalysts Method " Url="html/371262470.htm" />
+        <HelpTOCNode Title="getAnnualCompanyStatistic Method " Url="html/839840542.htm" />
+        <HelpTOCNode Title="getCategories Method " Url="html/1464452258.htm" />
+        <HelpTOCNode Title="getCategoriesByClass Method " Url="html/1005441836.htm" />
+        <HelpTOCNode Title="getCategoriesByName Method " Url="html/220720127.htm" />
+        <HelpTOCNode Title="getCategory Method " Url="html/290760420.htm" />
+        <HelpTOCNode Title="getCategoryClasses Method " Url="html/825659923.htm" />
+        <HelpTOCNode Title="getCompanies Method " Url="html/413398886.htm" />
+        <HelpTOCNode Title="getCompany Method " Url="html/335651431.htm" />
+        <HelpTOCNode Title="getCompanyAssociation Method " Url="html/1094551114.htm" />
+        <HelpTOCNode Title="getCompanyByName Method " Url="html/1172870822.htm" />
+        <HelpTOCNode Title="getCurrencies Method " Url="html/1693715598.htm" />
+        <HelpTOCNode Title="getCurrency Method " Url="html/1254524612.htm" />
+        <HelpTOCNode Title="getCurrencyByCodeOrName Method " Url="html/865453588.htm" />
+        <HelpTOCNode Title="GetCurrentDate Method " Url="html/326552298.htm" />
+        <HelpTOCNode Title="getDeal Method " Url="html/286717719.htm" />
+        <HelpTOCNode Title="getDealByAnalyst Method " Url="html/1495648187.htm" />
+        <HelpTOCNode Title="getDealByCompany Method " Url="html/834315617.htm" />
+        <HelpTOCNode Title="getDealByDate Method " Url="html/1791528997.htm" />
+        <HelpTOCNode Title="getDealByStatus Method " Url="html/1107086049.htm" />
+        <HelpTOCNode Title="getDealList Method " Url="html/650101128.htm" />
+        <HelpTOCNode Title="getDeals Method " Url="html/1848382227.htm" />
+        <HelpTOCNode Title="getDealsByCategory Method " Url="html/1897030878.htm" />
+        <HelpTOCNode Title="getDealsByCategoryClass Method " Url="html/1831812471.htm" />
+        <HelpTOCNode Title="getDealsByCriteria Method " Url="html/1117048890.htm" />
+        <HelpTOCNode Title="getDealsByDescription Method " Url="html/1743386856.htm" />
+        <HelpTOCNode Title="getDealStatus Method " Url="html/102042641.htm" />
+        <HelpTOCNode Title="getDealStatusByName Method " Url="html/319501854.htm" />
+        <HelpTOCNode Title="getDealStatuses Method " Url="html/1306068701.htm" />
+        <HelpTOCNode Title="getDealTeam Method " Url="html/1064281523.htm" />
+        <HelpTOCNode Title="getDealType Method " Url="html/931044721.htm" />
+        <HelpTOCNode Title="getDocument Method " Url="html/515132265.htm" />
+        <HelpTOCNode Title="getDocumentByName Method " Url="html/1794793263.htm" />
+        <HelpTOCNode Title="getDocumentGroup Method " Url="html/9059490.htm" />
+        <HelpTOCNode Title="getDocumentsByDeal Method " Url="html/682130983.htm" />
+        <HelpTOCNode Title="getEvent Method " Url="html/827276093.htm" />
+        <HelpTOCNode Title="getEventsByDeal Method " Url="html/1493222370.htm" />
+        <HelpTOCNode Title="getEventType Method " Url="html/401901185.htm" />
+        <HelpTOCNode Title="getEventTypes Method " Url="html/708342076.htm" />
+        <HelpTOCNode Title="getLastCompany Method " Url="html/755922287.htm" />
+        <HelpTOCNode Title="getLastCompanyAssociation Method " Url="html/1873197852.htm" />
+        <HelpTOCNode Title="getLastDeal Method " Url="html/68523728.htm" />
+        <HelpTOCNode Title="getLastDocument Method " Url="html/1267903819.htm" />
+        <HelpTOCNode Title="getLastDocumentGroup Method " Url="html/18290743.htm" />
+        <HelpTOCNode Title="getLastEvent Method " Url="html/409830061.htm" />
+        <HelpTOCNode Title="getLastSecurity Method " Url="html/2078157997.htm" />
+        <HelpTOCNode Title="getLastSecurityGroup Method " Url="html/126157873.htm" />
+        <HelpTOCNode Title="getMapDealAnalyst Method " Url="html/2090291145.htm" />
+        <HelpTOCNode Title="getMergerArb Method " Url="html/515143960.htm" />
+        <HelpTOCNode Title="getMergerArbByDealId Method " Url="html/537740443.htm" />
+        <HelpTOCNode Title="getMergerArbNewByDealId Method " Url="html/306615501.htm" />
+        <HelpTOCNode Title="getMergerArbNewByValue Method " Url="html/946963302.htm" />
+        <HelpTOCNode Title="getPrice Method " Url="html/158889759.htm" />
+        <HelpTOCNode Title="getSecurities Method " Url="html/1963247096.htm" />
+        <HelpTOCNode Title="getSecurity Method " Url="html/1602770577.htm" />
+        <HelpTOCNode Title="getSecurityByCode Method " Url="html/1137355379.htm" />
+        <HelpTOCNode Title="getSecurityGroup Method " Url="html/1818989892.htm" />
+        <HelpTOCNode Title="getSecurityGroupBySecurity1 Method " Url="html/452004920.htm" />
+        <HelpTOCNode Title="getSecurityType Method " Url="html/167871110.htm" />
+        <HelpTOCNode Title="getSecurityTypes Method " Url="html/1769114189.htm" />
+        <HelpTOCNode Title="getStatisticType Method " Url="html/2113258184.htm" />
+        <HelpTOCNode Title="removeCompany Method " Url="html/1848986101.htm" />
+        <HelpTOCNode Title="removeCompanyAssociation Method " Url="html/694510483.htm" />
+        <HelpTOCNode Title="removeDeal Method " Url="html/1048153116.htm" />
+        <HelpTOCNode Title="removeDealByDescription Method " Url="html/867378356.htm" />
+        <HelpTOCNode Title="removeDealById Method " Url="html/1380952495.htm" />
+        <HelpTOCNode Title="removeDocument Method " Url="html/860326926.htm" />
+        <HelpTOCNode Title="removeEvent Method " Url="html/898972069.htm" />
+        <HelpTOCNode Title="removeMapDealAnalyst Method " Url="html/877623131.htm" />
+        <HelpTOCNode Title="removeSecurity Method " Url="html/24172193.htm" />
+        <HelpTOCNode Title="updateCompany Method " Url="html/653268868.htm" />
+        <HelpTOCNode Title="updateCompanyAssociation Method " Url="html/409230849.htm" />
+        <HelpTOCNode Title="updateDeal Method " Url="html/1884491861.htm" />
+        <HelpTOCNode Title="updateDocument Method " Url="html/1001013464.htm" />
+        <HelpTOCNode Title="updateDocumentGroup Method " Url="html/1767674870.htm" />
+        <HelpTOCNode Title="updateMapDealAnalyst Method " Url="html/1162467884.htm" />
+        <HelpTOCNode Title="updateMergerArb Method " Url="html/481262548.htm" />
+        <HelpTOCNode Title="updateMergerArbNew Method " Url="html/1755518027.htm" />
+        <HelpTOCNode Title="updateSecurity Method " Url="html/1782030877.htm" />
+        <HelpTOCNode Title="updateSecurityGroup Method " Url="html/477104835.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d6b0f7f6-1427-4101-bf02-83bed6e78561" Title="CortexWCFServiceChannel Interface" Url="html/425706053.htm">
+      <HelpTOCNode Title="CortexWCFServiceChannel Methods" Url="html/568655447.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="38a054f9-deeb-447a-a41b-2fbd87cfa88b" Title="CortexWCFServiceClient Class" Url="html/1156449651.htm">
+      <HelpTOCNode Title="CortexWCFServiceClient Members" Url="html/618513509.htm" />
+      <HelpTOCNode Id="b28f8597-25d7-49d1-babc-20023dc32cad" Title="CortexWCFServiceClient Constructor " Url="html/1177904965.htm">
+        <HelpTOCNode Title="CortexWCFServiceClient Constructor " Url="html/864861787.htm" />
+        <HelpTOCNode Title="CortexWCFServiceClient Constructor (String)" Url="html/1931680051.htm" />
+        <HelpTOCNode Title="CortexWCFServiceClient Constructor (String, String)" Url="html/774890554.htm" />
+        <HelpTOCNode Title="CortexWCFServiceClient Constructor (String, EndpointAddress)" Url="html/489320655.htm" />
+        <HelpTOCNode Title="CortexWCFServiceClient Constructor (Binding, EndpointAddress)" Url="html/1308769245.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="94795c56-6c0e-49e4-8064-4c1671048a69" Title="CortexWCFServiceClient Methods" Url="html/302119739.htm">
+        <HelpTOCNode Title="addAnnualCompanyStatistic Method " Url="html/841589426.htm" />
+        <HelpTOCNode Title="addCompany Method " Url="html/1867772653.htm" />
+        <HelpTOCNode Title="addCompanyAssociation Method " Url="html/1086981498.htm" />
+        <HelpTOCNode Title="addCurrency Method " Url="html/438461200.htm" />
+        <HelpTOCNode Title="addDeal Method " Url="html/296977815.htm" />
+        <HelpTOCNode Title="addDealType Method " Url="html/572506110.htm" />
+        <HelpTOCNode Title="addDocument Method " Url="html/360591849.htm" />
+        <HelpTOCNode Title="addDocumentGroup Method " Url="html/2079022693.htm" />
+        <HelpTOCNode Title="addEvent Method " Url="html/98568299.htm" />
+        <HelpTOCNode Title="addEventType Method " Url="html/1953514665.htm" />
+        <HelpTOCNode Title="addMapDealAnalyst Method " Url="html/1599884001.htm" />
+        <HelpTOCNode Title="addMergerArb Method " Url="html/1267946522.htm" />
+        <HelpTOCNode Title="addMergerArbNew Method " Url="html/1121951370.htm" />
+        <HelpTOCNode Title="addPrice Method " Url="html/1690462623.htm" />
+        <HelpTOCNode Title="addSecurity Method " Url="html/1204879271.htm" />
+        <HelpTOCNode Title="addSecurityGroup Method " Url="html/1094512511.htm" />
+        <HelpTOCNode Title="addSecurityType Method " Url="html/112077843.htm" />
+        <HelpTOCNode Title="addStatisticType Method " Url="html/55697556.htm" />
+        <HelpTOCNode Title="AuditTrailAdd Method " Url="html/1380702580.htm" />
+        <HelpTOCNode Title="AuditTrailDelete Method " Url="html/1784333755.htm" />
+        <HelpTOCNode Title="AuditTrailLogin Method " Url="html/913872475.htm" />
+        <HelpTOCNode Title="AuditTrailLogout Method " Url="html/485730321.htm" />
+        <HelpTOCNode Title="AuditTrailUpdate Method " Url="html/1368555839.htm" />
+        <HelpTOCNode Title="AuditTrailView Method " Url="html/387078519.htm" />
+        <HelpTOCNode Title="getAnalyst Method " Url="html/515374699.htm" />
+        <HelpTOCNode Title="getAnalystByName Method " Url="html/1816138742.htm" />
+        <HelpTOCNode Title="getAnalysts Method " Url="html/791018261.htm" />
+        <HelpTOCNode Title="getAnnualCompanyStatistic Method " Url="html/96788788.htm" />
+        <HelpTOCNode Title="getCategories Method " Url="html/1530318781.htm" />
+        <HelpTOCNode Title="getCategoriesByClass Method " Url="html/534496071.htm" />
+        <HelpTOCNode Title="getCategoriesByName Method " Url="html/1099826784.htm" />
+        <HelpTOCNode Title="getCategory Method " Url="html/667528281.htm" />
+        <HelpTOCNode Title="getCategoryClasses Method " Url="html/2016069819.htm" />
+        <HelpTOCNode Title="getCompanies Method " Url="html/1586318144.htm" />
+        <HelpTOCNode Title="getCompany Method " Url="html/1482321479.htm" />
+        <HelpTOCNode Title="getCompanyAssociation Method " Url="html/1682638862.htm" />
+        <HelpTOCNode Title="getCompanyByName Method " Url="html/1209128417.htm" />
+        <HelpTOCNode Title="getCurrencies Method " Url="html/326018571.htm" />
+        <HelpTOCNode Title="getCurrency Method " Url="html/101297253.htm" />
+        <HelpTOCNode Title="getCurrencyByCodeOrName Method " Url="html/24035386.htm" />
+        <HelpTOCNode Title="GetCurrentDate Method " Url="html/640293665.htm" />
+        <HelpTOCNode Title="getDeal Method " Url="html/784396439.htm" />
+        <HelpTOCNode Title="getDealByAnalyst Method " Url="html/147993624.htm" />
+        <HelpTOCNode Title="getDealByCompany Method " Url="html/242424775.htm" />
+        <HelpTOCNode Title="getDealByDate Method " Url="html/662679891.htm" />
+        <HelpTOCNode Title="getDealByStatus Method " Url="html/1123143169.htm" />
+        <HelpTOCNode Title="getDealList Method " Url="html/1398435819.htm" />
+        <HelpTOCNode Title="getDeals Method " Url="html/1745425157.htm" />
+        <HelpTOCNode Title="getDealsByCategory Method " Url="html/305158552.htm" />
+        <HelpTOCNode Title="getDealsByCategoryClass Method " Url="html/364770976.htm" />
+        <HelpTOCNode Title="getDealsByCriteria Method " Url="html/1628872581.htm" />
+        <HelpTOCNode Title="getDealsByDescription Method " Url="html/2008665247.htm" />
+        <HelpTOCNode Title="getDealStatus Method " Url="html/499612652.htm" />
+        <HelpTOCNode Title="getDealStatusByName Method " Url="html/448994856.htm" />
+        <HelpTOCNode Title="getDealStatuses Method " Url="html/1181520818.htm" />
+        <HelpTOCNode Title="getDealTeam Method " Url="html/669389981.htm" />
+        <HelpTOCNode Title="getDealType Method " Url="html/1639164562.htm" />
+        <HelpTOCNode Title="getDocument Method " Url="html/2005160253.htm" />
+        <HelpTOCNode Title="getDocumentByName Method " Url="html/1733096641.htm" />
+        <HelpTOCNode Title="getDocumentGroup Method " Url="html/1693478140.htm" />
+        <HelpTOCNode Title="getDocumentsByDeal Method " Url="html/1462839772.htm" />
+        <HelpTOCNode Title="getEvent Method " Url="html/535505326.htm" />
+        <HelpTOCNode Title="getEventsByDeal Method " Url="html/193514199.htm" />
+        <HelpTOCNode Title="getEventType Method " Url="html/165400508.htm" />
+        <HelpTOCNode Title="getEventTypes Method " Url="html/2120573222.htm" />
+        <HelpTOCNode Title="getLastCompany Method " Url="html/743106730.htm" />
+        <HelpTOCNode Title="getLastCompanyAssociation Method " Url="html/476550779.htm" />
+        <HelpTOCNode Title="getLastDeal Method " Url="html/954382082.htm" />
+        <HelpTOCNode Title="getLastDocument Method " Url="html/1007643314.htm" />
+        <HelpTOCNode Title="getLastDocumentGroup Method " Url="html/1061027926.htm" />
+        <HelpTOCNode Title="getLastEvent Method " Url="html/779144669.htm" />
+        <HelpTOCNode Title="getLastSecurity Method " Url="html/372021305.htm" />
+        <HelpTOCNode Title="getLastSecurityGroup Method " Url="html/120350872.htm" />
+        <HelpTOCNode Title="getMapDealAnalyst Method " Url="html/1227420803.htm" />
+        <HelpTOCNode Title="getMergerArb Method " Url="html/484997178.htm" />
+        <HelpTOCNode Title="getMergerArbByDealId Method " Url="html/254236395.htm" />
+        <HelpTOCNode Title="getMergerArbNewByDealId Method " Url="html/518681635.htm" />
+        <HelpTOCNode Title="getMergerArbNewByValue Method " Url="html/561766324.htm" />
+        <HelpTOCNode Title="getPrice Method " Url="html/172814310.htm" />
+        <HelpTOCNode Title="getSecurities Method " Url="html/925212341.htm" />
+        <HelpTOCNode Title="getSecurity Method " Url="html/995825029.htm" />
+        <HelpTOCNode Title="getSecurityByCode Method " Url="html/1601932491.htm" />
+        <HelpTOCNode Title="getSecurityGroup Method " Url="html/1639760584.htm" />
+        <HelpTOCNode Title="getSecurityGroupBySecurity1 Method " Url="html/1675293866.htm" />
+        <HelpTOCNode Title="getSecurityType Method " Url="html/364464603.htm" />
+        <HelpTOCNode Title="getSecurityTypes Method " Url="html/1092992090.htm" />
+        <HelpTOCNode Title="getStatisticType Method " Url="html/1590761995.htm" />
+        <HelpTOCNode Title="removeCompany Method " Url="html/126674692.htm" />
+        <HelpTOCNode Title="removeCompanyAssociation Method " Url="html/1332320736.htm" />
+        <HelpTOCNode Title="removeDeal Method " Url="html/208728986.htm" />
+        <HelpTOCNode Title="removeDealByDescription Method " Url="html/583532459.htm" />
+        <HelpTOCNode Title="removeDealById Method " Url="html/1219081532.htm" />
+        <HelpTOCNode Title="removeDocument Method " Url="html/764323401.htm" />
+        <HelpTOCNode Title="removeEvent Method " Url="html/390296081.htm" />
+        <HelpTOCNode Title="removeMapDealAnalyst Method " Url="html/253670399.htm" />
+        <HelpTOCNode Title="removeSecurity Method " Url="html/107725243.htm" />
+        <HelpTOCNode Title="updateCompany Method " Url="html/1815281606.htm" />
+        <HelpTOCNode Title="updateCompanyAssociation Method " Url="html/858888652.htm" />
+        <HelpTOCNode Title="updateDeal Method " Url="html/2133997617.htm" />
+        <HelpTOCNode Title="updateDocument Method " Url="html/387872931.htm" />
+        <HelpTOCNode Title="updateDocumentGroup Method " Url="html/1047828606.htm" />
+        <HelpTOCNode Title="updateMapDealAnalyst Method " Url="html/1881612640.htm" />
+        <HelpTOCNode Title="updateMergerArb Method " Url="html/658242196.htm" />
+        <HelpTOCNode Title="updateMergerArbNew Method " Url="html/1198816021.htm" />
+        <HelpTOCNode Title="updateSecurity Method " Url="html/1911305240.htm" />
+        <HelpTOCNode Title="updateSecurityGroup Method " Url="html/213050482.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CortexWCFServiceClient Properties" Url="html/1494914076.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="1814685b-d740-495b-8791-d6aeaf9dead5" Title="Currency Class" Url="html/771776702.htm">
+      <HelpTOCNode Title="Currency Members" Url="html/85186943.htm" />
+      <HelpTOCNode Id="fb5cfd42-be23-4026-958a-16bef1d484fa" Title="Currency Fields" Url="html/2073221527.htm">
+        <HelpTOCNode Title="CurrencyCodeField Field" Url="html/451274348.htm" />
+        <HelpTOCNode Title="CurrencyIDField Field" Url="html/284447166.htm" />
+        <HelpTOCNode Title="CurrencyNameField Field" Url="html/2062061256.htm" />
+        <HelpTOCNode Title="DealsField Field" Url="html/1291623022.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1448570485.htm" />
+        <HelpTOCNode Title="SecuritiesField Field" Url="html/1370137077.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Currency Methods" Url="html/760227472.htm" />
+      <HelpTOCNode Id="dbb88052-4b25-4521-a902-777ef9f3f2e3" Title="Currency Properties" Url="html/2098636463.htm">
+        <HelpTOCNode Title="CurrencyCode Property " Url="html/1954034824.htm" />
+        <HelpTOCNode Title="CurrencyID Property " Url="html/1877670350.htm" />
+        <HelpTOCNode Title="CurrencyName Property " Url="html/1922769006.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/1014376318.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/334591837.htm" />
+        <HelpTOCNode Title="Securities Property " Url="html/1810589549.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="141f92d1-de13-4115-afec-b1bf0b34d966" Title="Currency Events" Url="html/1508177701.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/2136200283.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d91200a4-0ef4-41b9-89d9-06ad3a129930" Title="Deal Class" Url="html/365149138.htm">
+      <HelpTOCNode Title="Deal Members" Url="html/947672222.htm" />
+      <HelpTOCNode Id="d50ec52b-60a2-4929-b0bc-d880d23463b1" Title="Deal Fields" Url="html/1077520817.htm">
+        <HelpTOCNode Title="AcquirerShareholderMeetingEventIDField Field" Url="html/1163656711.htm" />
+        <HelpTOCNode Title="BackgroundField Field" Url="html/930397170.htm" />
+        <HelpTOCNode Title="CatalystField Field" Url="html/1466863622.htm" />
+        <HelpTOCNode Title="CategoryField Field" Url="html/1227586994.htm" />
+        <HelpTOCNode Title="CategoryIDField Field" Url="html/1579811864.htm" />
+        <HelpTOCNode Title="Company1Field Field" Url="html/351016041.htm" />
+        <HelpTOCNode Title="Company2Field Field" Url="html/353047657.htm" />
+        <HelpTOCNode Title="CompanyField Field" Url="html/366154464.htm" />
+        <HelpTOCNode Title="CompanyID1Field Field" Url="html/1501742362.htm" />
+        <HelpTOCNode Title="CompanyID2Field Field" Url="html/1079392998.htm" />
+        <HelpTOCNode Title="CompanyID3Field Field" Url="html/1004848410.htm" />
+        <HelpTOCNode Title="CompsField Field" Url="html/1653869300.htm" />
+        <HelpTOCNode Title="CurrencyField Field" Url="html/255005140.htm" />
+        <HelpTOCNode Title="CurrencyIDField Field" Url="html/1774782428.htm" />
+        <HelpTOCNode Title="CurrentValuationField Field" Url="html/1722818202.htm" />
+        <HelpTOCNode Title="Deal1Field Field" Url="html/2090115461.htm" />
+        <HelpTOCNode Title="DealCurrencyIDField Field" Url="html/483643846.htm" />
+        <HelpTOCNode Title="DealIDField Field" Url="html/908411076.htm" />
+        <HelpTOCNode Title="Deals1Field Field" Url="html/366657062.htm" />
+        <HelpTOCNode Title="DealStatusField Field" Url="html/1342408784.htm" />
+        <HelpTOCNode Title="DealStatusIDField Field" Url="html/1356496684.htm" />
+        <HelpTOCNode Title="DealType1Field Field" Url="html/1370781916.htm" />
+        <HelpTOCNode Title="DealTypeField Field" Url="html/91162943.htm" />
+        <HelpTOCNode Title="DealTypeIDField Field" Url="html/1956066732.htm" />
+        <HelpTOCNode Title="DescriptionField Field" Url="html/2008542939.htm" />
+        <HelpTOCNode Title="DocumentGroupField Field" Url="html/528236454.htm" />
+        <HelpTOCNode Title="DocumentGroupIDField Field" Url="html/458183873.htm" />
+        <HelpTOCNode Title="DocumentsField Field" Url="html/1565752480.htm" />
+        <HelpTOCNode Title="DownsidePriceField Field" Url="html/655956924.htm" />
+        <HelpTOCNode Title="DownsidePriceValuationField Field" Url="html/1221893528.htm" />
+        <HelpTOCNode Title="DropDeadEventIDField Field" Url="html/108696696.htm" />
+        <HelpTOCNode Title="Event1Field Field" Url="html/1043175523.htm" />
+        <HelpTOCNode Title="Event2Field Field" Url="html/1559402595.htm" />
+        <HelpTOCNode Title="Event3Field Field" Url="html/2075629667.htm" />
+        <HelpTOCNode Title="EventField Field" Url="html/1647530044.htm" />
+        <HelpTOCNode Title="EventsField Field" Url="html/796366947.htm" />
+        <HelpTOCNode Title="ExpirationDateField Field" Url="html/1042685336.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/539461096.htm" />
+        <HelpTOCNode Title="InvestmentThesisField Field" Url="html/763371984.htm" />
+        <HelpTOCNode Title="KeyRisksField Field" Url="html/1515357395.htm" />
+        <HelpTOCNode Title="MapDealAnalystsField Field" Url="html/269095749.htm" />
+        <HelpTOCNode Title="MergerAgreementEventIDField Field" Url="html/20720732.htm" />
+        <HelpTOCNode Title="RecommendationField Field" Url="html/15531704.htm" />
+        <HelpTOCNode Title="SecurityGroupField Field" Url="html/2040433260.htm" />
+        <HelpTOCNode Title="SecurityGroupIDField Field" Url="html/938244774.htm" />
+        <HelpTOCNode Title="TargetPriceField Field" Url="html/427642024.htm" />
+        <HelpTOCNode Title="TargetPriceValuationField Field" Url="html/1009071793.htm" />
+        <HelpTOCNode Title="TargetShareholderMeetingEventIDField Field" Url="html/1701587387.htm" />
+        <HelpTOCNode Title="ValuationMethodologyField Field" Url="html/835013065.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Deal Methods" Url="html/610029346.htm" />
+      <HelpTOCNode Id="7f1f870b-427a-4c3c-855d-59513944916f" Title="Deal Properties" Url="html/96836084.htm">
+        <HelpTOCNode Title="AcquirerShareholderMeetingEventID Property " Url="html/1104152391.htm" />
+        <HelpTOCNode Title="Background Property " Url="html/1986685466.htm" />
+        <HelpTOCNode Title="Catalyst Property " Url="html/1580732396.htm" />
+        <HelpTOCNode Title="Category Property " Url="html/138409592.htm" />
+        <HelpTOCNode Title="CategoryID Property " Url="html/462684918.htm" />
+        <HelpTOCNode Title="Company Property " Url="html/467005164.htm" />
+        <HelpTOCNode Title="Company1 Property " Url="html/468119276.htm" />
+        <HelpTOCNode Title="Company2 Property " Url="html/468184812.htm" />
+        <HelpTOCNode Title="CompanyID1 Property " Url="html/2073188467.htm" />
+        <HelpTOCNode Title="CompanyID2 Property " Url="html/647800717.htm" />
+        <HelpTOCNode Title="CompanyID3 Property " Url="html/1690851443.htm" />
+        <HelpTOCNode Title="Comps Property " Url="html/653462011.htm" />
+        <HelpTOCNode Title="Currency Property " Url="html/1102241661.htm" />
+        <HelpTOCNode Title="CurrencyID Property " Url="html/1860197904.htm" />
+        <HelpTOCNode Title="CurrentValuation Property " Url="html/330625411.htm" />
+        <HelpTOCNode Title="Deal1 Property " Url="html/1850937834.htm" />
+        <HelpTOCNode Title="DealCurrencyID Property " Url="html/1009599893.htm" />
+        <HelpTOCNode Title="DealID Property " Url="html/1525040722.htm" />
+        <HelpTOCNode Title="Deals1 Property " Url="html/1441660428.htm" />
+        <HelpTOCNode Title="DealStatus Property " Url="html/777832043.htm" />
+        <HelpTOCNode Title="DealStatusID Property " Url="html/18216451.htm" />
+        <HelpTOCNode Title="DealType Property " Url="html/284855891.htm" />
+        <HelpTOCNode Title="DealType1 Property " Url="html/1152213635.htm" />
+        <HelpTOCNode Title="DealTypeID Property " Url="html/113855803.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/2022896938.htm" />
+        <HelpTOCNode Title="DocumentGroup Property " Url="html/319585888.htm" />
+        <HelpTOCNode Title="DocumentGroupID Property " Url="html/1302817279.htm" />
+        <HelpTOCNode Title="Documents Property " Url="html/1046508504.htm" />
+        <HelpTOCNode Title="DownsidePrice Property " Url="html/1752902273.htm" />
+        <HelpTOCNode Title="DownsidePriceValuation Property " Url="html/931650242.htm" />
+        <HelpTOCNode Title="DropDeadEventID Property " Url="html/1604684574.htm" />
+        <HelpTOCNode Title="Event Property " Url="html/1578144104.htm" />
+        <HelpTOCNode Title="Event1 Property " Url="html/174354072.htm" />
+        <HelpTOCNode Title="Event2 Property " Url="html/1781961064.htm" />
+        <HelpTOCNode Title="Event3 Property " Url="html/556691096.htm" />
+        <HelpTOCNode Title="Events Property " Url="html/93426024.htm" />
+        <HelpTOCNode Title="ExpirationDate Property " Url="html/1124704319.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/969412203.htm" />
+        <HelpTOCNode Title="InvestmentThesis Property " Url="html/1941771484.htm" />
+        <HelpTOCNode Title="KeyRisks Property " Url="html/701147582.htm" />
+        <HelpTOCNode Title="MapDealAnalysts Property " Url="html/1775043432.htm" />
+        <HelpTOCNode Title="MergerAgreementEventID Property " Url="html/538805756.htm" />
+        <HelpTOCNode Title="Recommendation Property " Url="html/2095806707.htm" />
+        <HelpTOCNode Title="SecurityGroup Property " Url="html/1159425322.htm" />
+        <HelpTOCNode Title="SecurityGroupID Property " Url="html/179954167.htm" />
+        <HelpTOCNode Title="TargetPrice Property " Url="html/1404952573.htm" />
+        <HelpTOCNode Title="TargetPriceValuation Property " Url="html/2030981927.htm" />
+        <HelpTOCNode Title="TargetShareholderMeetingEventID Property " Url="html/471497712.htm" />
+        <HelpTOCNode Title="ValuationMethodology Property " Url="html/2046508197.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="998ff0bf-59d2-4ce4-a6c1-e67f29cd98ca" Title="Deal Events" Url="html/1134235111.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/791894932.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="235cce0a-433f-4ed0-90dd-649164adb92e" Title="DealStatus Class" Url="html/232319233.htm">
+      <HelpTOCNode Title="DealStatus Members" Url="html/1208790979.htm" />
+      <HelpTOCNode Id="f4a95b06-18ed-43c1-9f9d-68db892584ee" Title="DealStatus Fields" Url="html/148242667.htm">
+        <HelpTOCNode Title="CodeField Field" Url="html/2124784793.htm" />
+        <HelpTOCNode Title="DealsField Field" Url="html/675216806.htm" />
+        <HelpTOCNode Title="DealStatusIDField Field" Url="html/108521373.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1332360599.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/1077925361.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="DealStatus Methods" Url="html/1812189308.htm" />
+      <HelpTOCNode Id="f72c38e6-cdf0-43ae-aab2-ef6e71db0132" Title="DealStatus Properties" Url="html/216106227.htm">
+        <HelpTOCNode Title="Code Property " Url="html/832466008.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/1856441465.htm" />
+        <HelpTOCNode Title="DealStatusID Property " Url="html/646272428.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/667980069.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1541104478.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c3a7e6a2-e91f-439b-88e4-3276fe658239" Title="DealStatus Events" Url="html/835520059.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/79951609.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0dc7f4f7-6e9a-4cdb-ae48-640b8709718b" Title="DealType Class" Url="html/1512460629.htm">
+      <HelpTOCNode Title="DealType Members" Url="html/827928093.htm" />
+      <HelpTOCNode Id="59414217-fa30-4297-a0b8-2cbe0fd3302d" Title="DealType Fields" Url="html/145449771.htm">
+        <HelpTOCNode Title="CodeField Field" Url="html/1456796672.htm" />
+        <HelpTOCNode Title="Deals1Field Field" Url="html/1322832506.htm" />
+        <HelpTOCNode Title="DealsField Field" Url="html/148537355.htm" />
+        <HelpTOCNode Title="DealTypeIDField Field" Url="html/311163937.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1862653494.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/1108174854.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="DealType Methods" Url="html/1293422533.htm" />
+      <HelpTOCNode Id="038c63cf-5559-4990-a7d7-0fb5467da54b" Title="DealType Properties" Url="html/233170329.htm">
+        <HelpTOCNode Title="Code Property " Url="html/817183786.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/749733349.htm" />
+        <HelpTOCNode Title="Deals1 Property " Url="html/620427803.htm" />
+        <HelpTOCNode Title="DealTypeID Property " Url="html/1935226137.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/2081467618.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1854016212.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="30d6b12a-6171-43d5-ad3a-442d050fceaf" Title="DealType Events" Url="html/884911305.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/971301594.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2b36cb15-e38f-4564-b63e-f9c30510f748" Title="Document Class" Url="html/252017285.htm">
+      <HelpTOCNode Title="Document Members" Url="html/425102348.htm" />
+      <HelpTOCNode Id="81a47f97-e9e4-4def-bff1-17f7b8960c97" Title="Document Fields" Url="html/1635710224.htm">
+        <HelpTOCNode Title="DealField Field" Url="html/589516910.htm" />
+        <HelpTOCNode Title="DealIdField Field" Url="html/1708451609.htm" />
+        <HelpTOCNode Title="DescriptionField Field" Url="html/1724775862.htm" />
+        <HelpTOCNode Title="DocumentGroups1Field Field" Url="html/760975786.htm" />
+        <HelpTOCNode Title="DocumentGroups2Field Field" Url="html/760975631.htm" />
+        <HelpTOCNode Title="DocumentGroupsField Field" Url="html/1566765633.htm" />
+        <HelpTOCNode Title="DocumentIDField Field" Url="html/1895654208.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/209873908.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/1854765548.htm" />
+        <HelpTOCNode Title="URIField Field" Url="html/1839066525.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Document Methods" Url="html/871485469.htm" />
+      <HelpTOCNode Id="9fd7ebe6-1e18-463c-8835-95ee7baea2a8" Title="Document Properties" Url="html/1398590844.htm">
+        <HelpTOCNode Title="Deal Property " Url="html/1339757330.htm" />
+        <HelpTOCNode Title="DealId Property " Url="html/1761292727.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/1286845448.htm" />
+        <HelpTOCNode Title="DocumentGroups Property " Url="html/1745165246.htm" />
+        <HelpTOCNode Title="DocumentGroups1 Property " Url="html/1980990819.htm" />
+        <HelpTOCNode Title="DocumentGroups2 Property " Url="html/1980990822.htm" />
+        <HelpTOCNode Title="DocumentID Property " Url="html/714791910.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/1676497766.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1381193588.htm" />
+        <HelpTOCNode Title="URI Property " Url="html/1384426321.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f3ee90dd-8b74-4d3b-af11-cbf281d19f80" Title="Document Events" Url="html/173540970.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/449294065.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d430b10b-02ff-4aee-a266-3c46f5da1b47" Title="DocumentGroup Class" Url="html/2134367044.htm">
+      <HelpTOCNode Title="DocumentGroup Members" Url="html/2055178790.htm" />
+      <HelpTOCNode Id="66670387-cd11-4a17-9205-c05b91916b29" Title="DocumentGroup Fields" Url="html/337167028.htm">
+        <HelpTOCNode Title="DealsField Field" Url="html/118034846.htm" />
+        <HelpTOCNode Title="Document1Field Field" Url="html/682921101.htm" />
+        <HelpTOCNode Title="Document2Field Field" Url="html/1527804787.htm" />
+        <HelpTOCNode Title="DocumentField Field" Url="html/1888655195.htm" />
+        <HelpTOCNode Title="DocumentGroupIDField Field" Url="html/636560811.htm" />
+        <HelpTOCNode Title="DocumentID1Field Field" Url="html/2126515539.htm" />
+        <HelpTOCNode Title="DocumentID2Field Field" Url="html/2128547155.htm" />
+        <HelpTOCNode Title="DocumentID3Field Field" Url="html/2114325843.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/225153837.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="DocumentGroup Methods" Url="html/299192292.htm" />
+      <HelpTOCNode Id="cc7e6706-17d5-4383-b035-cf846dce02d1" Title="DocumentGroup Properties" Url="html/1589703945.htm">
+        <HelpTOCNode Title="Deals Property " Url="html/1054411623.htm" />
+        <HelpTOCNode Title="Document Property " Url="html/950009332.htm" />
+        <HelpTOCNode Title="Document1 Property " Url="html/802488844.htm" />
+        <HelpTOCNode Title="Document2 Property " Url="html/1153826292.htm" />
+        <HelpTOCNode Title="DocumentGroupID Property " Url="html/705093920.htm" />
+        <HelpTOCNode Title="DocumentID1 Property " Url="html/1644165799.htm" />
+        <HelpTOCNode Title="DocumentID2 Property " Url="html/1644231335.htm" />
+        <HelpTOCNode Title="DocumentID3 Property " Url="html/1644296871.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/2126552462.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="391e385d-7c0d-437a-94ea-787ace61a6d5" Title="DocumentGroup Events" Url="html/2139560281.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/46079152.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="29ebc5f8-fcd1-4393-b08c-62110701b798" Title="Event Class" Url="html/1446667089.htm">
+      <HelpTOCNode Title="Event Members" Url="html/425978621.htm" />
+      <HelpTOCNode Id="8375a3b8-5cc6-40f9-b0e6-728ba7ec0c37" Title="Event Fields" Url="html/627221060.htm">
+        <HelpTOCNode Title="DealField Field" Url="html/608953090.htm" />
+        <HelpTOCNode Title="DealIDField Field" Url="html/571160472.htm" />
+        <HelpTOCNode Title="Deals1Field Field" Url="html/2101950701.htm" />
+        <HelpTOCNode Title="Deals2Field Field" Url="html/2101950538.htm" />
+        <HelpTOCNode Title="Deals3Field Field" Url="html/2101950507.htm" />
+        <HelpTOCNode Title="DealsField Field" Url="html/746232734.htm" />
+        <HelpTOCNode Title="DescriptionField Field" Url="html/1359241195.htm" />
+        <HelpTOCNode Title="EventDateField Field" Url="html/2023206354.htm" />
+        <HelpTOCNode Title="EventIDField Field" Url="html/1655827590.htm" />
+        <HelpTOCNode Title="EventTypeField Field" Url="html/1735702750.htm" />
+        <HelpTOCNode Title="EventTypeIDField Field" Url="html/286507987.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1729216247.htm" />
+        <HelpTOCNode Title="NoteField Field" Url="html/409630151.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Event Methods" Url="html/264397637.htm" />
+      <HelpTOCNode Id="1d5f1041-1779-4f8f-9436-f9f4ac624a87" Title="Event Properties" Url="html/991368903.htm">
+        <HelpTOCNode Title="Deal Property " Url="html/1956934560.htm" />
+        <HelpTOCNode Title="DealID Property " Url="html/1815982426.htm" />
+        <HelpTOCNode Title="Deals Property " Url="html/1122333600.htm" />
+        <HelpTOCNode Title="Deals1 Property " Url="html/1803570809.htm" />
+        <HelpTOCNode Title="Deals2 Property " Url="html/1803570808.htm" />
+        <HelpTOCNode Title="Deals3 Property " Url="html/1803570807.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/517113610.htm" />
+        <HelpTOCNode Title="EventDate Property " Url="html/772592287.htm" />
+        <HelpTOCNode Title="EventID Property " Url="html/500261774.htm" />
+        <HelpTOCNode Title="EventType Property " Url="html/1195203301.htm" />
+        <HelpTOCNode Title="EventTypeID Property " Url="html/1800886235.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/1256871567.htm" />
+        <HelpTOCNode Title="Note Property " Url="html/1303428243.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5cfcd108-e4e6-41a7-b46d-26c6c5765fe1" Title="Event Events" Url="html/820767526.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/542218029.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e974e00e-26cc-426d-b176-f7c82ef75c28" Title="EventType Class" Url="html/1343175242.htm">
+      <HelpTOCNode Title="EventType Members" Url="html/2023450699.htm" />
+      <HelpTOCNode Id="a4790573-b044-452d-83c9-a9c17caf867d" Title="EventType Fields" Url="html/270739323.htm">
+        <HelpTOCNode Title="CodeField Field" Url="html/301438570.htm" />
+        <HelpTOCNode Title="DescriptionField Field" Url="html/1869161257.htm" />
+        <HelpTOCNode Title="EventsField Field" Url="html/1892061450.htm" />
+        <HelpTOCNode Title="EventTypeIDField Field" Url="html/1436866547.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1042397264.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/433558752.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EventType Methods" Url="html/638441422.htm" />
+      <HelpTOCNode Id="c7e0a701-acf5-46ba-997d-6d43699fa944" Title="EventType Properties" Url="html/1986199753.htm">
+        <HelpTOCNode Title="Code Property " Url="html/866725638.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/1544848366.htm" />
+        <HelpTOCNode Title="Events Property " Url="html/1926472282.htm" />
+        <HelpTOCNode Title="EventTypeID Property " Url="html/783729026.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/1352046227.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/197865216.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="21f49b30-4e36-4c49-82a9-3e7f9b9b6fb9" Title="EventType Events" Url="html/1112634787.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/1756957182.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="90345abc-b15d-42df-866c-4157f9259299" Title="MapDealAnalyst Class" Url="html/1105667233.htm">
+      <HelpTOCNode Title="MapDealAnalyst Members" Url="html/1780667352.htm" />
+      <HelpTOCNode Id="9e272e66-49a1-4957-9e0c-165644036543" Title="MapDealAnalyst Fields" Url="html/1550709825.htm">
+        <HelpTOCNode Title="AnalystField Field" Url="html/180683777.htm" />
+        <HelpTOCNode Title="AnalystIDField Field" Url="html/2127859067.htm" />
+        <HelpTOCNode Title="DealField Field" Url="html/1654710882.htm" />
+        <HelpTOCNode Title="DealIDField Field" Url="html/1422026844.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1605589929.htm" />
+        <HelpTOCNode Title="IsLeadAnalystField Field" Url="html/468150017.htm" />
+        <HelpTOCNode Title="MapDealAnalystIDField Field" Url="html/1672692736.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MapDealAnalyst Methods" Url="html/1017151413.htm" />
+      <HelpTOCNode Id="25f3d8e2-acc5-44c6-a9c5-1b0017287ca7" Title="MapDealAnalyst Properties" Url="html/578142706.htm">
+        <HelpTOCNode Title="Analyst Property " Url="html/2047724439.htm" />
+        <HelpTOCNode Title="AnalystID Property " Url="html/1262767109.htm" />
+        <HelpTOCNode Title="Deal Property " Url="html/137135692.htm" />
+        <HelpTOCNode Title="DealID Property " Url="html/983417069.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/1096848299.htm" />
+        <HelpTOCNode Title="IsLeadAnalyst Property " Url="html/1516946097.htm" />
+        <HelpTOCNode Title="MapDealAnalystID Property " Url="html/1184581240.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="8a829a0d-2b14-4d69-9815-9d3dd60c584b" Title="MapDealAnalyst Events" Url="html/1488122101.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/1840670676.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f15aa521-d206-4aa1-ab12-a694eee93f02" Title="MergerArb Class" Url="html/1925849812.htm">
+      <HelpTOCNode Title="MergerArb Members" Url="html/1394094208.htm" />
+      <HelpTOCNode Id="f61819cd-f38c-4e5e-b25d-5efea0357bf6" Title="MergerArb Fields" Url="html/1914600322.htm">
+        <HelpTOCNode Title="C000_DealId__Required_Field Field" Url="html/109700208.htm" />
+        <HelpTOCNode Title="C001_Deal_Name__Required_Field Field" Url="html/677363741.htm" />
+        <HelpTOCNode Title="C002_Target_Ticker__Required_Field Field" Url="html/835687322.htm" />
+        <HelpTOCNode Title="C003_Target_Name__Required_Field Field" Url="html/120435321.htm" />
+        <HelpTOCNode Title="C004_Acquirer_Ticker__Required_Field Field" Url="html/2020598955.htm" />
+        <HelpTOCNode Title="C005_Acquirer_Name__Required_Field Field" Url="html/1274389715.htm" />
+        <HelpTOCNode Title="C006_File_Name_Path__Required_Field Field" Url="html/215333308.htm" />
+        <HelpTOCNode Title="C008_Target_Shares_Owned__Required_Field Field" Url="html/451408413.htm" />
+        <HelpTOCNode Title="C009_Acquirer_Shares_Owned__Required_Field Field" Url="html/152280925.htm" />
+        <HelpTOCNode Title="C011_Key_Notes_1__Required_Field Field" Url="html/1033690858.htm" />
+        <HelpTOCNode Title="C012_Key_Notes_2__Required_Field Field" Url="html/1588821871.htm" />
+        <HelpTOCNode Title="C013_Key_Notes_3__Required_Field Field" Url="html/631185571.htm" />
+        <HelpTOCNode Title="C014_Pricing_Period__Required_Field Field" Url="html/694458792.htm" />
+        <HelpTOCNode Title="C015_Target_Earnings_Date__Required_Field Field" Url="html/39873518.htm" />
+        <HelpTOCNode Title="C016_Acquirer_Earnings_Date__Required_Field Field" Url="html/1468053445.htm" />
+        <HelpTOCNode Title="C017_Key_Dates__Required_Field Field" Url="html/60896700.htm" />
+        <HelpTOCNode Title="C019_Stated_Cash_Terms__Optional_Field Field" Url="html/1669985623.htm" />
+        <HelpTOCNode Title="C020_Stated_Stock_Exchange_Ratio__Optional_Field Field" Url="html/772877882.htm" />
+        <HelpTOCNode Title="C021_Cash_Prorate__Optional_Field Field" Url="html/1696193292.htm" />
+        <HelpTOCNode Title="C022_Stock_Prorate__Optional_Field Field" Url="html/1543118351.htm" />
+        <HelpTOCNode Title="C023_Hedge_Ratio__Required_Field Field" Url="html/116095813.htm" />
+        <HelpTOCNode Title="C024_Cash_Terms__Required_Field Field" Url="html/1522467035.htm" />
+        <HelpTOCNode Title="C025_Stock_Exchange_Ratio__Required_Field Field" Url="html/1790743150.htm" />
+        <HelpTOCNode Title="C027_Target_Price_in_Local_Currency__Required_Field Field" Url="html/1223417374.htm" />
+        <HelpTOCNode Title="C028_Acquirer_Price_in_Local_Currency__Required_Field Field" Url="html/1663810884.htm" />
+        <HelpTOCNode Title="C029_Target_Price_in_Deal_Currency__Required_Field Field" Url="html/1494824118.htm" />
+        <HelpTOCNode Title="C030_Acquirer_Price_in_Deal_Currency__Required_Field Field" Url="html/781413889.htm" />
+        <HelpTOCNode Title="C032_Target_Currency__Required_Field Field" Url="html/1759091962.htm" />
+        <HelpTOCNode Title="C033_Acquirer_Currency__Required_Field Field" Url="html/1132451777.htm" />
+        <HelpTOCNode Title="C034_Deal_Currency__Required_Field Field" Url="html/1320477572.htm" />
+        <HelpTOCNode Title="C035_FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency__Required_Field Field" Url="html/1002668768.htm" />
+        <HelpTOCNode Title="C036_FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency__Required_Field Field" Url="html/1724532964.htm" />
+        <HelpTOCNode Title="C037_FX_Ratio_to_Covert_Deal_Currency_to_USD__Optional_Field Field" Url="html/272829150.htm" />
+        <HelpTOCNode Title="C039_Today__Optional_Field Field" Url="html/1011088275.htm" />
+        <HelpTOCNode Title="C040_Announced_Date__Required_Field Field" Url="html/1018031571.htm" />
+        <HelpTOCNode Title="C041_Estimated_Close_Date__Optional_Field Field" Url="html/1306634345.htm" />
+        <HelpTOCNode Title="C042_Potential_Days_Delayed__Optional_Field Field" Url="html/762662395.htm" />
+        <HelpTOCNode Title="C043_Days_to_Close__Optional_Field Field" Url="html/1945298812.htm" />
+        <HelpTOCNode Title="C044_Close_Date__Required_Field Field" Url="html/821979865.htm" />
+        <HelpTOCNode Title="C046_Total_Consideration__Optional_Field Field" Url="html/1719591658.htm" />
+        <HelpTOCNode Title="C047_Gross_Spread__Required_Field Field" Url="html/1452869156.htm" />
+        <HelpTOCNode Title="C048_Net_Spread_before_Leverage__Required_Field Field" Url="html/95092270.htm" />
+        <HelpTOCNode Title="C049_Cost_of_Leverage__Optional_Field Field" Url="html/2135250316.htm" />
+        <HelpTOCNode Title="C050_Net_Dividends__Required_Field Field" Url="html/1030541211.htm" />
+        <HelpTOCNode Title="C051_Short_Rebates__Optional_Field Field" Url="html/1957768538.htm" />
+        <HelpTOCNode Title="C052_Net_Spread__Required_Field Field" Url="html/1370567129.htm" />
+        <HelpTOCNode Title="C053_Hypothetical_Targeted_Net_Spread__Required_Field Field" Url="html/2035016482.htm" />
+        <HelpTOCNode Title="C054_Hypothetical_Unwind_Net_Spread__Required_Field Field" Url="html/935520759.htm" />
+        <HelpTOCNode Title="C055_Theoretical_Spread_collar__Required_Field Field" Url="html/1338611066.htm" />
+        <HelpTOCNode Title="C057_Gross_Return__Optional_Field Field" Url="html/1103988347.htm" />
+        <HelpTOCNode Title="C058_Annualized_ROR__Required_Field Field" Url="html/1722480677.htm" />
+        <HelpTOCNode Title="C059_Hypothetical_Targeted_Annualized_Return__Required_Field Field" Url="html/1078476536.htm" />
+        <HelpTOCNode Title="C060_Hypothetical_Unwind_Annualized_Return__Required_Field Field" Url="html/1537318352.htm" />
+        <HelpTOCNode Title="C061_Theoretical_Annualized_Return_collar__Required_Field Field" Url="html/1384750489.htm" />
+        <HelpTOCNode Title="C063_Commission_Cost_per_Share__Optional_Field Field" Url="html/1775906301.htm" />
+        <HelpTOCNode Title="C064_Long_Financing_Rate__Optional_Field Field" Url="html/1632280984.htm" />
+        <HelpTOCNode Title="C065_Short_Rebate__Optional_Field Field" Url="html/1507687319.htm" />
+        <HelpTOCNode Title="C066_Long_Margin_Required__Optional_Field Field" Url="html/1862782480.htm" />
+        <HelpTOCNode Title="C067_Short_Margin_Required__Optional_Field Field" Url="html/1600916801.htm" />
+        <HelpTOCNode Title="C069_Target_Ex_Dividend_Date__Required_Field Field" Url="html/726569159.htm" />
+        <HelpTOCNode Title="C070_Aquirer_Ex_Dividend_Date__Required_Field Field" Url="html/798924551.htm" />
+        <HelpTOCNode Title="C071_Target_Dividend_Projected_or_Declared__Required_Field Field" Url="html/1018650800.htm" />
+        <HelpTOCNode Title="C072_Acquirer_Dividend_Projected_or_Declared__Required_Field Field" Url="html/1947358310.htm" />
+        <HelpTOCNode Title="C073_Number_of_Target_Dividends__Required_Field Field" Url="html/753498099.htm" />
+        <HelpTOCNode Title="C074_Number_of_Acquirer_Dividends__Required_Field Field" Url="html/1392776866.htm" />
+        <HelpTOCNode Title="C075_Target_Dividend_Quarterly_Amount__Required_Field Field" Url="html/1720461708.htm" />
+        <HelpTOCNode Title="C076_Acquirer_Dividend_Quarterly_Amount__Required_Field Field" Url="html/1522441241.htm" />
+        <HelpTOCNode Title="C077_Total_Target_Dividends__Required_Field Field" Url="html/533309541.htm" />
+        <HelpTOCNode Title="C078_Total_Acquirer_Dividends__Required_Field Field" Url="html/442721674.htm" />
+        <HelpTOCNode Title="C080_Target_Break_Price__Required_Field Field" Url="html/1089565683.htm" />
+        <HelpTOCNode Title="C081_Acquirer_Break_Price__Required_Field Field" Url="html/1136125359.htm" />
+        <HelpTOCNode Title="C082_Expected_USD_Return_prob_wtd__Required_Field Field" Url="html/234776153.htm" />
+        <HelpTOCNode Title="C083_RiskReward__Required_Field Field" Url="html/2077278469.htm" />
+        <HelpTOCNode Title="C084_Notional_Long_USD_MV__Required_Field Field" Url="html/1722423466.htm" />
+        <HelpTOCNode Title="C085_Net_USD_Profit_at_Close__Required_Field Field" Url="html/1545505104.htm" />
+        <HelpTOCNode Title="C086_Net_USD_Profit_at_Break__Required_Field Field" Url="html/1794834887.htm" />
+        <HelpTOCNode Title="C087_Probability_of_Break__Required_Field Field" Url="html/165427104.htm" />
+        <HelpTOCNode Title="C088_Tgt_13D_Num_shs_remaining__Optional_Field Field" Url="html/131977814.htm" />
+        <HelpTOCNode Title="C090_Prorate_Value_of_Stock__Optional_Field Field" Url="html/137501975.htm" />
+        <HelpTOCNode Title="C091_Prorate_Value_of_Cash__Optional_Field Field" Url="html/1021193785.htm" />
+        <HelpTOCNode Title="C092_Prorate_Comment_1__Optional_Field Field" Url="html/1716007709.htm" />
+        <HelpTOCNode Title="C093_Prorate_Comment_2__Optional_Field Field" Url="html/1208881124.htm" />
+        <HelpTOCNode Title="C095_Collar_Flag_Yes_No__Optional_Field Field" Url="html/2076225380.htm" />
+        <HelpTOCNode Title="C096_Collar_Flag_Normal_Inverted__Optional_Field Field" Url="html/1636674458.htm" />
+        <HelpTOCNode Title="C097_Collar_Num_of_Segments__Optional_Field Field" Url="html/1506331870.htm" />
+        <HelpTOCNode Title="C098_Collar_Num_of_Breakpoints__Optional_Field Field" Url="html/1875239972.htm" />
+        <HelpTOCNode Title="C099_Collar___Optional_Field Field" Url="html/2063031805.htm" />
+        <HelpTOCNode Title="C100_Collar_High_Breakpoint__Optional_Field Field" Url="html/329190310.htm" />
+        <HelpTOCNode Title="C101_Collar_Position__Optional_Field Field" Url="html/2099161781.htm" />
+        <HelpTOCNode Title="C102_Collar_Walk__Optional_Field Field" Url="html/48466200.htm" />
+        <HelpTOCNode Title="C103_Collar_Cure_Low_Breakpoint__Optional_Field Field" Url="html/1184993846.htm" />
+        <HelpTOCNode Title="C104_Collar_Cure_High_Breakpoint__Optional_Field Field" Url="html/1735415129.htm" />
+        <HelpTOCNode Title="C105_Collar_Value_of_Collar__Optional_Field Field" Url="html/530796905.htm" />
+        <HelpTOCNode Title="C106_Collar_Note_Description__Optional_Field Field" Url="html/2045919860.htm" />
+        <HelpTOCNode Title="C108_Pricing_Period_Start_Date__Optional_Field Field" Url="html/868721163.htm" />
+        <HelpTOCNode Title="C109_Pricing_Period_End_Date__Optional_Field Field" Url="html/469868667.htm" />
+        <HelpTOCNode Title="C110_Pricing_Period_Length_days__Optional_Field Field" Url="html/1137235994.htm" />
+        <HelpTOCNode Title="C111_Pricing_Period_Trading_Days_Prior_to_Close___Optional_Field Field" Url="html/460044321.htm" />
+        <HelpTOCNode Title="C112_Pricing_Period_Prc_Complete__Optional_Field Field" Url="html/1320955115.htm" />
+        <HelpTOCNode Title="C113_Pricing_Period_Prc_Remaining__Optional_Field Field" Url="html/152683859.htm" />
+        <HelpTOCNode Title="C114_Pricing_Period_Price_Based_on_Prc_Complete__Optional_Field Field" Url="html/1774517167.htm" />
+        <HelpTOCNode Title="C115_Pricing_Period_Price_Based_on_Prc_Remaining__Optional_Field Field" Url="html/1148477165.htm" />
+        <HelpTOCNode Title="C116_Pricing_Period_Weighted_Price__Optional_Field Field" Url="html/1952136425.htm" />
+        <HelpTOCNode Title="C118_Bloomberg_Corporate_Action_ID__Optional_Field Field" Url="html/1514807840.htm" />
+        <HelpTOCNode Title="C119_Bloomberg_Target_Company_Description__Optional_Field Field" Url="html/1131192208.htm" />
+        <HelpTOCNode Title="C120_Bloomberg_Acquirer_Company_Description__Optional_Field Field" Url="html/965687814.htm" />
+        <HelpTOCNode Title="C121_Bloomberg_Deal_Description__Optional_Field Field" Url="html/202432165.htm" />
+        <HelpTOCNode Title="C122_Bloomberg_Target_Legal_Advisors__Optional_Field Field" Url="html/70376766.htm" />
+        <HelpTOCNode Title="C123_Bloomberg_Target_Financial_Advisors__Optional_Field Field" Url="html/1591077189.htm" />
+        <HelpTOCNode Title="C124_Bloomberg_Acquirer_Legal_Advisors__Optional_Field Field" Url="html/799114407.htm" />
+        <HelpTOCNode Title="C125_Bloomberg_Acquirer_Financial_Advisors__Optional_Field Field" Url="html/866535371.htm" />
+        <HelpTOCNode Title="C126_Bloomberg_Pending_Approvals__Optional_Field Field" Url="html/842789398.htm" />
+        <HelpTOCNode Title="C127_Bloomberg_Approved_Approvals__Optional_Field Field" Url="html/182688411.htm" />
+        <HelpTOCNode Title="C128_Bloomberg_Expired_Approvals__Optional_Field Field" Url="html/307727245.htm" />
+        <HelpTOCNode Title="C129_Bloomberg_Entended_Approvals__Optional_Field Field" Url="html/2146307544.htm" />
+        <HelpTOCNode Title="C130_Bloomberg_Announced_Date__Optional_Field Field" Url="html/1256947981.htm" />
+        <HelpTOCNode Title="C131_Bloomberg_Amendment_Date__Optional_Field Field" Url="html/2025509664.htm" />
+        <HelpTOCNode Title="C132_Bloomberg_Expected_Completion_Date__Optional_Field Field" Url="html/1717458623.htm" />
+        <HelpTOCNode Title="C133_Bloomberg_Completed_Termination_Date__Optional_Field Field" Url="html/1139634238.htm" />
+        <HelpTOCNode Title="C134_Bloomberg_Merger_Agreement_Date__Optional_Field Field" Url="html/559159443.htm" />
+        <HelpTOCNode Title="C135_Bloomberg_Drop_Dead_Date__Optional_Field Field" Url="html/653385114.htm" />
+        <HelpTOCNode Title="C136_Bloomberg_Go_Shop_Period_Start_Date__Optional_Field Field" Url="html/286610401.htm" />
+        <HelpTOCNode Title="C137_Bloomberg_Go_Shop_Period_End_Date__Optional_Field Field" Url="html/524987945.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/810023478.htm" />
+        <HelpTOCNode Title="MergerArbIDField Field" Url="html/360914887.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MergerArb Methods" Url="html/719327600.htm" />
+      <HelpTOCNode Id="985fd412-63e1-4fb0-8aa3-d1865193d1d4" Title="MergerArb Properties" Url="html/1546019646.htm">
+        <HelpTOCNode Title="C000_DealId__Required_ Property " Url="html/200581085.htm" />
+        <HelpTOCNode Title="C001_Deal_Name__Required_ Property " Url="html/646309032.htm" />
+        <HelpTOCNode Title="C002_Target_Ticker__Required_ Property " Url="html/172518022.htm" />
+        <HelpTOCNode Title="C003_Target_Name__Required_ Property " Url="html/1407128730.htm" />
+        <HelpTOCNode Title="C004_Acquirer_Ticker__Required_ Property " Url="html/1011272062.htm" />
+        <HelpTOCNode Title="C005_Acquirer_Name__Required_ Property " Url="html/210766565.htm" />
+        <HelpTOCNode Title="C006_File_Name_Path__Required_ Property " Url="html/1196667195.htm" />
+        <HelpTOCNode Title="C008_Target_Shares_Owned__Required_ Property " Url="html/507871454.htm" />
+        <HelpTOCNode Title="C009_Acquirer_Shares_Owned__Required_ Property " Url="html/642790053.htm" />
+        <HelpTOCNode Title="C011_Key_Notes_1__Required_ Property " Url="html/1694498926.htm" />
+        <HelpTOCNode Title="C012_Key_Notes_2__Required_ Property " Url="html/2115036872.htm" />
+        <HelpTOCNode Title="C013_Key_Notes_3__Required_ Property " Url="html/1976965430.htm" />
+        <HelpTOCNode Title="C014_Pricing_Period__Required_ Property " Url="html/1717312509.htm" />
+        <HelpTOCNode Title="C015_Target_Earnings_Date__Required_ Property " Url="html/1023538193.htm" />
+        <HelpTOCNode Title="C016_Acquirer_Earnings_Date__Required_ Property " Url="html/1470946687.htm" />
+        <HelpTOCNode Title="C017_Key_Dates__Required_ Property " Url="html/1721486077.htm" />
+        <HelpTOCNode Title="C019_Stated_Cash_Terms__Optional_ Property " Url="html/1238903764.htm" />
+        <HelpTOCNode Title="C020_Stated_Stock_Exchange_Ratio__Optional_ Property " Url="html/1331535147.htm" />
+        <HelpTOCNode Title="C021_Cash_Prorate__Optional_ Property " Url="html/1562119640.htm" />
+        <HelpTOCNode Title="C022_Stock_Prorate__Optional_ Property " Url="html/234287074.htm" />
+        <HelpTOCNode Title="C023_Hedge_Ratio__Required_ Property " Url="html/1611451439.htm" />
+        <HelpTOCNode Title="C024_Cash_Terms__Required_ Property " Url="html/2056292029.htm" />
+        <HelpTOCNode Title="C025_Stock_Exchange_Ratio__Required_ Property " Url="html/1898783490.htm" />
+        <HelpTOCNode Title="C027_Target_Price_in_Local_Currency__Required_ Property " Url="html/692346321.htm" />
+        <HelpTOCNode Title="C028_Acquirer_Price_in_Local_Currency__Required_ Property " Url="html/2041163572.htm" />
+        <HelpTOCNode Title="C029_Target_Price_in_Deal_Currency__Required_ Property " Url="html/773384059.htm" />
+        <HelpTOCNode Title="C030_Acquirer_Price_in_Deal_Currency__Required_ Property " Url="html/1241279691.htm" />
+        <HelpTOCNode Title="C032_Target_Currency__Required_ Property " Url="html/815732988.htm" />
+        <HelpTOCNode Title="C033_Acquirer_Currency__Required_ Property " Url="html/423239357.htm" />
+        <HelpTOCNode Title="C034_Deal_Currency__Required_ Property " Url="html/916871765.htm" />
+        <HelpTOCNode Title="C035_FX_Ratio_to_Convert_to_Target_Acquirer_into_Deal_Currency__Required_ Property " Url="html/1842028864.htm" />
+        <HelpTOCNode Title="C036_FX_Ratio_to_Convert_to_Target_Price_into_Deal_Currency__Required_ Property " Url="html/2006734513.htm" />
+        <HelpTOCNode Title="C037_FX_Ratio_to_Covert_Deal_Currency_to_USD__Optional_ Property " Url="html/2017937091.htm" />
+        <HelpTOCNode Title="C039_Today__Optional_ Property " Url="html/1236419893.htm" />
+        <HelpTOCNode Title="C040_Announced_Date__Required_ Property " Url="html/1391798977.htm" />
+        <HelpTOCNode Title="C041_Estimated_Close_Date__Optional_ Property " Url="html/558072102.htm" />
+        <HelpTOCNode Title="C042_Potential_Days_Delayed__Optional_ Property " Url="html/958076471.htm" />
+        <HelpTOCNode Title="C043_Days_to_Close__Optional_ Property " Url="html/1392063463.htm" />
+        <HelpTOCNode Title="C044_Close_Date__Required_ Property " Url="html/1465461651.htm" />
+        <HelpTOCNode Title="C046_Total_Consideration__Optional_ Property " Url="html/1685790642.htm" />
+        <HelpTOCNode Title="C047_Gross_Spread__Required_ Property " Url="html/1333220541.htm" />
+        <HelpTOCNode Title="C048_Net_Spread_before_Leverage__Required_ Property " Url="html/1128127473.htm" />
+        <HelpTOCNode Title="C049_Cost_of_Leverage__Optional_ Property " Url="html/683616581.htm" />
+        <HelpTOCNode Title="C050_Net_Dividends__Required_ Property " Url="html/259499085.htm" />
+        <HelpTOCNode Title="C051_Short_Rebates__Optional_ Property " Url="html/1638887099.htm" />
+        <HelpTOCNode Title="C052_Net_Spread__Required_ Property " Url="html/1932350837.htm" />
+        <HelpTOCNode Title="C053_Hypothetical_Targeted_Net_Spread__Required_ Property " Url="html/1749014225.htm" />
+        <HelpTOCNode Title="C054_Hypothetical_Unwind_Net_Spread__Required_ Property " Url="html/674476326.htm" />
+        <HelpTOCNode Title="C055_Theoretical_Spread_collar__Required_ Property " Url="html/442354250.htm" />
+        <HelpTOCNode Title="C057_Gross_Return__Optional_ Property " Url="html/886197823.htm" />
+        <HelpTOCNode Title="C058_Annualized_ROR__Required_ Property " Url="html/1528509112.htm" />
+        <HelpTOCNode Title="C059_Hypothetical_Targeted_Annualized_Return__Required_ Property " Url="html/631922726.htm" />
+        <HelpTOCNode Title="C060_Hypothetical_Unwind_Annualized_Return__Required_ Property " Url="html/490002233.htm" />
+        <HelpTOCNode Title="C061_Theoretical_Annualized_Return_collar__Required_ Property " Url="html/916532264.htm" />
+        <HelpTOCNode Title="C063_Commission_Cost_per_Share__Optional_ Property " Url="html/2146396253.htm" />
+        <HelpTOCNode Title="C064_Long_Financing_Rate__Optional_ Property " Url="html/1939577324.htm" />
+        <HelpTOCNode Title="C065_Short_Rebate__Optional_ Property " Url="html/1400205082.htm" />
+        <HelpTOCNode Title="C066_Long_Margin_Required__Optional_ Property " Url="html/1477557437.htm" />
+        <HelpTOCNode Title="C067_Short_Margin_Required__Optional_ Property " Url="html/168900691.htm" />
+        <HelpTOCNode Title="C069_Target_Ex_Dividend_Date__Required_ Property " Url="html/1834320788.htm" />
+        <HelpTOCNode Title="C070_Aquirer_Ex_Dividend_Date__Required_ Property " Url="html/1991807579.htm" />
+        <HelpTOCNode Title="C071_Target_Dividend_Projected_or_Declared__Required_ Property " Url="html/1715611554.htm" />
+        <HelpTOCNode Title="C072_Acquirer_Dividend_Projected_or_Declared__Required_ Property " Url="html/695373988.htm" />
+        <HelpTOCNode Title="C073_Number_of_Target_Dividends__Required_ Property " Url="html/1281394120.htm" />
+        <HelpTOCNode Title="C074_Number_of_Acquirer_Dividends__Required_ Property " Url="html/1205758382.htm" />
+        <HelpTOCNode Title="C075_Target_Dividend_Quarterly_Amount__Required_ Property " Url="html/1500350217.htm" />
+        <HelpTOCNode Title="C076_Acquirer_Dividend_Quarterly_Amount__Required_ Property " Url="html/1126793321.htm" />
+        <HelpTOCNode Title="C077_Total_Target_Dividends__Required_ Property " Url="html/1537739797.htm" />
+        <HelpTOCNode Title="C078_Total_Acquirer_Dividends__Required_ Property " Url="html/556472885.htm" />
+        <HelpTOCNode Title="C080_Target_Break_Price__Required_ Property " Url="html/302746943.htm" />
+        <HelpTOCNode Title="C081_Acquirer_Break_Price__Required_ Property " Url="html/1271156100.htm" />
+        <HelpTOCNode Title="C082_Expected_USD_Return_prob_wtd__Required_ Property " Url="html/1902870710.htm" />
+        <HelpTOCNode Title="C083_RiskReward__Required_ Property " Url="html/2070081728.htm" />
+        <HelpTOCNode Title="C084_Notional_Long_USD_MV__Required_ Property " Url="html/726592429.htm" />
+        <HelpTOCNode Title="C085_Net_USD_Profit_at_Close__Required_ Property " Url="html/1949106105.htm" />
+        <HelpTOCNode Title="C086_Net_USD_Profit_at_Break__Required_ Property " Url="html/667705611.htm" />
+        <HelpTOCNode Title="C087_Probability_of_Break__Required_ Property " Url="html/2930158.htm" />
+        <HelpTOCNode Title="C088_Tgt_13D_Num_shs_remaining__Optional_ Property " Url="html/465834790.htm" />
+        <HelpTOCNode Title="C090_Prorate_Value_of_Stock__Optional_ Property " Url="html/1585945357.htm" />
+        <HelpTOCNode Title="C091_Prorate_Value_of_Cash__Optional_ Property " Url="html/1679182693.htm" />
+        <HelpTOCNode Title="C092_Prorate_Comment_1__Optional_ Property " Url="html/1097885368.htm" />
+        <HelpTOCNode Title="C093_Prorate_Comment_2__Optional_ Property " Url="html/149532694.htm" />
+        <HelpTOCNode Title="C095_Collar_Flag_Yes_No__Optional_ Property " Url="html/929206189.htm" />
+        <HelpTOCNode Title="C096_Collar_Flag_Normal_Inverted__Optional_ Property " Url="html/1585422227.htm" />
+        <HelpTOCNode Title="C097_Collar_Num_of_Segments__Optional_ Property " Url="html/1072829510.htm" />
+        <HelpTOCNode Title="C098_Collar_Num_of_Breakpoints__Optional_ Property " Url="html/618045433.htm" />
+        <HelpTOCNode Title="C099_Collar___Optional_ Property " Url="html/155793383.htm" />
+        <HelpTOCNode Title="C100_Collar_High_Breakpoint__Optional_ Property " Url="html/649609991.htm" />
+        <HelpTOCNode Title="C101_Collar_Position__Optional_ Property " Url="html/896961982.htm" />
+        <HelpTOCNode Title="C102_Collar_Walk__Optional_ Property " Url="html/1171931524.htm" />
+        <HelpTOCNode Title="C103_Collar_Cure_Low_Breakpoint__Optional_ Property " Url="html/686815697.htm" />
+        <HelpTOCNode Title="C104_Collar_Cure_High_Breakpoint__Optional_ Property " Url="html/1578917124.htm" />
+        <HelpTOCNode Title="C105_Collar_Value_of_Collar__Optional_ Property " Url="html/985528869.htm" />
+        <HelpTOCNode Title="C106_Collar_Note_Description__Optional_ Property " Url="html/1223600900.htm" />
+        <HelpTOCNode Title="C108_Pricing_Period_Start_Date__Optional_ Property " Url="html/743409584.htm" />
+        <HelpTOCNode Title="C109_Pricing_Period_End_Date__Optional_ Property " Url="html/764813935.htm" />
+        <HelpTOCNode Title="C110_Pricing_Period_Length_days__Optional_ Property " Url="html/1373012316.htm" />
+        <HelpTOCNode Title="C111_Pricing_Period_Trading_Days_Prior_to_Close___Optional_ Property " Url="html/1967214508.htm" />
+        <HelpTOCNode Title="C112_Pricing_Period_Prc_Complete__Optional_ Property " Url="html/999108457.htm" />
+        <HelpTOCNode Title="C113_Pricing_Period_Prc_Remaining__Optional_ Property " Url="html/1014721179.htm" />
+        <HelpTOCNode Title="C114_Pricing_Period_Price_Based_on_Prc_Complete__Optional_ Property " Url="html/241588132.htm" />
+        <HelpTOCNode Title="C115_Pricing_Period_Price_Based_on_Prc_Remaining__Optional_ Property " Url="html/1596241823.htm" />
+        <HelpTOCNode Title="C116_Pricing_Period_Weighted_Price__Optional_ Property " Url="html/1715759798.htm" />
+        <HelpTOCNode Title="C118_Bloomberg_Corporate_Action_ID__Optional_ Property " Url="html/1976640120.htm" />
+        <HelpTOCNode Title="C119_Bloomberg_Target_Company_Description__Optional_ Property " Url="html/1917563674.htm" />
+        <HelpTOCNode Title="C120_Bloomberg_Acquirer_Company_Description__Optional_ Property " Url="html/601800486.htm" />
+        <HelpTOCNode Title="C121_Bloomberg_Deal_Description__Optional_ Property " Url="html/1164651098.htm" />
+        <HelpTOCNode Title="C122_Bloomberg_Target_Legal_Advisors__Optional_ Property " Url="html/1138782822.htm" />
+        <HelpTOCNode Title="C123_Bloomberg_Target_Financial_Advisors__Optional_ Property " Url="html/1897738735.htm" />
+        <HelpTOCNode Title="C124_Bloomberg_Acquirer_Legal_Advisors__Optional_ Property " Url="html/2078202082.htm" />
+        <HelpTOCNode Title="C125_Bloomberg_Acquirer_Financial_Advisors__Optional_ Property " Url="html/1145535500.htm" />
+        <HelpTOCNode Title="C126_Bloomberg_Pending_Approvals__Optional_ Property " Url="html/297619780.htm" />
+        <HelpTOCNode Title="C127_Bloomberg_Approved_Approvals__Optional_ Property " Url="html/312392760.htm" />
+        <HelpTOCNode Title="C128_Bloomberg_Expired_Approvals__Optional_ Property " Url="html/1038463988.htm" />
+        <HelpTOCNode Title="C129_Bloomberg_Entended_Approvals__Optional_ Property " Url="html/308365023.htm" />
+        <HelpTOCNode Title="C130_Bloomberg_Announced_Date__Optional_ Property " Url="html/1494914352.htm" />
+        <HelpTOCNode Title="C131_Bloomberg_Amendment_Date__Optional_ Property " Url="html/153096607.htm" />
+        <HelpTOCNode Title="C132_Bloomberg_Expected_Completion_Date__Optional_ Property " Url="html/1820677913.htm" />
+        <HelpTOCNode Title="C133_Bloomberg_Completed_Termination_Date__Optional_ Property " Url="html/995136346.htm" />
+        <HelpTOCNode Title="C134_Bloomberg_Merger_Agreement_Date__Optional_ Property " Url="html/665253960.htm" />
+        <HelpTOCNode Title="C135_Bloomberg_Drop_Dead_Date__Optional_ Property " Url="html/1829998573.htm" />
+        <HelpTOCNode Title="C136_Bloomberg_Go_Shop_Period_Start_Date__Optional_ Property " Url="html/1918904453.htm" />
+        <HelpTOCNode Title="C137_Bloomberg_Go_Shop_Period_End_Date__Optional_ Property " Url="html/1633082687.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/535001423.htm" />
+        <HelpTOCNode Title="MergerArbID Property " Url="html/55394448.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="35e2edc8-1c05-43eb-859b-a440b8d3c570" Title="MergerArb Events" Url="html/1990739972.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/531066448.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9ad5bad7-f51a-4c7d-b36d-bc100daa064f" Title="MergerArbNew Class" Url="html/1220177918.htm">
+      <HelpTOCNode Title="MergerArbNew Members" Url="html/1326187065.htm" />
+      <HelpTOCNode Id="7348bae8-89d8-484b-844b-63e3bb48aa6a" Title="MergerArbNew Fields" Url="html/1694359770.htm">
+        <HelpTOCNode Title="Calendar_CommentField Field" Url="html/986065209.htm" />
+        <HelpTOCNode Title="Calendar_FlagField Field" Url="html/895758770.htm" />
+        <HelpTOCNode Title="Calendar_TimeField Field" Url="html/1032875935.htm" />
+        <HelpTOCNode Title="DealIdField Field" Url="html/634586673.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/389919858.htm" />
+        <HelpTOCNode Title="Field_NameField Field" Url="html/824981580.htm" />
+        <HelpTOCNode Title="Field_TypeField Field" Url="html/641283724.htm" />
+        <HelpTOCNode Title="Field_UpdatedField Field" Url="html/185017371.htm" />
+        <HelpTOCNode Title="Field_ValueField Field" Url="html/1638146834.htm" />
+        <HelpTOCNode Title="IDField Field" Url="html/1191062216.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MergerArbNew Methods" Url="html/325616382.htm" />
+      <HelpTOCNode Id="3e19e437-3727-4532-b4cf-e7a541dcd74f" Title="MergerArbNew Properties" Url="html/671485872.htm">
+        <HelpTOCNode Title="Calendar_Comment Property " Url="html/1769963083.htm" />
+        <HelpTOCNode Title="Calendar_Flag Property " Url="html/1932978112.htm" />
+        <HelpTOCNode Title="Calendar_Time Property " Url="html/675533049.htm" />
+        <HelpTOCNode Title="DealId Property " Url="html/1130330848.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/343707014.htm" />
+        <HelpTOCNode Title="Field_Name Property " Url="html/105931323.htm" />
+        <HelpTOCNode Title="Field_Type Property " Url="html/558950952.htm" />
+        <HelpTOCNode Title="Field_Updated Property " Url="html/1026017218.htm" />
+        <HelpTOCNode Title="Field_Value Property " Url="html/1000768450.htm" />
+        <HelpTOCNode Title="ID Property " Url="html/559250338.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="75a2053d-db25-4e67-a5cd-41f2c92cbbbf" Title="MergerArbNew Events" Url="html/185168252.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/1447090206.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="49760518-6141-4152-aac6-7abd20b37ebb" Title="Price Class" Url="html/154496800.htm">
+      <HelpTOCNode Title="Price Members" Url="html/812717853.htm" />
+      <HelpTOCNode Id="e8e5feab-a674-43d7-a2cb-de44b0af4531" Title="Price Fields" Url="html/115749556.htm">
+        <HelpTOCNode Title="extensionDataField Field" Url="html/109703221.htm" />
+        <HelpTOCNode Title="Price1Field Field" Url="html/586668370.htm" />
+        <HelpTOCNode Title="PriceDateTimeField Field" Url="html/947136611.htm" />
+        <HelpTOCNode Title="PriceIDField Field" Url="html/580092150.htm" />
+        <HelpTOCNode Title="PriceSourceField Field" Url="html/244246083.htm" />
+        <HelpTOCNode Title="SecurityField Field" Url="html/2062644120.htm" />
+        <HelpTOCNode Title="SecurityIDField Field" Url="html/19900815.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Price Methods" Url="html/335689148.htm" />
+      <HelpTOCNode Id="cce99cc2-ec13-48ca-a4ac-b30b2d91a643" Title="Price Properties" Url="html/1005174041.htm">
+        <HelpTOCNode Title="ExtensionData Property " Url="html/1871008398.htm" />
+        <HelpTOCNode Title="Price1 Property " Url="html/1188364624.htm" />
+        <HelpTOCNode Title="PriceDateTime Property " Url="html/786707865.htm" />
+        <HelpTOCNode Title="PriceID Property " Url="html/1192820968.htm" />
+        <HelpTOCNode Title="PriceSource Property " Url="html/1678298027.htm" />
+        <HelpTOCNode Title="Security Property " Url="html/959409310.htm" />
+        <HelpTOCNode Title="SecurityID Property " Url="html/1391027620.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bea8627d-21b2-43ce-bf22-8b1e81ac6048" Title="Price Events" Url="html/1233613374.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/2143372607.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="567af6aa-b70f-43d5-8a19-af79461c7560" Title="Security Class" Url="html/1008559608.htm">
+      <HelpTOCNode Title="Security Members" Url="html/894619446.htm" />
+      <HelpTOCNode Id="187bad43-f35a-4fb9-b3cd-9c8048e5b6b7" Title="Security Fields" Url="html/1646016034.htm">
+        <HelpTOCNode Title="CodeField Field" Url="html/901868580.htm" />
+        <HelpTOCNode Title="CompaniesField Field" Url="html/1116730913.htm" />
+        <HelpTOCNode Title="CurrencyField Field" Url="html/985037555.htm" />
+        <HelpTOCNode Title="CurrencyIDField Field" Url="html/248010066.htm" />
+        <HelpTOCNode Title="CusipField Field" Url="html/600463032.htm" />
+        <HelpTOCNode Title="DescriptionField Field" Url="html/1697679391.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/1400181934.htm" />
+        <HelpTOCNode Title="IsinField Field" Url="html/1188395114.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/1603991222.htm" />
+        <HelpTOCNode Title="PricesField Field" Url="html/432361461.htm" />
+        <HelpTOCNode Title="SecurityGroups1Field Field" Url="html/1224450560.htm" />
+        <HelpTOCNode Title="SecurityGroups2Field Field" Url="html/1224450777.htm" />
+        <HelpTOCNode Title="SecurityGroups3Field Field" Url="html/1224450746.htm" />
+        <HelpTOCNode Title="SecurityGroups4Field Field" Url="html/1224450467.htm" />
+        <HelpTOCNode Title="SecurityGroupsField Field" Url="html/1871854295.htm" />
+        <HelpTOCNode Title="SecurityIDField Field" Url="html/111152463.htm" />
+        <HelpTOCNode Title="SecurityTypeField Field" Url="html/1886287187.htm" />
+        <HelpTOCNode Title="SecurityTypeIDField Field" Url="html/421141622.htm" />
+        <HelpTOCNode Title="SedolField Field" Url="html/1415582814.htm" />
+        <HelpTOCNode Title="TickerField Field" Url="html/478925526.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Security Methods" Url="html/1250272460.htm" />
+      <HelpTOCNode Id="b59e02be-fc8e-47c2-8fb8-dc35575ba85e" Title="Security Properties" Url="html/347757818.htm">
+        <HelpTOCNode Title="Code Property " Url="html/1544756860.htm" />
+        <HelpTOCNode Title="Companies Property " Url="html/1178535655.htm" />
+        <HelpTOCNode Title="Currency Property " Url="html/787072411.htm" />
+        <HelpTOCNode Title="CurrencyID Property " Url="html/509919675.htm" />
+        <HelpTOCNode Title="Cusip Property " Url="html/1335120608.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/781066254.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/1384557487.htm" />
+        <HelpTOCNode Title="Isin Property " Url="html/1032613765.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/1891117186.htm" />
+        <HelpTOCNode Title="Prices Property " Url="html/761057114.htm" />
+        <HelpTOCNode Title="SecurityGroups Property " Url="html/1665546045.htm" />
+        <HelpTOCNode Title="SecurityGroups1 Property " Url="html/852654117.htm" />
+        <HelpTOCNode Title="SecurityGroups2 Property " Url="html/852654118.htm" />
+        <HelpTOCNode Title="SecurityGroups3 Property " Url="html/852654119.htm" />
+        <HelpTOCNode Title="SecurityGroups4 Property " Url="html/852654112.htm" />
+        <HelpTOCNode Title="SecurityID Property " Url="html/223513447.htm" />
+        <HelpTOCNode Title="SecurityType Property " Url="html/264485399.htm" />
+        <HelpTOCNode Title="SecurityTypeID Property " Url="html/56424794.htm" />
+        <HelpTOCNode Title="Sedol Property " Url="html/906639593.htm" />
+        <HelpTOCNode Title="Ticker Property " Url="html/901166492.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4e72ae2b-17c7-4452-a0ea-12b8409e4f05" Title="Security Events" Url="html/298001008.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/22658842.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6d1cc5cc-b61d-4a62-895b-4fdf6d4f779e" Title="SecurityGroup Class" Url="html/1796096063.htm">
+      <HelpTOCNode Title="SecurityGroup Members" Url="html/1478667568.htm" />
+      <HelpTOCNode Id="325320aa-6a2b-407e-bf8d-f3acfd9aadb9" Title="SecurityGroup Fields" Url="html/184193240.htm">
+        <HelpTOCNode Title="DealsField Field" Url="html/143850919.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/450453988.htm" />
+        <HelpTOCNode Title="Security1Field Field" Url="html/424447086.htm" />
+        <HelpTOCNode Title="Security2Field Field" Url="html/627340178.htm" />
+        <HelpTOCNode Title="Security3Field Field" Url="html/1143567250.htm" />
+        <HelpTOCNode Title="Security4Field Field" Url="html/1289384850.htm" />
+        <HelpTOCNode Title="SecurityField Field" Url="html/379640313.htm" />
+        <HelpTOCNode Title="SecurityGroupIDField Field" Url="html/2026180874.htm" />
+        <HelpTOCNode Title="SecurityID1Field Field" Url="html/1840918564.htm" />
+        <HelpTOCNode Title="SecurityID2Field Field" Url="html/1830236196.htm" />
+        <HelpTOCNode Title="SecurityID3Field Field" Url="html/1828204580.htm" />
+        <HelpTOCNode Title="SecurityID4Field Field" Url="html/1851076644.htm" />
+        <HelpTOCNode Title="SecurityID5Field Field" Url="html/1849045028.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="SecurityGroup Methods" Url="html/126685445.htm" />
+      <HelpTOCNode Id="fbfcd9f2-bb1f-4c9b-b7d6-1c27d32f6a60" Title="SecurityGroup Properties" Url="html/1535634118.htm">
+        <HelpTOCNode Title="Deals Property " Url="html/118053190.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/1760728313.htm" />
+        <HelpTOCNode Title="Security Property " Url="html/302480724.htm" />
+        <HelpTOCNode Title="Security1 Property " Url="html/2054978900.htm" />
+        <HelpTOCNode Title="Security2 Property " Url="html/666010284.htm" />
+        <HelpTOCNode Title="Security3 Property " Url="html/1672641876.htm" />
+        <HelpTOCNode Title="Security4 Property " Url="html/481000788.htm" />
+        <HelpTOCNode Title="SecurityGroupID Property " Url="html/1846198051.htm" />
+        <HelpTOCNode Title="SecurityID1 Property " Url="html/1127749111.htm" />
+        <HelpTOCNode Title="SecurityID2 Property " Url="html/1127945719.htm" />
+        <HelpTOCNode Title="SecurityID3 Property " Url="html/1127880183.htm" />
+        <HelpTOCNode Title="SecurityID4 Property " Url="html/1128076791.htm" />
+        <HelpTOCNode Title="SecurityID5 Property " Url="html/1128011255.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="aff99c4b-9273-4cb7-bf62-a6f915c4671a" Title="SecurityGroup Events" Url="html/227159768.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/614830765.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0540b67f-7602-466d-bdf7-07fc66ca0b46" Title="SecurityType Class" Url="html/112024002.htm">
+      <HelpTOCNode Title="SecurityType Members" Url="html/625270399.htm" />
+      <HelpTOCNode Id="ee0089a5-70ad-46d1-8268-d274587abee0" Title="SecurityType Fields" Url="html/1674132196.htm">
+        <HelpTOCNode Title="CodeField Field" Url="html/591158534.htm" />
+        <HelpTOCNode Title="DescriptionField Field" Url="html/389652511.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/483020107.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/1752816978.htm" />
+        <HelpTOCNode Title="SecuritiesField Field" Url="html/2047513589.htm" />
+        <HelpTOCNode Title="SecurityTypeIDField Field" Url="html/191411015.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="SecurityType Methods" Url="html/1727657890.htm" />
+      <HelpTOCNode Id="a4f12378-3276-41ba-9741-973c16a0d95e" Title="SecurityType Properties" Url="html/172004523.htm">
+        <HelpTOCNode Title="Code Property " Url="html/1056663761.htm" />
+        <HelpTOCNode Title="Description Property " Url="html/2137065226.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/1718003368.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/271042217.htm" />
+        <HelpTOCNode Title="Securities Property " Url="html/804865918.htm" />
+        <HelpTOCNode Title="SecurityTypeID Property " Url="html/1188018327.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7851567b-4c18-46e8-8580-5eb2a218ecfb" Title="SecurityType Events" Url="html/211068977.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/347262977.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="80093156-9c4e-4913-8b8e-9930b3b4e02c" Title="StatisticType Class" Url="html/1380996526.htm">
+      <HelpTOCNode Title="StatisticType Members" Url="html/330419899.htm" />
+      <HelpTOCNode Id="ad1b814c-8ead-4e62-90d8-33df7d31caeb" Title="StatisticType Fields" Url="html/364436659.htm">
+        <HelpTOCNode Title="AnnualCompanyStatisticsField Field" Url="html/1970622050.htm" />
+        <HelpTOCNode Title="CodeField Field" Url="html/1188956306.htm" />
+        <HelpTOCNode Title="extensionDataField Field" Url="html/279267699.htm" />
+        <HelpTOCNode Title="NameField Field" Url="html/2033579360.htm" />
+        <HelpTOCNode Title="StatisticTypeIDField Field" Url="html/281816282.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="StatisticType Methods" Url="html/592304050.htm" />
+      <HelpTOCNode Id="fc834d1e-b1b3-4d6e-917c-17da898eb164" Title="StatisticType Properties" Url="html/432060804.htm">
+        <HelpTOCNode Title="AnnualCompanyStatistics Property " Url="html/745808788.htm" />
+        <HelpTOCNode Title="Code Property " Url="html/668380732.htm" />
+        <HelpTOCNode Title="ExtensionData Property " Url="html/703313967.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/479670.htm" />
+        <HelpTOCNode Title="StatisticTypeID Property " Url="html/592405601.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="44d2c01d-1080-4980-abaf-94124c8e07f2" Title="StatisticType Events" Url="html/2123916846.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/1263332382.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

@@ -1,16 +1,12 @@
 ﻿// ***********************************************************************
 // Assembly         : Cortex
-// Author           : JRP-Dell-01
-// Created          : 03-10-2015
+// Author           : ktam
+// Created          : 01-20-2015
 //
-// Last Modified By : JRP-Dell-01
+// Last Modified By : ktam
 // Last Modified On : 04-14-2015
 // ***********************************************************************
-// <copyright file="Login.cs" company="">
-//     Copyright (c) . All rights reserved.
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,13 +31,14 @@ namespace CortexClient
     {
 
         /// <summary>
-        /// The wc
+        /// The Web Service Client object
         /// </summary>
         CortexWCFServiceClient wc;
         /// <summary>
-        /// a
+        /// Anlyst Object
         /// </summary>
         Analyst a;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Login"/> class.
         /// </summary>

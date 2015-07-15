@@ -1,16 +1,12 @@
 ﻿// ***********************************************************************
 // Assembly         : Cortex
-// Author           : JRP-Dell-01
-// Created          : 03-10-2015
+// Author           : ktam
+// Created          : 12-05-2014
 //
-// Last Modified By : JRP-Dell-01
+// Last Modified By : ktam
 // Last Modified On : 03-23-2015
 // ***********************************************************************
-// <copyright file="FormSecurityDefinition.cs" company="">
-//     Copyright (c) . All rights reserved.
-// </copyright>
-// <summary></summary>
-// ***********************************************************************
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +26,7 @@ namespace CortexClient
     /// Class FormSecurityDefinition.
     /// </summary>
     public partial class FormSecurityDefinition : Form
-    {
+            {
         /// <summary>
         /// Form attributes
         /// </summary>
@@ -79,75 +75,13 @@ namespace CortexClient
         }
 
         /// <summary>
-        /// Shows the security group.
-        /// </summary>
-        /// <param name="cbxSec">The CBX sec.</param>
-        /// <param name="lblDescr">The label description.</param>
-        /// <param name="lblName">Name of the label.</param>
-        private void showSecurityGroup(ComboBox cbxSec, Label lblDescr, Label lblName)
-        {
-            try
-            {
-                if (cbxSec.SelectedValue != null)
-                {
-                    SecurityType s = wc.getSecurityType((int)cbxSec.SelectedValue);
-
-                    lblDescr.Text = s.Description;
-                    lblName.Text = s.Name;
-                }
-                else
-                {
-                    lblDescr.Text = String.Empty;
-                    lblName.Text = String.Empty;
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error retrieving Security object");
-                Console.WriteLine(ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// Method called when a user loads an existing Security to definition screen
-        /// loads Security Currency value to dropdown
-        /// </summary>
-        /// <param name="cbxSec">The CBX sec.</param>
-        /// <param name="lblName">Name of the label.</param>
-        private void showCurrency(ComboBox cbxSec, Label lblName)
-        {
-            try
-            {
-                if (cbxSec.SelectedValue != null)
-                {
-                    Currency s = wc.getCurrency((int)cbxSec.SelectedValue);
-
-                    lblName.Text = s.CurrencyName;
-                }
-                else
-                {
-                    lblName.Text = String.Empty;
-
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error retrieving Security object");
-                Console.WriteLine(ex.Message);
-            }
-        }
-
-        /// <summary>
         /// Handles the SelectedIndexChanged event of the cbxSecurityGroupID control.
         /// </summary>
         /// <param name="sender">The source of the event.</param>
         /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
         private void cbxSecurityGroupID_SelectedIndexChanged(object sender, EventArgs e)
         {
-            showSecurityGroup(cbxSecurityTypeID, lblSecTypeDescr, lblSecTypeName);
+            CortexGUIProcesses.showSecurityGroup(cbxSecurityTypeID, lblSecTypeDescr, lblSecTypeName, wc);
         }
 
         /// <summary>
